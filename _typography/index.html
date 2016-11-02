@@ -1,0 +1,12 @@
+---
+layout: section
+title: typography
+---
+
+     {% for m in site.typography %}
+         {% if m.title != page.title %}
+
+            {{ m.content }}
+
+         {% endif %}
+     {% endfor %}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Readme | AFR Experience Guide</title>
+  <link rel="stylesheet" href="/landmark/sites/site-afr/styleguide/_site/css/styleguide.css">
+
+  
+
+</head>
+
+
+  <body>
+
+    <header class="styleguide-inner-wrap styleguide-site-header">
+
+    <div class='styleguide-header-heading'>
+        
+        <a class="styleguide-site-link styleguide-site-title" href="/landmark/sites/site-afr/styleguide/_site/">AFR Experience Guide</a>
+        
+        <span class="styleguide-logo">The Australian Financial Review</span>
+    </div>
+
+    <div class='styleguide-header-links'>
+        <a class="styleguide-header-link" href="">Other Brands</a>
+        <a class="styleguide-header-link" href="/landmark/sites/site-afr/styleguide/_site/readme">about this site</a>
+    </div>
+
+</header>
+
+
+    <div class="styleguide-wrap grid">
+        <aside class="styleguide-main-navigation grid__cell">
+            
+
+<nav class="styleguide-nav">
+    <ul class="styleguide-nav__menu">
+        
+            
+            <li class="styleguide-nav__item">
+                <a class="styleguide-nav__link" href="/landmark/sites/site-afr/styleguide/_site/typography">Typography</a>
+                <ul class="styleguide-subnav__menu">
+                   
+                       
+                   
+                       
+                        <li class="styleguide-subnav__item">
+                            <a class="styleguide-subnav__link" href="/landmark/sites/site-afr/styleguide/_site/typography/#fonts">fonts</a>
+                        </li>
+                       
+                   
+                       
+                        <li class="styleguide-subnav__item">
+                            <a class="styleguide-subnav__link" href="/landmark/sites/site-afr/styleguide/_site/typography/#headings">headings</a>
+                        </li>
+                       
+                   
+                       
+                        <li class="styleguide-subnav__item">
+                            <a class="styleguide-subnav__link" href="/landmark/sites/site-afr/styleguide/_site/typography/#headlines">headlines</a>
+                        </li>
+                       
+                   
+                       
+                   
+                 </ul>
+            </li>
+            
+        
+            
+            <li class="styleguide-nav__item">
+                <a class="styleguide-nav__link" href="/landmark/sites/site-afr/styleguide/_site/colours">Colours</a>
+                <ul class="styleguide-subnav__menu">
+                   
+                       
+                   
+                       
+                        <li class="styleguide-subnav__item">
+                            <a class="styleguide-subnav__link" href="/landmark/sites/site-afr/styleguide/_site/colours/#brand colours">brand colours</a>
+                        </li>
+                       
+                   
+                       
+                        <li class="styleguide-subnav__item">
+                            <a class="styleguide-subnav__link" href="/landmark/sites/site-afr/styleguide/_site/colours/#section colours">section colours</a>
+                        </li>
+                       
+                   
+                       
+                   
+                 </ul>
+            </li>
+            
+        
+            
+        
+     </ul>
+ </nav>
+
+
+        </aside>
+
+        <main class="styleguide-main-content grid__cell">
+            <h1 id="instructions-for-editing-and-maintaining-the-styleguide">Instructions for editing and maintaining the styleguide</h1>
+
+<p>This styleguide is built with <a href="https://jekyllrb.com/docs/home/">Jekyll</a> static site generator. The best way to edit it is to install and run it locally, then commit and push your changes to the Landmark Bitbucket repository.</p>
+
+<h2 class="styleguide-heading" id="installation">Installation</h2>
+
+<p>Check if you have Ruby installed: open a Terminal window, type “ruby -v” and press enter. You should see something like</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin14]
+</code></pre>
+</div>
+
+<p>If you instead see something like</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>-bash: ruby: command not found
+</code></pre>
+</div>
+
+<p>you will need to <a href="https://www.ruby-lang.org/en/downloads/">install Ruby</a>.</p>
+
+<p>To install Jekyll, go back to the Terminal and type:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install jekyll
+</code></pre>
+</div>
+
+<p>Next, check out the <a href="https://bitbucket.org/fairfax/xdb-landmark">Landmark Bitbucket repository</a> and pull down the <a href="https://bitbucket.org/fairfax/xdb-landmark/branch/feature/LANDMARK-styleguide">styleguide branch</a>. More details on cloning a git repository <a href="https://confluence.atlassian.com/bitbucket/clone-a-repository-223217891.html">here</a>.</p>
+
+<p>Then in the Terminal navigate to the root styleguide folder - this should be in <code class="highlighter-rouge">landmark/sites/[your project name]</code> - and type:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll build --watch
+</code></pre>
+</div>
+
+<p>You can then edit the markdown files and Jekyll will update the site as you save.</p>
+
+<h2 class="styleguide-heading" id="file-structure">File structure</h2>
+
+<p>The styleguide is organised in sections and each section corresponds to a <a href="https://jekyllrb.com/docs/collections/">Jekyll collection</a>. For each of them there is a folder at root level named after the section name. All folder names are preceded by an underscore; that is how Jekyll identifies collections.</p>
+
+<p>Inside each of these folders there is an <code class="highlighter-rouge">index.html</code> file and several <a href="https://daringfireball.net/projects/markdown/syntax"><code class="highlighter-rouge">markdown</code></a> files. The index.html is the main section page - for example “Colours” - and for each subsection in that page there is a markdown file. The markdown file names all start with a number; this number determines the order of the subsections. Numbering starts at 00.</p>
+
+<p>Each markdown file should start with <a href="https://jekyllrb.com/docs/frontmatter/">front matter</a>, otherwise Jekyll will not process it. For the subsections you need only add a title.</p>
+
+<p>Each markdown file in a section folder will be added to the left hand side navigation bar under that section, UNLESS its title is “intro” OR equal to the section name.</p>
+
+<p>The homepage is generated from the <code class="highlighter-rouge">index.md</code> file at root level.</p>
+
+<h2 class="styleguide-heading" id="adding-new-sections">Adding new sections</h2>
+
+<p>To add a section you must create a new collection. This is a two step process:</p>
+
+<p>First you must register the collection in the <code class="highlighter-rouge">_config.yml</code> file at root level.
+Within that file you will find something like:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>collections:
+    typography:
+        output: true
+</code></pre>
+</div>
+
+<p>Under <code class="highlighter-rouge">collections</code> add your section name, indented 4 spaces and followed by a colon. On the line below add <code class="highlighter-rouge">output: true</code>, indented 8 spaces. Be sure to indent correctly or Jekyll will not process your collection.</p>
+
+<p>Then you need to create the collection folder. Add a new folder at root level and give it the section name preceded by an underscore.</p>
+
+<p>Inside that folder, you will need to add an <code class="highlighter-rouge">index.html</code> file containing the following code:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+layout: section
+title: [your section name here]
+---
+
+{% for m in site.[your section name here] %}
+    {% if m.title != page.title %}
+
+        {{ m.content }}
+
+    {% endif %}
+{% endfor %
+</code></pre>
+</div>
+
+<p>This is the loop that displays all the subsections inside the main section.</p>
+
+<p>You can then add in a markdown file for each subsection, numbered 00 - 99 in the order you wish them to display. Add the subsection title in its front matter like so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+title: intro
+---
+</code></pre>
+</div>
+
+<p>For all sections except the intro a level 2 heading (h2) should be added with the exact same text as the subsection title. If there is no heading or the text is not the same, in-page links from the navigation bar will not work, as they depend on automatically generated <code class="highlighter-rouge">id</code>s for these headings. These headings should also be given a class of <code class="highlighter-rouge">styleguide-heading</code>, using <a href="http://kramdown.gettalong.org/syntax.html#block-ials">Kramdown attribute notation</a>. Example:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>## fonts
+{: .styleguide-heading}
+</code></pre>
+</div>
+
+<h2 class="styleguide-heading" id="adding-images-in-content-area">Adding images in content area</h2>
+
+<p>Markdown image syntax is very similar to link syntax except it starts with an exclamation mark like so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>![Vertov films oncoming train](../images/vertov.jpg)
+{: .f-right .img-medium}
+</code></pre>
+</div>
+
+<p>Contents of the square brackets will become image alt text. Note that path to the <code class="highlighter-rouge">/images/</code> folder must always be specified relative to the file where the image is being inserted.</p>
+
+<p>A few classes are available for positioning and sizing images:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">img-medium</code> sizes an image responsively at 50% of content width for screens over 820px and full size for smaller screens</li>
+  <li><code class="highlighter-rouge">img-small</code> sizes an image responsively at 25% of content width for screens over 820px, 50% for screens over 384px and full size for smaller screens</li>
+  <li><code class="highlighter-rouge">f-left</code> floats a non-full size image to the left (text will wrap around its right hand side)</li>
+  <li><code class="highlighter-rouge">f-right</code> floats a non-full size image to the right (text will wrap around its left hand side)</li>
+</ul>
+
+<h2 class="styleguide-heading" id="adding-project-css-to-the-styleguide">Adding project CSS to the styleguide</h2>
+
+<p>The CSS from the project is fed directly into the styleguide. Inside the project’s <code class="highlighter-rouge">sass</code> folder there is a <code class="highlighter-rouge">styleguide</code> folder containing two files: <code class="highlighter-rouge">styleguide.scss</code> lists all the partials that need to be included both from base landmark level and project level, and <code class="highlighter-rouge">_styleguide-settings.scss</code> is where all the styles for the styleguide itself are located.</p>
+
+<p>These files get compiled whenever any project <code class="highlighter-rouge">.scss</code> file is updated via the same <code class="highlighter-rouge">grunt</code> task that updates the project CSS and the compiled <code class="highlighter-rouge">styleguide.css</code> is sent to the css folder within the styleguide itself.</p>
+
+<h2 class="styleguide-heading" id="resources">Resources</h2>
+
+<p>Jekyll uses a particular flavour of markdown called <a href="http://kramdown.gettalong.org/quickref.html">Kramdown</a>.</p>
+
+        </main>
+    </div>
+
+    <footer class="site-footer">
+
+</footer>
+
+
+  </body>
+
+</html>

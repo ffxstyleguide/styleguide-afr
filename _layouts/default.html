@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="styleguide-wrap grid">
+        <aside class="styleguide-main-navigation grid__cell">
+            {% include navigation.html %}
+        </aside>
+
+        <main class="styleguide-main-content grid__cell">
+            {{ content }}
+        </main>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

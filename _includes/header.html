@@ -1,0 +1,17 @@
+<header class="styleguide-inner-wrap styleguide-site-header">
+
+    <div class='styleguide-header-heading'>
+        {% if page.url == "/" %}
+        <a class="styleguide-site-link" href="{{ site.baseurl }}/"><h1 class="styleguide-site-title">{{ site.title }}</h1></a>
+        {% else %}
+        <a class="styleguide-site-link styleguide-site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        {% endif %}
+        <span class="styleguide-logo">{{ site.subtitle }}</span>
+    </div>
+
+    <div class='styleguide-header-links'>
+        <a class="styleguide-header-link" href="">Other Brands</a>
+        <a class="styleguide-header-link" href="{{ site.baseurl }}/readme">about this site</a>
+    </div>
+
+</header>

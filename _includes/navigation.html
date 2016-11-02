@@ -1,0 +1,23 @@
+
+{% if site.collections %}
+<nav class="styleguide-nav">
+    <ul class="styleguide-nav__menu">
+        {% for collection in site.collections %}
+            {% unless collection.label == "posts" %}
+            <li class="styleguide-nav__item{% if collection.label == page.title%} styleguide-nav-selected{% endif %}">
+                <a class="styleguide-nav__link" href="{{ site.baseurl }}/{{ collection.label }}">{{ collection.label | capitalize }}</a>
+                <ul class="styleguide-subnav__menu">
+                   {% for doc in collection.docs %}
+                       {% unless doc.title == collection.label or doc.title == "intro" %}
+                        <li class="styleguide-subnav__item">
+                            <a class="styleguide-subnav__link" href="{{ site.baseurl }}/{{ doc.collection }}/#{{ doc.title }}">{{ doc.title }}</a>
+                        </li>
+                       {% endunless %}
+                   {% endfor %}
+                 </ul>
+            </li>
+            {% endunless %}
+        {% endfor %}
+     </ul>
+ </nav>
+{% endif %}

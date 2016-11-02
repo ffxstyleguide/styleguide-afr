@@ -1,0 +1,12 @@
+---
+layout: section
+title: colours
+---
+
+  {% for m in site.colours %}
+      {% if m.title != page.title %}
+
+         {{ m.content }}
+
+      {% endif %}
+  {% endfor %}
