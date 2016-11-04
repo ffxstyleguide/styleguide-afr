@@ -318,7 +318,7 @@ html body.noscript .showWithoutJS { display: block; }
 
 .styleguide-btn { border: 0; padding: 6px 10px; text-transform: none; }
 
-.content img { width: 100%; height: auto; padding-bottom: 20px; padding-top: 20px; }
+.styleguide-main-content img { width: 100%; height: auto; padding-bottom: 20px; padding-top: 20px; }
 
 .styleguide-site-header { background-color: #f6f5f5; color: black; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
