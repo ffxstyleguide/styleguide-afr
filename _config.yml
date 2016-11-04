@@ -11,9 +11,8 @@ subtitle: The Australian Financial Review
 email:
 description: > # this means to ignore newlines until "baseurl:"
 
-baseurl: "" # the subpath of your site, e.g. /blog
-brandurl: ""
-url: "" # the base hostname & protocol for your site
+baseurl: /styleguide-afr # the subpath of your site, e.g. /blog
+
 collections:
     typography:
         output: true
@@ -22,3 +21,8 @@ collections:
 
 # Build settings
 markdown: kramdown
+prose:
+    siteurl: 'https://ffxstyleguide.github.io/styleguide-afr/'
+    media: 'images'
+    ignore: ['_includes','_layouts']
+    
