@@ -11,9 +11,9 @@ subtitle: The Australian Financial Review
 email:
 description: > # this means to ignore newlines until "baseurl:"
 
-baseurl: "/landmark/sites/site-afr/styleguide/_site" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 brandurl: ""
-url: "http://localhost" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 collections:
     typography:
         output: true
