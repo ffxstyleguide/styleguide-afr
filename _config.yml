@@ -24,4 +24,4 @@ markdown: kramdown
 prose:
     siteurl: 'https://ffxstyleguide.github.io/styleguide-afr/'
     media: 'images'
-    ignore: ['_includes','_layouts','_site','css','.gitignore']
+    ignore: ['_includes','_layouts','_site','.gitignore']
