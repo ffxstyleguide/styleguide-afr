@@ -22,4 +22,5 @@ that are part of a greater digital product whole
 
 hello world here's a cat pic
 
-![ed through window]({{site.baseurl}}//IMG_6196.JPG)
+![peeping ed]({{site.baseurl}}/images/IMG_6196.JPG)![IMG_6196.JPG]({{site.baseurl}}/images/IMG_6196.JPG)
+
