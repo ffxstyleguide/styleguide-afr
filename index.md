@@ -1,7 +1,7 @@
 ---
 layout: default
 title: home
-published: false
+published: true
 ---
 
 ## Overview
