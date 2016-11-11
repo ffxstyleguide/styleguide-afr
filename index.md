@@ -1,7 +1,6 @@
 ---
 layout: default
 title: home
-published: true
 ---
 
 ## Overview
@@ -17,10 +16,3 @@ that are part of a greater digital product whole
 - Our mastheads hold 185 years of history
 - Loyal customers, readers in the millions
 - Proudly independent, trusted source
-
-## testing prose visual editor
-
-hello world here's a cat pic
-
-![peeping ed]({{site.baseurl}}/images/peeping_ed.jpg)
-{: .f-right .img-medium}
