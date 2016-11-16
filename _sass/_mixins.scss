@@ -1,0 +1,41 @@
+//------------------------------------//
+//    $ NUMBERED LIST
+//------------------------------------//
+
+
+ //  To add CSS-only, custom-styleable numbers to ordered lists. Supports nested lists.
+ //
+ //  Ideally use it with the classic ordered list markup, calling it on the <ol> (on all the <ol>s if it's a nested list) but works with other elements too: call on parent to number direct children.
+ //
+ //  USAGE:
+ //
+ //  @include numbered-list([$separator] [$nested-list], [$nested-separator])
+ //
+ //
+ //  PARAMETERS:
+ //
+ //  $separator [OPTIONAL] - use any character enclosed in quotes or empty string if no separator is required
+ //                          defaults to "."
+ //
+ //  $nested-list [OPTIONAL] - use any non-null value - preferably "yes" - to generate numbering for nested lists
+ //                            defaults to null
+ //
+ //  $nested-separator [OPTIONAL] - use only if you wish the last separator on a nested list item to be different from the first separator
+ //                                 defaults to same as first separator
+ //
+ //
+ //  IMPORTANT: if you wish to specify the second parameter but not the first, you must use the parameter name, e.g. $nested-list: yes
+ //
+
+@mixin numbered-list($separator:".", $nested-list:null, $nested-separator:$separator) {
+    counter-reset: item;
+    > *:before {
+      @if ($nested-list) {
+        content: counters(item, $separator) $nested-separator + " ";
+      }
+      @else {
+        content: counter(item) $separator;
+      }
+      counter-increment: item;
+    }
+}

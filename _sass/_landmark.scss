@@ -1,4 +1,4 @@
-* { box-sizing: border-box; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
@@ -22,7 +22,7 @@ blockquote:after { clear: both; content: ""; display: table; }
 
 .grid { display: block; padding: 0; margin: 0 -10px; text-align: left; letter-spacing: -0.32em; text-rendering: optimizespeed; }
 
-.grid__cell { box-sizing: border-box; display: inline-block; margin: 0; padding-left: 10px; padding-right: 10px; vertical-align: top; letter-spacing: normal; word-spacing: normal; text-rendering: auto; }
+.grid__cell { -moz-box-sizing: border-box; box-sizing: border-box; display: inline-block; margin: 0; padding-left: 10px; padding-right: 10px; vertical-align: top; letter-spacing: normal; word-spacing: normal; text-rendering: auto; }
 
 .opera:-o-prefocus, .grid { word-spacing: -0.43em; }
 
@@ -218,7 +218,7 @@ q q:after { content: "\201D"; content: close-quote; }
 
 abbr[title] { border-bottom: 1px dotted; }
 
-hr { box-sizing: content-box; height: 0; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
 
 mark { background: #ff0; color: black; }
 
@@ -300,6 +300,18 @@ html body.noscript .showWithoutJS { display: block; }
 
 .f-none { float: none !important; }
 
+@media (min-width: 384px) { .f-left--small { float: left !important; }
+  .f-right--small { float: right !important; }
+  .f-none--small { float: none !important; } }
+
+@media (min-width: 720px) { .f-left--medium { float: left !important; }
+  .f-right--medium { float: right !important; }
+  .f-none--medium { float: none !important; } }
+
+@media (min-width: 820px) { .f-left--large { float: left !important; }
+  .f-right--large { float: right !important; }
+  .f-none--large { float: none !important; } }
+
 .block { display: block !important; }
 
 .inline { display: inline !important; }
@@ -308,107 +320,4 @@ html body.noscript .showWithoutJS { display: block; }
 
 .divider { border-top: 1px solid #ccc; padding-top: 18px; }
 
-.styleguide-logo { display: inline-block; margin: 0 30px; overflow: hidden; vertical-align: middle; }
-
-.styleguide-logo:before { content: ""; display: block; height: 100%; width: 0; }
-
-.styleguide-wrap { margin: 2vh 2vw; }
-
-.styleguide-full-wrap { margin: 0; width: 100%; height: 100vh; background: tomato; }
-
-.styleguide-full-wrap .content { margin: 2vh 2vw; }
-
-.styleguide-inner-wrap { padding: 2vh 2vw; }
-
-.styleguide-btn { border: 0; padding: 6px 10px; text-transform: none; }
-
-.content img { width: 100%; height: auto; padding-bottom: 20px; padding-top: 20px; }
-
-.styleguide-site-header { background-color: #f6f5f5; color: black; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; }
-
-.styleguide-header-heading { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; }
-
-.styleguide-site-link:hover, .styleguide-site-link:focus { text-decoration: none; }
-
-.styleguide-site-title { font-size: 18px; font-size: 1.125rem; display: inline-block; margin-bottom: 15px; vertical-align: middle; }
-
-.styleguide-logo { margin-bottom: 15px; }
-
-.styleguide-header-links { display: -ms-flexbox; display: flex; -ms-flex-positive: 1; flex-grow: 1; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
-
-.styleguide-header-link { font-size: 18px; font-size: 1.125rem; }
-
-.styleguide-main-navigation { margin-bottom: 30px; }
-
-.styleguide-nav__item { font-size: 20px; font-size: 1.25rem; }
-
-.styleguide-nav-selected .styleguide-nav__link { font-weight: bold; }
-
-.styleguide-nav__link, .styleguide-subnav__link { color: black; }
-
-.styleguide-subnav__item { font-size: 18px; font-size: 1.125rem; padding-left: 20px; }
-
-.styleguide-main-content { color: black; max-width: 58.75em; }
-
-.styleguide-main-content ul { list-style: disc; margin-left: 1em; }
-
-.styleguide-main-content ol { counter-reset: item; }
-
-.styleguide-main-content ol > *:before { content: counter(item) ". "; counter-increment: item; }
-
-.styleguide-main-content .styleguide-heading { margin-bottom: 1em; margin-top: 2em; }
-
-div.highlighter-rouge { background: #f6f5f5; margin-bottom: .75em; padding: .5em; }
-
-code.highlighter-rouge { background: #f6f5f5; padding: .1em; }
-
-@media (min-width: 384px) {
-
- .f-left--small { float: left !important; }
-
- .f-right--small { float: right !important; }
-
- .f-none--small { float: none !important; }
-
- .img-small { max-width: 50%; margin-left: auto; margin-right: auto; }
-
- .img-small.f-right img { padding-left: 20px; }
-
- .img-small.f-left img { padding-right: 20px; } }
-
-@media (min-width: 720px) {
-
- .f-left--medium { float: left !important; }
-
- .f-right--medium { float: right !important; }
-
- .f-none--medium { float: none !important; }
-
- .styleguide-header-links { -ms-flex-pack: end; justify-content: flex-end; }
-
- .styleguide-header-link { margin: 0 10px; }
-
- .styleguide-main-navigation { display: inline-block; vertical-align: top; width: 25%; }
-
- .styleguide-main-content { display: inline-block; vertical-align: top; width: 75%; }
-
- .styleguide-nav { margin-right: 20px; } }
-
-@media (min-width: 820px) {
-
- .f-left--large { float: left !important; }
-
- .f-right--large { float: right !important; }
-
- .f-none--large { float: none !important; }
-
- .img-medium { max-width: 50%; margin-left: auto; margin-right: auto; }
-
- .img-small { max-width: 25%; margin-left: auto; margin-right: auto; }
-
- .f-right img { padding-left: 20px; }
-
- .f-left img { padding-right: 20px; }
-
- .styleguide-site-title, .styleguide-logo { margin-bottom: 0; } }
-/*# sourceMappingURL=styleguide.css.map */
+/*# sourceMappingURL=_landmark.scss.map */
