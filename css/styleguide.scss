@@ -19,14 +19,8 @@ $text-color: #333;
 .styleguide-logo {
     display: inline-block;
     margin: 0 30px;
-    overflow: hidden;
-    vertical-align: middle;
-
-    &:before {
-        content: "";
-        display: block;
-        height: 100%;
-        width: 0;
+    svg {
+        width: 300px;
     }
 }
 
@@ -40,8 +34,7 @@ $text-color: #333;
     margin: 0;
     width: 100%;
     height: 100vh;
-    background: aliceblue;
-    color: #666;
+    color: #333;
 
     .content {
         margin: 2vh 2vw;
@@ -88,6 +81,7 @@ $text-color: #333;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .styleguide-site-link {
@@ -169,6 +163,18 @@ $text-color: #333;
         margin-bottom: 1em;
         margin-top: 2em;
     }
+}
+
+// landing page
+
+.styleguide-landing {
+    background: aliceblue;
+}
+
+.rooster {
+    width: 50%;
+    float: right;
+    margin-left: 30px;
 }
 
 // block level code (pre) styling
