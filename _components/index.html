@@ -1,0 +1,12 @@
+---
+layout: section
+title: components
+---
+
+     {% for m in site.components %}
+         {% if m.title != page.title %}
+
+            {{ m.content }}
+
+         {% endif %}
+     {% endfor %}

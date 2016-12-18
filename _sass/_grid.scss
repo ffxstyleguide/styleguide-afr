@@ -1,0 +1,66 @@
+$grid-direction: left !default; // switch to 'right' for rtl
+$grid-gutter: 20px !default; // can be px, em, or %
+
+// Grid core //
+
+
+// Grid container
+// Must only contain `.grid` or `.grid__cell` components as children.
+
+// 1. Adjustment for child element margins.
+// 2. Ensure consistent default alignment/
+// 3. Remove inter-unit whitespace that appears between `inline-block` child
+//    elements. Work for all non-monospace font-families.  If you're using a
+//    monospace base font, you will need to set the `grid` font-family to
+//   `sans-serif` and then redeclare the monospace font on the `grid__cell`
+//    objects.
+//    Related: https://github.com/necolas/griddle/issues/27
+//   4. Protect against WebKit bug with optimizelegibility.
+
+
+%grid {
+    display: block;
+    padding: 0;
+    margin-left: -0.5 * $grid-gutter; // [1]
+    margin-right: -0.5 * $grid-gutter;
+    text-align: $grid-direction; // [2]
+    letter-spacing: -0.32em; // [3]
+    text-rendering: optimizespeed; // [4]
+}
+
+
+// Grid units
+// No explicit width by default. Apply `.unit-x-y` classes.
+
+// 1. Fundamentals of the non-float grid layout mechanism.
+// 2. Apply grid gutter.
+// 3. Controls vertical positioning of units.
+// 4. Keeps content correctly aligned with the grid direction.
+// 5. Reset text defaults.
+
+
+// Note: We split out a silent %grid__cell so containers that
+// wish to @extend base grid cell layout behaviour can use it.
+// Behaviour that do not affect the layout of the grid__cell are
+// called in the .grid__cell selector.
+
+
+%grid__cell {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block; // [1]
+    margin: 0;
+    padding-left: 0.5 * $grid-gutter; // [2]
+    padding-right: 0.5 * $grid-gutter; // [2]
+    vertical-align: top; // [3]
+    letter-spacing: normal; // [5]
+    word-spacing: normal; // [5]
+    text-rendering: auto; // [5]
+}
+
+.grid {
+    @extend %grid;
+}
+.grid__cell {
+    @extend %grid__cell;
+}

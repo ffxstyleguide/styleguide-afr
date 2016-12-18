@@ -1,0 +1,22 @@
+
+// main content - markdown stuff
+
+.styleguide-main-content {
+    color: $text-color;
+    max-width: 58.75em; // 940px assuming a body font size of 16;
+
+    ul {
+        list-style: disc;
+        margin-left: 1em;
+    }
+    ol {
+        @include numbered-list(". ");
+    }
+    .page-heading {
+        margin-top: 0;
+    }
+    .styleguide-heading {
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+}

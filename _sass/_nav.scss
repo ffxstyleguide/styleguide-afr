@@ -1,0 +1,34 @@
+// nav
+
+.styleguide-main-navigation {
+    margin-bottom: 30px;
+}
+
+.styleguide-nav {
+
+}
+
+.styleguide-nav__item {
+    font-size: 1.2rem;
+}
+
+.styleguide-nav-selected .styleguide-nav__link {
+    font-weight: bold;
+}
+
+.styleguide-nav__link,
+.styleguide-subnav__link {
+    color: $text-color;
+}
+
+.styleguide-subnav__item {
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+
+@media (min-width: $bp-medium) {
+
+    .styleguide-nav {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,11 @@
+---
+layout: landing
+title: home
+published: true
+---
+
+{% for m in site.frontpage %}
+    <div class="styleguide-section">
+        {{ m.content }}
+    </div>
+{% endfor %}

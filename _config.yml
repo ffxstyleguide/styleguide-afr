@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: AFR Experience Guide
+title: Design System
 subtitle: The Australian Financial Review
 email:
 description: > # this means to ignore newlines until "baseurl:"
@@ -14,9 +14,13 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: /styleguide-afr # the subpath of your site, e.g. /blog
 
 collections:
+    frontpage:
+        output: true
     typography:
         output: true
     colours:
+        output: true
+    components:
         output: true
 
 # Build settings

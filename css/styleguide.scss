@@ -3,47 +3,13 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import 'landmark';
+@import 'variables';
 @import 'mixins';
-
-// variables essential for styleguide
-$bp-small: 				384px;
-$bp-medium: 			720px;
-$bp-large: 				820px;
-$bp-xlarge: 			1168px;
-
-$text-color: #333;
-
-// logos and other assets
-
-.styleguide-logo {
-    display: inline-block;
-    margin: 0 30px;
-    svg {
-        width: 300px;
-    }
-}
-
-// wrappers
-
-.styleguide-wrap {
-    margin: 2vh 2vw;
-}
-
-.styleguide-full-wrap {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    color: #333;
-
-    .content {
-        margin: 2vh 2vw;
-    }
-}
-
-.styleguide-inner-wrap {
-    padding: 2vh 2vw;
-}
+@import 'base';
+@import 'grid';
+@import 'header';
+@import 'nav';
+@import 'content';
 
 // bits and bobs
 
@@ -67,112 +33,15 @@ $text-color: #333;
     padding-top: 20px;
 }
 
-// header
-
-.styleguide-site-header {
-    background-color: #fff;
-    color: $text-color;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.styleguide-img {
+    background-color: #999;
 }
 
-.styleguide-header-heading {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.styleguide-site-link {
-
-    &:visited {
-
-    }
-
-    &:hover,
-    &:focus {
-        text-decoration: none;
-    }
-}
-
-.styleguide-site-title {
-    font-size: 1.1rem;
-    display: inline-block;
-    margin-bottom: 15px;
-    vertical-align: middle;
-}
-
-.styleguide-logo {
-    margin-bottom: 15px;
-}
-
-.styleguide-header-links {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.styleguide-header-link {
-    font-size: 1.1rem;
-}
-
-// nav
-
-.styleguide-main-navigation {
-    margin-bottom: 30px;
-}
-
-.styleguide-nav {
-
-}
-
-.styleguide-nav__item {
-    font-size: 1.2rem;
-}
-
-.styleguide-nav-selected .styleguide-nav__link {
-    font-weight: bold;
-}
-
-.styleguide-nav__link,
-.styleguide-subnav__link {
-    color: $text-color;
-}
-
-.styleguide-subnav__item {
-    font-size: 1.1rem;
-    padding-left: 20px;
-}
-
-// main content - markdown stuff
-
-.styleguide-main-content {
-    color: $text-color;
-    max-width: 58.75em; // 940px assuming a body font size of 16;
-
-    ul {
-        list-style: disc;
-        margin-left: 1em;
-    }
-    ol {
-        @include numbered-list(". ");
-    }
-    .styleguide-heading {
-        margin-bottom: 1em;
-        margin-top: 2em;
-    }
-}
 
 // landing page
 
-.styleguide-landing {
-    background: aliceblue;
-}
-
 .rooster {
-    width: 50%;
+    width: 30%;
     float: right;
     margin-left: 30px;
 }
@@ -211,29 +80,6 @@ code.highlighter-rouge {
 
 }
 
-@media (min-width: $bp-medium) {
-
-    .styleguide-header-links {
-        justify-content: flex-end;
-    }
-    .styleguide-header-link {
-        margin: 0 10px;
-    }
-    .styleguide-main-navigation {
-        display: inline-block;
-        vertical-align: top;
-        width: 25%;
-    }
-    .styleguide-main-content {
-        display: inline-block;
-        vertical-align: top;
-        width: 75%;
-    }
-    .styleguide-nav {
-        margin-right: 20px;
-    }
-}
-
 @media (min-width: $bp-large) {
 
     //images
@@ -255,12 +101,6 @@ code.highlighter-rouge {
 
     .f-left img {
         padding-right: 20px;
-    }
-
-    // header
-    .styleguide-site-title,
-    .styleguide-logo {
-        margin-bottom: 0;
     }
 
 }

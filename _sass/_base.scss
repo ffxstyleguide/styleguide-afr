@@ -1,0 +1,84 @@
+// base styles
+
+body {
+    font-family: $base-font-family;
+    font-size: 100%;
+    margin: 0;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+// utility classes
+
+.f-left {
+    float: left;
+
+    + .f-left {
+        margin-left: 20px;
+    }
+}
+.f-right {
+    float: right;
+
+     + .f-right {
+         margin-right: 20px;
+     }
+}
+
+// resets
+
+.styleguide-site-header,
+.styleguide-main-navigation,
+.styleguide-footer {
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+}
+
+// wrappers
+
+.styleguide-wrap {
+    margin: 2vh 2vw;
+}
+
+.styleguide-full-wrap {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    color: #333;
+
+    .content {
+        margin: 2vh 2vw;
+    }
+}
+
+.styleguide-section {
+    clear: both;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.styleguide-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: $bp-medium) {
+
+    .styleguide-main-navigation {
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+    }
+    .styleguide-main-content {
+        display: inline-block;
+        vertical-align: top;
+        width: 75%;
+    }
+
+}
