@@ -5,7 +5,12 @@ published: true
 ---
 
 {% for m in site.frontpage %}
-    <div class="styleguide-section">
-        {{ m.content }}
+    <div class="styleguide-section grid">
+        <header class="grid__cell">
+            <h2>{{ m.title }}</h2>
+        </header>
+        <section class="grid__cell">
+            {{ m.content }}
+        </section>
     </div>
 {% endfor %}

@@ -1,8 +1,7 @@
 ---
-title: why design
+title: Why a design system is important
 ---
 
-## Why a design system is important
 
 * It leads to cohesive, consistent experiences. That means users master our UI faster, leading to more conversions and improved metrics.
 

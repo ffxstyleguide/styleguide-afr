@@ -4,8 +4,9 @@
     margin-bottom: 30px;
 }
 
-.styleguide-nav {
-
+.styleguide-nav__menu {
+    padding: 0;
+    margin-left: 30px;
 }
 
 .styleguide-nav__item {
@@ -25,6 +26,8 @@
     font-size: 1.1rem;
     padding-left: 20px;
 }
+
+
 
 @media (min-width: $bp-medium) {
 

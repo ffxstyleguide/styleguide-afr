@@ -4,8 +4,8 @@ body {
     font-family: $base-font-family;
     font-size: 100%;
     margin: 0;
-    padding-bottom: 60px;
-    position: relative;
+    // padding-bottom: 60px;
+    // position: relative;
 }
 
 // utility classes
@@ -36,7 +36,6 @@ body {
     }
     ul {
         list-style: none;
-        margin: 0;
     }
 }
 
@@ -46,27 +45,31 @@ body {
     margin: 2vh 2vw;
 }
 
+// homepage
+
 .styleguide-full-wrap {
     margin: 0;
     width: 100%;
     height: 100vh;
     color: #333;
 
-    .content {
-        margin: 2vh 2vw;
+    .styleguide-section {
+        clear: both;
+        margin: 60px 0;
+        padding: 0 20px;
+        overflow: hidden;
+
+        &:nth-child(odd) {
+            background-color: aliceblue;
+        }
     }
 }
 
-.styleguide-section {
-    clear: both;
-    margin-top: 60px;
-    overflow: hidden;
-}
 
-.styleguide-footer {
-    position: absolute;
-    bottom: 0;
-}
+// .styleguide-footer {
+//     position: absolute;
+//     bottom: 0;
+// }
 
 @media (min-width: $bp-medium) {
 
@@ -80,5 +83,15 @@ body {
         vertical-align: top;
         width: 75%;
     }
-
+    .styleguide-full-wrap .styleguide-section {
+        header {
+            display: inline-block;
+            width: 25%;
+        }
+        section {
+            display: inline-block;
+            width: 75%;
+            max-width: 58.75em; // 940px assuming a body font size of 16;
+        }
+    }
 }
