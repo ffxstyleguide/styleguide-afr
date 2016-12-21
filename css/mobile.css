@@ -1101,8 +1101,6 @@ html body.noscript .showWithoutJS { display: block; }
 
 .grid__cell--fl { float: left; }
 
-body { overflow-x: hidden; }
-
 #__hid_beacon__ { display: none; }
 
 .content { padding: 0px 0 25px; margin-top: 14px; }
@@ -1315,6 +1313,8 @@ small.ad--text { font-size: 12px; font-size: 0.75rem; line-height: 1; -webkit-tr
 
 .ad-container .adWrapper { position: relative; }
 
+.subindex--article-lifestyle .ad-container { height: auto; }
+
 .ad-wrap { margin: 14px auto 24px; }
 
 .ad-wrap .ad { margin: auto; }
@@ -1474,6 +1474,8 @@ small.ad--text { font-size: 12px; font-size: 0.75rem; line-height: 1; -webkit-tr
 .btn--large:hover, .btn--large:focus { background: #f2f2f2; border: 1px solid #d2d8dc; }
 
 .btn--large:active { background: #f2f2f2; border-color: #b9bfc2; }
+
+button { outline: 0; }
 
 .byline { font-size: 12px; font-size: 0.75rem; line-height: 1.25; font-weight: bold; word-spacing: -0.19rem; }
 

@@ -1169,8 +1169,6 @@ html body.noscript .showWithoutJS { display: block; }
 
 .grid__cell--fl { float: left; }
 
-body { overflow-x: hidden; }
-
 #__hid_beacon__ { display: none; }
 
 .content { padding: 0px 0 25px; margin-top: 14px; }
@@ -1396,6 +1394,8 @@ small.ad--text { font-size: 12px; font-size: 0.75rem; line-height: 1; -webkit-tr
 .ad-container { height: 750px; position: relative; }
 
 .ad-container .adWrapper { position: relative; }
+
+.subindex--article-lifestyle .ad-container { height: auto; }
 
 .ad-wrap { margin: 14px auto 24px; }
 
@@ -4757,6 +4757,8 @@ select.error { border-color: #b94a48; }
 
 .subindex--brw .panel--numbered ol > li:nth-child(even), .subindex--brw .panel--alt ol > li:nth-child(even) { padding-left: 60px; }
 
+.subindex--article-lifestyle .full-width { width: 940px; }
+
 .inner-wrap .main .strap--lifestyle-hero .grid .story, .inner-wrap .main .strap--1s-1s-a_1s-1s-1s .grid .story, .inner-wrap .main .strap--lifestyle .grid .story { border-bottom: 0; display: inline-block; letter-spacing: normal; padding: 0 10px; vertical-align: top; word-spacing: normal; margin-bottom: 25px; min-height: 251px; }
 
 .inner-wrap .main .strap--lifestyle-hero .grid .story--stacked .story__lead, .inner-wrap .main .strap--1s-1s-a_1s-1s-1s .grid .story--stacked .story__lead, .inner-wrap .main .strap--lifestyle .grid .story--stacked .story__lead, .inner-wrap .main .strap--lifestyle-hero .grid .strap--lifestyle .story .story__lead, .inner-wrap .main .strap--1s-1s-a_1s-1s-1s .grid .strap--lifestyle .story .story__lead, .inner-wrap .main .strap--lifestyle .grid .story .story__lead { margin-right: 0; width: 100%; }
@@ -5329,7 +5331,6 @@ body:not(.cq-wcm-edit) div[class*='cq-'] { display: inline; }
  .notification--basic-subscriber .mobile-tablet-new-line, .notification--basic-subscriber-maximum-reached .mobile-tablet-new-line{ display: block; } }
 
 @media only screen and (max-width: 960px){
- body{ min-width: 960px; overflow-x: scroll; }
  .outer-wrap{ max-width: 960px; overflow: hidden; }
  .persistent-on .masthead-wrap{ position: relative; padding-top: 26px; transition: none; }
  .persistent-on .masthead-wrap .masthead{ padding: 10px 0 7px; }

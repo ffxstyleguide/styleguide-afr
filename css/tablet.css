@@ -1051,8 +1051,6 @@ html body.noscript .showWithoutJS { display: block; }
 
 .grid__cell--fl { float: left; }
 
-body { overflow-x: hidden; }
-
 #__hid_beacon__ { display: none; }
 
 .content { padding: 0px 0 25px; margin-top: 14px; }
@@ -1101,7 +1099,7 @@ body { overflow-x: hidden; }
 
 .content.wrap { background: white; margin: 0; padding-top: 0; width: 100%; }
 
-.content.wrap .inner-wrap { margin: 0 2.5%; width: 95%; }
+.content.wrap .inner-wrap { margin: 0 2.5vw; width: 95vw; }
 
 .home .wrap .aside, .subindex .wrap .aside { margin-top: 590px; }
 
@@ -1111,7 +1109,7 @@ body { overflow-x: hidden; }
 
 .subindex.search .wrap .aside, .subindex.article .wrap .aside { margin-top: 0; }
 
-.article__content .ad { margin-bottom: 0; position: absolute; right: -320px; top: 0; width: 300px; }
+.article__content .ad { position: relative; top: 0; margin: 0 auto 20px; right: 0; }
 
 .panel { margin-bottom: 2em; }
 
@@ -1303,6 +1301,8 @@ small.ad--text { font-size: 12px; font-size: 0.75rem; line-height: 1; -webkit-tr
 
 .ad-container .adWrapper { position: relative; }
 
+.subindex--article-lifestyle .ad-container { height: auto; }
+
 .ad-wrap { margin: 14px auto 24px; }
 
 .ad-wrap .ad { margin: auto; }
@@ -1440,6 +1440,8 @@ small.ad--text { font-size: 12px; font-size: 0.75rem; line-height: 1; -webkit-tr
 .btn--large:hover, .btn--large:focus { background: #f2f2f2; border: 1px solid #d2d8dc; }
 
 .btn--large:active { background: #f2f2f2; border-color: #b9bfc2; }
+
+button { outline: 0; }
 
 .byline { font-size: 12px; font-size: 0.75rem; line-height: 1.25; font-weight: bold; word-spacing: -0.19rem; }
 
@@ -5093,7 +5095,9 @@ body:not(.cq-wcm-edit) div[class*='cq-'] { display: inline; }
  .unit-17-24--large{ width: 70.8333%; }
  .unit-19-24--large{ width: 79.1667%; }
  .unit-21-24--large{ width: 87.5%; }
- .unit-23-24--large{ width: 95.8333%; } }
+ .unit-23-24--large{ width: 95.8333%; }
+ .subindex--article .article__content .ad{ margin-bottom: 0; position: absolute; right: -320px; top: 0; width: 300px; }
+ .subindex--article-lifestyle .full-width{ margin-right: -320px; } }
 
 @media (min-width: 1168px){
  .unit-1-1--xlarge{ width: 100%; }
@@ -5148,6 +5152,7 @@ body:not(.cq-wcm-edit) div[class*='cq-'] { display: inline; }
  .controls .search{ padding-top: 10px; display: block; }
  .masthead-wrap .search-box{ width: 100%; margin: 0; }
  .wrap .aside{ display: none; }
+ .subindex--article-lifestyle .wrap .aside{ display: block; clear: both; float: none; width: auto; }
  .wrap .main .inner-content, .wrap .strap__main .inner-content{ margin-right: 0; }
  .wrap .strap__main, .wrap .strap__aside{ width: 100%; }
  .faux-aside-landscape{ position: relative; top: auto; right: auto; min-width: 300px; min-height: 250px; margin-bottom: 30px; width: 48.5%; display: inline-block; vertical-align: top; float: right; }
@@ -5167,7 +5172,6 @@ body:not(.cq-wcm-edit) div[class*='cq-'] { display: inline; }
  .article__header{ margin-right: 0; }
  .article__header .inline-list{ margin-bottom: 0px; width: 100%; }
  .article__header .tools, .article__header .byline{ width: 100%; margin-bottom: 10px; float: none; display: block; text-align: left; }
- .article__content .ad{ position: relative; top: 0; margin: 0 auto 20px; right: 0; }
  .article__content{ margin: 0 0px 40px 0px; }
  .article__content .flex-viewport .media{ margin: 0; }
  .story.story--defcon, .story.story--brand{ width: 105.3%; margin-left: -2.51%; margin-bottom: 30px; }
