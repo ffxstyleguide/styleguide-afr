@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var breakpoint = window.frameElement.getAttribute('data-breakpoint');
+        var stylesheet = document.createElement('link');
+        stylesheet.setAttribute('rel','stylesheet');
+        stylesheet.setAttribute('href',breakpoint);
+        document.head.appendChild(stylesheet);
+    </script>
+</head>
+</html>
+
+{{ content }}

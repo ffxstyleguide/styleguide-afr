@@ -2,4 +2,4 @@
 title:  story
 ---
 
- {% include views/story-view.html %}
+ {% include tabs.html component=page.title %}
