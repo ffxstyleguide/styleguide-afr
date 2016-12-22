@@ -3,8 +3,13 @@
 
 .styleguide-main-content {
     color: $text-color;
-    max-width: 58.75em; // 940px assuming a body font size of 16;
 
+    .styleguide-index & {
+        max-width: 58.75em; // 940px assuming a body font size of 16;
+    }
+    p {
+        margin: 0 0 $half;
+    }
     ul {
         list-style: disc;
         margin-left: 1em;

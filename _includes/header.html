@@ -1,11 +1,3 @@
-<header class="styleguide-inner-wrap styleguide-site-header">
-
-    <div class='styleguide-header-heading'>
-        {% if page.url == "/" %}
-        <a class="styleguide-site-link" href="{{ site.github.url }}/"><h1 class="styleguide-site-title"><span class="styleguide-logo">{% include svg/afr-logo.svg %}</span><span>{{ site.title }}</span></h1></a>
-        {% else %}
-        <a class="styleguide-site-link styleguide-site-title" href="{{ site.github.url}}/"><span class="styleguide-logo">{% include svg/afr-logo.svg %}</span><span>{{ site.title }}</span></a>
-        {% endif %}
-    </div>
-
+<header class="styleguide-site-header">
+    <a class="styleguide-home-link" href="{{ site.github.url}}/"><span class="styleguide-logo">{% include svg/afr-logo.svg %}</span><span>{{ site.title }}</span></a>
 </header>

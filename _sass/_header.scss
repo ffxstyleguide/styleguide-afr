@@ -2,44 +2,45 @@
 
 .styleguide-site-header {
     background-color: #fff;
-    color: $text-color;
+    color: $mid-grey;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-bottom: $half;
 }
 
 .styleguide-logo {
-    display: inline-block;
-    margin: 0 30px;
+    line-height: 1;
+    padding-right: $quarter;
     svg {
-        width: 300px;
+        width: 280px;
         height: auto;
+        path {
+            fill: $black;
+        }
     }
 }
 
-.styleguide-site-link {
-
-    &:visited {
-
-    }
-
-    &:hover,
-    &:focus {
-        text-decoration: none;
-    }
-}
-
-.styleguide-site-title {
-    font-size: 1.1rem;
+.styleguide-home-link {
+    font-size: 1.6rem;
     font-weight: normal;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin: $half;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+    span + span {
+        border-left: 1px solid currentColor;
+        padding-left: $quarter;
+    }
 }
 
 .styleguide-logo {
-    margin-bottom: 15px;
+    margin-bottom: $quarter;
 }
 
 .styleguide-header-links {
@@ -67,7 +68,7 @@
 @media (min-width: $bp-large) {
 
     // header
-    .styleguide-site-title,
+    .styleguide-home-link,
     .styleguide-logo {
         margin-bottom: 0;
     }

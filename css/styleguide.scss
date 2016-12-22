@@ -26,7 +26,7 @@
 
 // images
 
-.content img {
+.styleguide-main-content img {
     width: 100%;
     height: auto;
     padding-bottom: 20px;
@@ -43,7 +43,7 @@
 .rooster {
     width: 30%;
     float: right;
-    margin: 30px;
+    margin-left: $half;
 }
 
 // block level code (pre) styling
