@@ -11,4 +11,4 @@ This style guide is based largely on the principles of Atomic Design. The key id
 
 {% include inline-figure.html url="../images/edward.jpg" description="Molecule" %}
 
-{% include inline-figure.html url="../images/grumps.jpg" description="Organism" %}
+{% include inline-figure.html url="../images/dalek.png" description="Organism" %}
