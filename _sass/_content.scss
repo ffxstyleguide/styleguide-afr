@@ -5,14 +5,15 @@
     color: $text-color;
 
     .styleguide-index & {
-        max-width: 58.75em; // 940px assuming a body font size of 16;
+        max-width: $max-content-width; // 940px assuming a body font size of 16;
     }
     p {
         margin: 0 0 $half;
     }
     ul {
         list-style: disc;
-        margin-left: 1em;
+        margin: 0;
+        padding-left: 1em;
     }
     ol {
         @include numbered-list(". ");
@@ -23,6 +24,35 @@
     .styleguide-heading {
         margin-bottom: 1em;
         margin-top: 2em;
+    }
+
+}
+
+.styleguide-inline-figure {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $half 0;
+    vertical-align: top;
+    // width: 33%;
+
+    + .styleguide-inline-figure {
+        margin-left: calc(50% - 180px);
+    }
+    .inline-circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            padding: 0;
+        }
+    }
+    figcaption {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: $quarter;
     }
 }
 

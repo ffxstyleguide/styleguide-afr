@@ -3,7 +3,7 @@
 <nav class="styleguide-nav">
     <ul class="styleguide-nav__menu">
         {% for collection in site.collections %}
-            {% unless collection.label == "posts" %}
+            {% unless collection.label == "posts" or collection.label == "frontpage" %}
             <li class="styleguide-nav__item{% if collection.label == page.title%} styleguide-nav-selected{% endif %}">
                 <a class="styleguide-nav__link" href="{{ site.github.url }}/{{ collection.label }}">{{ collection.label | capitalize }}</a>
                 <ul class="styleguide-subnav__menu">

@@ -1,5 +1,5 @@
 ---
-title: The daily habit of effective digital products
+title: Introduction
 ---
 
 {% include svg/rooster.svg %}
