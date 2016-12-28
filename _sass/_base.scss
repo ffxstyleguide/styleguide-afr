@@ -104,7 +104,6 @@ body {
 // }
 
 @media (min-width: $bp-medium) {
-
     .styleguide-main-navigation {
         display: inline-block;
         vertical-align: top;
@@ -116,14 +115,15 @@ body {
         width: 75%;
     }
     .styleguide-full-wrap .styleguide-section {
-        padding: $whole $half;
+        padding: $half $quarter;
         
         header {
             display: inline-block;
             width: 25%;
         }
         h2 {
-            margin: 0 0 0 $whole;
+            font-size: 1rem;
+            margin: 0 0 0 $quarter;
         }
         section {
             display: inline-block;
@@ -138,11 +138,24 @@ body {
         }
         .styleguide-superlarge-heading {
             margin: 0 0 $half;
-            font-size: 5rem;
+            font-size: 3.5rem;
         }
         .styleguide-small-heading {
             font-size: 1.6rem;
             font-weight: bold;
         }
     }
+}
+
+@media (min-width: $bp-large) {
+    .styleguide-full-wrap .styleguide-section {
+        padding: $whole $half;
+        
+        .styleguide-superlarge-heading {
+            font-size: 5rem;
+        }
+        h2 {
+            margin: 0 0 0 $half;
+        }
+    }    
 }

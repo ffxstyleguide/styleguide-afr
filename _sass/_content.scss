@@ -33,15 +33,11 @@
     margin-top: $half;
 }
 .styleguide-inline-figure {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin: $half 0;
-    vertical-align: top;
 
-    + .styleguide-inline-figure {
-        margin-left: calc(50% - 180px);
-    }
     figcaption {
         font-size: 1.2rem;
         font-weight: bold;
@@ -71,10 +67,6 @@
 }
 .styleguide-image-list__item {
     display: flex;
-    
-    + .styleguide-image-list__item {
-        margin-left: 30px;
-    }
 }
 .styleguide-image-list__figure {
     margin: 0 $half 0 0;
@@ -92,10 +84,28 @@
     color: $text-color;
 }
 
+@media (min-width: $bp-small) {
+    .styleguide-inline-figure {
+        display: inline-flex;
+        vertical-align: top;
+        
+        + .styleguide-inline-figure {
+            margin-left: calc(50% - 180px);
+        }
+    }
+}
+
 @media (min-width: $bp-large) {
     .styleguide-main-content {
         p {
             margin-bottom: $half;
+        }
+    }
+    .styleguide-two-column {
+        flex-wrap: nowrap;
+        
+        .styleguide-image-list__item:first-child {
+            margin-right: 30px;
         }
     }
 }

@@ -10,9 +10,9 @@ $base-font-family-secondary-bold:     'suecasans_bold', Arial, Helvetica, sans-s
 
 // breakpoints
 
-$bp-small: 24em;
-$bp-medium: 45em;
-$bp-large: 51.25em;
+$bp-small: 24em; // 384px at 16px font-size
+$bp-medium: 45em; // 720px at 16px font-size
+$bp-large: 51.25em; // 820px at 16px font-size
 
 // new greys
 
