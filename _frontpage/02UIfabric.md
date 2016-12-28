@@ -1,6 +1,6 @@
 ---
 title: UI Fabric
-class: inline-spacing
+content-class: styleguide-inline-spacing
 ---
 
 

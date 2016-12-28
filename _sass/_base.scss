@@ -87,15 +87,15 @@ body {
     }
 }
 
-.styleguide-section {
-    .inline-spacing {
-        letter-spacing: -0.32em;
 
-        * {
-            letter-spacing: normal;
-        }
+.styleguide-inline-spacing {
+    letter-spacing: -0.32em;
+
+    * {
+        letter-spacing: normal;
     }
 }
+
 
 // .styleguide-footer {
 //     position: absolute;

@@ -5,8 +5,8 @@
 
 @import 'variables';
 @import 'mixins';
-@import 'base';
 @import 'grid';
+@import 'base';
 @import 'header';
 @import 'nav';
 @import 'content';
@@ -29,8 +29,6 @@
 .styleguide-main-content img {
     width: 100%;
     height: auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 .styleguide-img {
