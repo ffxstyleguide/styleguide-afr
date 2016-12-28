@@ -98,10 +98,10 @@ body {
 }
 
 
-// .styleguide-footer {
-//     position: absolute;
-//     bottom: 0;
-// }
+.styleguide-footer {
+    color: $mid-grey;
+    padding: $quarter;
+}
 
 @media (min-width: $bp-medium) {
     .styleguide-main-navigation {
