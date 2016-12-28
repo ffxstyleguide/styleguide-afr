@@ -1,11 +1,10 @@
 ---
 title: Design Principles
-content-class: styleguide-image-list
 ---
 
 We’ve identified the following principles as unique to Australian Financial Review:
 
-<ul>
+<ul class="styleguide-image-list">
     <li>
     {% capture url1 %} {{ site.github.url }}/images/baby_cat.jpg {% endcapture %}
     {% include image-list-item.html url=url1 alt="baby cat" title="Refined" description="We strive to ensure everything has its place. Elegant and cultured, in appearance and taste." %}

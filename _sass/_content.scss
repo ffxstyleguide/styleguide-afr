@@ -28,10 +28,8 @@
 
 }
 .styleguide-two-column {
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
     margin-top: $half;
-    width: 50%;
 }
 .styleguide-inline-figure {
     display: inline-flex;
@@ -63,20 +61,26 @@
         height: 60px;
     }
 }
-.styleguide-image-list {
+.styleguide-image-list.styleguide-image-list {
     li {
         list-style: none;
+    }    
+    margin-top: $whole;
+    padding: 0;
+}
+.styleguide-image-list__item {
+    display: flex;
+    
+    + .styleguide-image-list__item {
+        margin-left: 30px;
     }
 }
 .styleguide-image-list__figure {
-    display: inline-block;
-    vertical-align: top;
     margin: 0 $half 0 0;
+    flex-shrink: 0;
 }
 .styleguide-image-list__text {
-    display: inline-block;
-    vertical-align: top;
-    width: 360px;
+    max-width: 360px;
     
     h3 {
         color: $black;
