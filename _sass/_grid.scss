@@ -7,7 +7,7 @@ $grid-gutter: 20px !default; // can be px, em, or %
 // Grid container
 // Must only contain `.grid` or `.grid__cell` components as children.
 
-// 1. Adjustment for child element margins.
+// 1. Adjustment for child element margins. (removed)
 // 2. Ensure consistent default alignment/
 // 3. Remove inter-unit whitespace that appears between `inline-block` child
 //    elements. Work for all non-monospace font-families.  If you're using a
@@ -21,8 +21,6 @@ $grid-gutter: 20px !default; // can be px, em, or %
 %grid {
     display: block;
     padding: 0;
-    margin-left: -0.5 * $grid-gutter; // [1]
-    margin-right: -0.5 * $grid-gutter;
     text-align: $grid-direction; // [2]
     letter-spacing: -0.32em; // [3]
     text-rendering: optimizespeed; // [4]
@@ -33,7 +31,7 @@ $grid-gutter: 20px !default; // can be px, em, or %
 // No explicit width by default. Apply `.unit-x-y` classes.
 
 // 1. Fundamentals of the non-float grid layout mechanism.
-// 2. Apply grid gutter.
+// 2. Apply grid gutter. (removed)
 // 3. Controls vertical positioning of units.
 // 4. Keeps content correctly aligned with the grid direction.
 // 5. Reset text defaults.
@@ -50,8 +48,6 @@ $grid-gutter: 20px !default; // can be px, em, or %
     box-sizing: border-box;
     display: inline-block; // [1]
     margin: 0;
-    padding-left: 0.5 * $grid-gutter; // [2]
-    padding-right: 0.5 * $grid-gutter; // [2]
     vertical-align: top; // [3]
     letter-spacing: normal; // [5]
     word-spacing: normal; // [5]

@@ -8,7 +8,7 @@
         max-width: $max-content-width; // 940px assuming a body font size of 16;
     }
     p {
-        margin: 0 0 $half;
+        margin: 0 0 $quarter;
     }
     ul {
         list-style: disc;
@@ -29,6 +29,7 @@
 }
 .styleguide-two-column {
     display: flex;
+    flex-wrap: wrap;
     margin-top: $half;
 }
 .styleguide-inline-figure {
@@ -89,4 +90,12 @@
 }
 .styleguide-full-wrap {
     color: $text-color;
+}
+
+@media (min-width: $bp-large) {
+    .styleguide-main-content {
+        p {
+            margin-bottom: $half;
+        }
+    }
 }

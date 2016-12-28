@@ -60,29 +60,30 @@ body {
 
     .styleguide-section {
         clear: both;
-        padding: $whole $half;
+        padding: $quarter;
 
         &:nth-child(odd) {
             background-color: $pale-grey;
         }
         h2 {
             font-size: 1.2rem;
-            margin: 0 0 0 $whole;
+            margin: $quarter 0;
         }
         ul,
         p {
             color: $mid-grey;
-            font-size: 1.2rem;
+        }
+        .grid__cell:empty {
+            display: none;
         }
         .styleguide-superlarge-heading {
-            font-size: 5rem;
+            font-size: 2rem;
             font-weight: normal;
-            margin: 0 0 $half;
+            margin: 0 0 $quarter;
         }
 
         .styleguide-small-heading {
-            font-size: 1.6rem;
-            font-weight: bold;
+            font-size: 1rem;
         }
     }
 }
@@ -115,14 +116,33 @@ body {
         width: 75%;
     }
     .styleguide-full-wrap .styleguide-section {
+        padding: $whole $half;
+        
         header {
             display: inline-block;
             width: 25%;
+        }
+        h2 {
+            margin: 0 0 0 $whole;
         }
         section {
             display: inline-block;
             width: 75%;
             max-width: $max-content-width; // 940px assuming a body font size of 16;
+        } 
+        p {
+            font-size: 1.2rem;
+        }
+        .grid__cell:empty {
+            display: inline-block;
+        }
+        .styleguide-superlarge-heading {
+            margin: 0 0 $half;
+            font-size: 5rem;
+        }
+        .styleguide-small-heading {
+            font-size: 1.6rem;
+            font-weight: bold;
         }
     }
 }

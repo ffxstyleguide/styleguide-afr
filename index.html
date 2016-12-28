@@ -6,11 +6,7 @@ published: true
 
 {% for m in site.frontpage %}
     <div class="styleguide-section grid">
-        <header class="grid__cell">
-            {% unless m.title == "title" %}
-            <h2>{{ m.title }}</h2>
-            {% endunless %}
-        </header>
+        <header class="grid__cell">{% unless m.title == "title" %}<h2>{{ m.title }}</h2>{% endunless %}</header>
         <section class="grid__cell{% if m.content-class %} {{ m.content-class }}{% endif %}">
             {{ m.content }}
         </section>
