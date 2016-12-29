@@ -1,6 +1,10 @@
-//colours
+//colours (new grey palette)
 
-$text-color: #252525;
+$pale-grey: #faf7f5;
+$mid-grey: #757575;
+$black: #252525;
+
+$text-color: $black;
 
 // fonts
 
@@ -14,14 +18,9 @@ $bp-small: 24em; // 384px at 16px font-size
 $bp-medium: 45em; // 720px at 16px font-size
 $bp-large: 51.25em; // 820px at 16px font-size
 
-// new greys
-
-$pale-grey: #faf7f5;
-$mid-grey: #757575;
-$black: #252525;
-
 // measurements
 
+$twice: 120px;
 $whole: 60px;
 $half: 30px;
 $quarter: 15px;

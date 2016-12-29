@@ -24,14 +24,18 @@
 
 .styleguide-subnav__item {
     font-size: 1.1rem;
-    padding-left: 20px;
+    padding-left: $quarter;
 }
 
 
 
 @media (min-width: $bp-medium) {
-
+    .styleguide-main-navigation {
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+    }
     .styleguide-nav {
-        margin-right: 20px;
+        margin-right: $half;
     }
 }

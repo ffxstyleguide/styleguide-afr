@@ -4,25 +4,6 @@ body {
     font-family: $base-font-family;
     font-size: 100%;
     margin: 0;
-    // padding-bottom: $whole;
-    // position: relative;
-}
-
-// utility classes
-
-.f-left {
-    float: left;
-
-    + .f-left {
-        margin-left: 20px;
-    }
-}
-.f-right {
-    float: right;
-
-     + .f-right {
-         margin-right: 20px;
-     }
 }
 
 // resets
@@ -45,49 +26,7 @@ body {
     margin: 2vh 2vw;
 }
 
-// homepage
-
-.styleguide-landing {
-    .styleguide-site-header {
-        background-color: $pale-grey;
-    }
-}
-
-.styleguide-full-wrap {
-    margin: 0;
-    width: 100%;
-    color: #333;
-
-    .styleguide-section {
-        clear: both;
-        padding: $quarter;
-
-        &:nth-child(odd) {
-            background-color: $pale-grey;
-        }
-        h2 {
-            font-size: 1.2rem;
-            margin: $quarter 0;
-        }
-        ul,
-        p {
-            color: $mid-grey;
-        }
-        .grid__cell:empty {
-            display: none;
-        }
-        .styleguide-superlarge-heading {
-            font-size: 2rem;
-            font-weight: normal;
-            margin: 0 0 $quarter;
-        }
-
-        .styleguide-small-heading {
-            font-size: 1rem;
-        }
-    }
-}
-
+// layout helpers
 
 .styleguide-inline-spacing {
     letter-spacing: -0.32em;
@@ -97,65 +36,77 @@ body {
     }
 }
 
+// images
 
-.styleguide-footer {
-    color: $mid-grey;
-    padding: $quarter;
+.styleguide-main-content img {
+    width: 100%;
+    height: auto;
 }
 
-@media (min-width: $bp-medium) {
-    .styleguide-main-navigation {
-        display: inline-block;
-        vertical-align: top;
-        width: 25%;
+.styleguide-img {
+    background-color: $mid-grey;
+}
+
+// utility classes
+
+.f-left {
+    float: left;
+
+    + .f-left {
+        margin-left: $quarter;
     }
-    .styleguide-index .styleguide-main-content {
-        display: inline-block;
-        vertical-align: top;
-        width: 75%;
-    }
-    .styleguide-full-wrap .styleguide-section {
-        padding: $half $quarter;
-        
-        header {
-            display: inline-block;
-            width: 25%;
+}
+.f-right {
+    float: right;
+
+     + .f-right {
+         margin-right: $quarter;
+     }
+}
+
+// desktop later :D
+
+@media (min-width: $bp-small) {
+
+    // images
+    .img-small {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &.f-right img {
+            padding-left: $quarter;
         }
-        h2 {
-            font-size: 1rem;
-            margin: 0 0 0 $quarter;
-        }
-        section {
-            display: inline-block;
-            width: 75%;
-            max-width: $max-content-width; // 940px assuming a body font size of 16;
-        } 
-        p {
-            font-size: 1.2rem;
-        }
-        .grid__cell:empty {
-            display: inline-block;
-        }
-        .styleguide-superlarge-heading {
-            margin: 0 0 $half;
-            font-size: 3.5rem;
-        }
-        .styleguide-small-heading {
-            font-size: 1.6rem;
-            font-weight: bold;
+
+        &.f-left img {
+            padding-right: $quarter;
         }
     }
+
 }
 
 @media (min-width: $bp-large) {
-    .styleguide-full-wrap .styleguide-section {
-        padding: $whole $half;
-        
-        .styleguide-superlarge-heading {
-            font-size: 5rem;
-        }
-        h2 {
-            margin: 0 0 0 $half;
-        }
-    }    
+
+    //images
+    .img-medium {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-small {
+        max-width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .f-right img {
+        padding-left: $quarter;
+    }
+
+    .f-left img {
+        padding-right: $quarter;
+    }
+
 }
+

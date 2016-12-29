@@ -1,3 +1,50 @@
+// homepage specific styles
+
+.styleguide-landing {
+    .styleguide-site-header {
+        background-color: $pale-grey;
+    }
+}
+
+.styleguide-full-wrap {
+    margin: 0;
+    width: 100%;
+
+    .styleguide-section {
+        clear: both;
+        padding: $quarter;
+
+        &:nth-child(odd) {
+            background-color: $pale-grey;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin: $quarter 0;
+        }
+        ul,
+        p {
+            color: $mid-grey;
+        }
+        .grid__cell:empty {
+            display: none;
+        }
+        .styleguide-superlarge-heading {
+            font-size: 2rem;
+            font-weight: normal;
+            margin: 0 0 $quarter;
+        }
+
+        .styleguide-small-heading {
+            font-size: 1rem;
+        }
+    }
+}
+
+.rooster {
+    width: 30%;
+    float: right;
+    margin-left: $whole;
+}
 
 // main content - markdown stuff
 
@@ -27,6 +74,22 @@
     }
 
 }
+
+// block level code (pre) styling
+div.highlighter-rouge {
+    background: #fff;
+    margin-bottom: .75em;
+    padding: .5em;
+}
+
+// inline code styling
+code.highlighter-rouge {
+    background: #fff;
+    padding: .1em;
+}
+
+// components
+
 .styleguide-two-column {
     display: flex;
     flex-wrap: wrap;
@@ -44,18 +107,17 @@
         margin-top: $quarter;
     }
 }
-
 .styleguide-inline-circle {
     border-radius: 50%;
     overflow: hidden;
 
     &.medium {
-        width: 120px;
-        height: 120px;
+        width: $twice;
+        height: $twice;
     }
     &.small {
-        width: 60px;
-        height: 60px;
+        width: $whole;
+        height: $whole;
     }
 }
 .styleguide-image-list.styleguide-image-list {
@@ -80,9 +142,6 @@
         margin-top: 0;
     }
 }
-.styleguide-full-wrap {
-    color: $text-color;
-}
 
 @media (min-width: $bp-small) {
     .styleguide-inline-figure {
@@ -95,17 +154,68 @@
     }
 }
 
+@media (min-width: $bp-medium) {
+    .styleguide-index .styleguide-main-content {
+        display: inline-block;
+        vertical-align: top;
+        width: 75%;
+    }
+    .styleguide-full-wrap .styleguide-section {
+        padding: $half $quarter;
+        
+        header {
+            display: inline-block;
+            width: 25%;
+        }
+        h2 {
+            font-size: 1rem;
+            margin: 0 0 0 $quarter;
+        }
+        section {
+            display: inline-block;
+            width: 75%;
+            max-width: $max-content-width; // 940px assuming a body font size of 16;
+        } 
+        p {
+            font-size: 1.2rem;
+        }
+        .grid__cell:empty {
+            display: inline-block;
+        }
+        .styleguide-superlarge-heading {
+            margin: 0 0 $half;
+            font-size: 3.5rem;
+        }
+        .styleguide-small-heading {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+    }
+}
+
 @media (min-width: $bp-large) {
+    .styleguide-full-wrap .styleguide-section {
+        padding: $whole $half;
+        
+        .styleguide-superlarge-heading {
+            font-size: 5rem;
+        }
+        h2 {
+            margin: 0 0 0 $half;
+        }
+    }
+    
     .styleguide-main-content {
         p {
             margin-bottom: $half;
         }
     }
+    
     .styleguide-two-column {
         flex-wrap: nowrap;
         
         .styleguide-image-list__item:first-child {
-            margin-right: 30px;
+            margin-right: $half;
         }
     }
 }
