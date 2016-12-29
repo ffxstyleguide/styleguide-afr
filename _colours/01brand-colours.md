@@ -1,5 +1,6 @@
 ---
 title:  brand colours
+menu-item: true
 ---
 
 ## brand colours

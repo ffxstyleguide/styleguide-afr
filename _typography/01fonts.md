@@ -1,5 +1,6 @@
 ---
 title:  fonts
+menu-item: true
 ---
 
 ## fonts

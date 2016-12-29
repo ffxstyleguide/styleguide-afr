@@ -1,22 +1,23 @@
 
 {% if site.collections %}
+{% assign sorted = site.collections | sort:"menu" %}
 <nav class="styleguide-nav">
     <ul class="styleguide-nav__menu">
-        {% for collection in site.collections %}
-            {% unless collection.label == "posts" or collection.label == "frontpage" %}
+        {% for collection in sorted %}
+            {% if collection.menu %}
             <li class="styleguide-nav__item{% if collection.label == page.title%} styleguide-nav-selected{% endif %}">
                 <a class="styleguide-nav__link" href="{{ site.github.url }}/{{ collection.label }}">{{ collection.label | capitalize }}</a>
                 <ul class="styleguide-subnav__menu">
                    {% for doc in collection.docs %}
-                       {% unless doc.title == collection.label or doc.title == "intro" %}
+                       {% if doc.menu-item %}
                         <li class="styleguide-subnav__item">
                             <a class="styleguide-subnav__link" href="{{ site.github.url }}/{{ doc.collection }}/#{{ doc.title }}">{{ doc.title }}</a>
                         </li>
-                       {% endunless %}
+                       {% endif %}
                    {% endfor %}
                  </ul>
             </li>
-            {% endunless %}
+            {% endif %}
         {% endfor %}
      </ul>
  </nav>

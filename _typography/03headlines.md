@@ -1,5 +1,6 @@
 ---
 title: headlines
+menu-item: true
 ---
 
 ## Headlines

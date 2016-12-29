@@ -1,5 +1,6 @@
 ---
 title:  section colours
+menu-item: true
 ---
 
 ## section colours

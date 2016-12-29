@@ -18,10 +18,13 @@ collections:
         output: true
     typography:
         output: true
+        menu: 0
     colours:
         output: true
+        menu: 1
     components:
         output: true
+        menu: 2
 
 # Build settings
 markdown: kramdown
