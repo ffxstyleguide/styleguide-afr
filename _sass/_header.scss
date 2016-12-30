@@ -3,6 +3,10 @@
 .styleguide-site-header {
     color: $mid-grey;
     padding: $quarter;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 .styleguide-home-link {
     font-size: 1rem;
