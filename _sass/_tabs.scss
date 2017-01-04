@@ -1,0 +1,6 @@
+.styleguide-tab__panel {
+    display: none;
+    &.is-selected {
+        display: block;
+    }
+}

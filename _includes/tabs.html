@@ -1,8 +1,8 @@
-<div class="styleguide-tabs">
+<div class="styleguide-tabs tabs fm-tabs">
     <header>
         <h2>{{include.component}}</h2>
     </header>
-    <nav class="styleguide-tab__nav">
+    <nav class="styleguide-tab__nav tab__nav fm-tabs-nav">
         <ul role="tablist">
             <li role="presentation" class="is-selected">
                 <a role="tab" aria-controls="#tab-desktop" href="#tab-desktop">Desktop</a>
@@ -15,14 +15,14 @@
             </li>
         </ul>
     </nav>
-    <div class="styleguide-tab__content">
-        <div role="tabpanel" id="tab-desktop" class="styleguide-tab__panel is-selected">
+    <div class="styleguide-tab__content tab__content">
+        <div role="tabpanel" id="tab-desktop" class="styleguide-tab__panel tab__panel fm-tabs-content is-selected">
             <iframe width="560" height="315" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/desktop.css" frameborder="0"></iframe>
         </div>
-        <div role="tabpanel" id="tab-tablet" class="styleguide-tab__panel">
+        <div role="tabpanel" id="tab-tablet" class="styleguide-tab__panel tab__panel fm-tabs-content">
             <iframe width="560" height="315" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/tablet.css" frameborder="0"></iframe>
         </div>
-        <div role="tabpanel" id="tab-mobile" class="styleguide-tab__panel">
+        <div role="tabpanel" id="tab-mobile" class="styleguide-tab__panel tab__panel fm-tabs-content">
             <iframe width="560" height="315" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/mobile.css" frameborder="0"></iframe>
         </div>
     </div>
