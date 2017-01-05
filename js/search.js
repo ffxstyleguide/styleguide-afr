@@ -1,4 +1,4 @@
-(function() {
+require(['lunr.min'], function() {
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
@@ -54,4 +54,4 @@
       displaySearchResults(results, window.store); 
     }
   }
-})();
+});

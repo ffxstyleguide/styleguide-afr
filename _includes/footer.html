@@ -4,5 +4,6 @@
     </div>
 </footer>
 
-<script>var siteURL = '{{ site.github.url }}'; </script>
-<script data-main="{{ site.github.url }}/js/plugin-calls.js" src="{{ site.github.url }}/js/requirejs/require.min.js"></script>
+{% if page.scripts %}
+    {% include scripts/scripts-{{page.scripts}}.html %}
+{% endif %}

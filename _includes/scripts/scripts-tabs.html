@@ -1,0 +1,10 @@
+{% include scripts/scripts-main.html %}
+
+<script>
+require(['fmjs/tabs/fm.tabs'], function(){
+    $('.fm-tabs').fmTabs({
+        tabNavSelector: '.styleguide-tab__nav',
+        tabPanelSelector: '.styleguide-tab__panel'
+    });
+});
+</script>
