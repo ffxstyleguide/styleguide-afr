@@ -1,5 +1,19 @@
-{% include scripts/scripts-main.html %}
-
 <script>
-require(['search']);
+require(['search'], function(){
+    window.store = {
+      {% for collection in site.collections %}
+          {% unless collection.label == "frontpage" %}
+          {% for doc in collection.docs %}
+              {% unless doc.title == "intro" %}
+              "{{ doc.url | slugify }}": {
+                  "title": "{{ doc.title | xml_escape }}",
+                  "content": {{ doc.content | strip_html | strip_newlines | jsonify }},
+                  "url": "{{ doc.collection }}/#{{ doc.title }}"
+              },
+              {% endunless %}        
+          {% endfor %}
+          {% endunless %}
+      {% endfor %}
+    };
+});
 </script>

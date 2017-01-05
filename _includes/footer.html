@@ -5,5 +5,8 @@
 </footer>
 
 {% if page.scripts %}
-    {% include scripts/scripts-{{page.scripts}}.html %}
+    {% include scripts/scripts-main.html %}
+    {% for script in page.scripts %}
+        {% include scripts/scripts-{{script}}.html %}
+    {% endfor %}
 {% endif %}

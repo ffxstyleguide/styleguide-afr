@@ -1,7 +1,8 @@
 var require = {
     baseUrl: siteURL + '/js',
     paths: {
-        jquery: 'jquery/jquery-1.12.3.min'
+        jquery: 'jquery/jquery-1.12.3.min',
+        lunr: 'lunr.min'
     }
 };
 

@@ -1,4 +1,4 @@
-require(['lunr.min'], function() {
+require(['lunr'], function(lunr) {
   function displaySearchResults(results, store) {
     var searchResults = document.getElementById('search-results');
 
