@@ -49,6 +49,26 @@ body {
 
 // utility classes
 
+.is-vishidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+    //Extends the .is-vishidden class to allow the element to be focusable when navigated to via the keyboard
+    &.focusable:active,
+    &.focusable:focus {
+        position: static!important;
+        height: auto;
+        width: auto;
+        overflow: visible;
+        clip: auto;
+    }
+}
+
 .f-left {
     float: left;
 
@@ -62,6 +82,38 @@ body {
      + .f-right {
          margin-right: $quarter;
      }
+}
+
+// form elements
+
+.styleguide-text-input {
+    height: $half;
+    width: $twice * 2;
+    border: 1px solid $pale-grey;
+    border-radius: $sixteenth;
+    font-family: $base-font-family-secondary;
+    font-size: 12px;
+    padding-left: $quarter;
+}
+
+.styleguide-search-form {
+    position: relative;
+}
+
+.styleguide-search-button {
+    background-image: url(img/icon--search.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    height: 16px;
+    width: 16px;    
+    position: absolute;
+    top: 8px;
+    right: 8px;    
+    text-indent: -9999px;
+    overflow: hidden
 }
 
 // desktop later :D
