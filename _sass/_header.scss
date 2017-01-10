@@ -18,7 +18,6 @@
 }
 .styleguide-logo {
     display: block;
-    line-height: 1;
     padding-right: $quarter;
     svg {
         width: 11em;
@@ -42,6 +41,7 @@
         margin: $quarter;
     }
     .styleguide-tagline {
+        align-self: flex-start;
         display: block;
         border-left: 1px solid currentColor;
         padding-left: $quarter;
