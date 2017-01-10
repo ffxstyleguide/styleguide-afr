@@ -16,15 +16,18 @@ baseurl: /styleguide-afr # the subpath of your site, e.g. /blog
 collections:
     frontpage:
         output: true
-    typography:
+    layout:
         output: true
         menu: 0
-    colours:
+    typography:
         output: true
         menu: 1
-    components:
+    colours:
         output: true
         menu: 2
+    components:
+        output: true
+        menu: 3
 
 # Build settings
 markdown: kramdown

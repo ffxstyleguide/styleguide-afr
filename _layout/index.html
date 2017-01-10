@@ -1,0 +1,12 @@
+---
+layout: section
+title: layout
+---
+
+     {% for m in site.layout %}
+         {% if m.title != page.title %}
+
+            {{ m.content }}
+
+         {% endif %}
+     {% endfor %}
