@@ -1,0 +1,12 @@
+---
+layout: section
+title: iconography
+---
+
+     {% for m in site.iconography %}
+         {% if m.title != page.title %}
+
+            {{ m.content }}
+
+         {% endif %}
+     {% endfor %}

@@ -19,15 +19,18 @@ collections:
     layout:
         output: true
         menu: 0
-    typography:
-        output: true
-        menu: 1
     colours:
         output: true
+        menu: 1
+    typography:
+        output: true
         menu: 2
-    components:
+    iconography:
         output: true
         menu: 3
+    components:
+        output: true
+        menu: 4
 
 # Build settings
 markdown: kramdown
