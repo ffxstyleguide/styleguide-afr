@@ -88,6 +88,22 @@ code.highlighter-rouge {
     padding: .1em;
 }
 
+// iconography
+
+.styleguide-iconset {
+    display: flex;
+    flex-wrap: wrap;
+}
+.styleguide-iconbox {
+    border: 1px solid $mid-grey;
+    margin: 0 $quarter $quarter 0;
+    padding: .5em;
+    text-align: center;
+}
+.styleguide-iconbox__class {
+    margin: .5em 0 0;
+}
+
 // components
 
 .styleguide-two-column {

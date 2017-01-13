@@ -60,35 +60,35 @@ Currently there are three size groups, mini (14x14px [sass: $icon-mn]), small (1
 ### mini icons
 {: .styleguide-heading}
 
+<div class="styleguide-iconset">
 {% for icon in page.icons.mini %}
-<div class="grid__cell unit-3-12">
     <div class="styleguide-iconbox">
         <span class="{{ icon.class }}"></span>
         <h6 class="styleguide-iconbox__class">.{{ icon.class }}</h6>
     </div>
-</div>
 {% endfor %}
+</div>
 
 ### small icons
 {: .styleguide-heading}
 
+<div class="styleguide-iconset">
 {% for icon in page.icons.small %}
-<div class="grid__cell unit-3-12">
     <div class="styleguide-iconbox">
         <span class="{{ icon.class }}"></span>
         <h6 class="styleguide-iconbox__class">.{{ icon.class }}</h6>
     </div>
-</div>
 {% endfor %}
+</div>
 
 ### medium icons
 {: .styleguide-heading}
 
+<div class="styleguide-iconset">
 {% for icon in page.icons.medium %}
-<div class="grid__cell unit-3-12">
     <div class="styleguide-iconbox">
         <span class="{{ icon.class }}"></span>
         <h6 class="styleguide-iconbox__class">.{{ icon.class }}</h6>
     </div>
-</div>
 {% endfor %}
+</div>
