@@ -3,7 +3,7 @@ title:  colours
 menu-item: true
 ---
 
-## icon colours
+## colours
 {: .styleguide-heading}
 
 Each icon should be bundled into a sprite with a particular colourway. The plan is for icons to be available in grey(sass: $afr-grey), afr blue(sass: $primary-color), $white and $black.

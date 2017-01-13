@@ -52,7 +52,7 @@ icons:
     - class: "icon--url"
 ---
 
-## icon sizes
+## sizes
 {: .styleguide-heading}
 
 Currently there are three size groups, mini (14x14px [sass: $icon-mn]), small (16x16px [sass: [sass: $icon-sm]) and medium (20x20px [sass: $icon-md]). An icon will fall into one of these sizes, currently and icon is only available in a specific size, however this will likely change. Below is a list of these size groups
