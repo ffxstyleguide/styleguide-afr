@@ -32,6 +32,7 @@
     overflow: hidden;
     .mobile & {
         padding-bottom: 100%;
+        max-width: 400px;
     }
     .tablet & {
         padding-bottom: 57%;
