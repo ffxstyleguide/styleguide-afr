@@ -11,7 +11,7 @@
                    {% for doc in collection.docs %}
                        {% if doc.menu-item %}
                         <li class="styleguide-subnav__item">
-                            <a class="styleguide-subnav__link" href="{{ site.github.url }}/{{ doc.collection }}/#{{ doc.title }}">{{ doc.title }}</a>
+                            <a class="styleguide-subnav__link" href="{{ site.github.url }}/{{ doc.collection }}/#{{ doc.title | slugify }}">{{ doc.title }}</a>
                         </li>
                        {% endif %}
                    {% endfor %}
