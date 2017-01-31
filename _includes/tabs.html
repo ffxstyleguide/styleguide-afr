@@ -1,35 +1,34 @@
 <div class="styleguide-tabs tabs fm-tabs">
-    <header>
-        <h2>{{include.component}}</h2>
-    </header>
     <nav class="styleguide-tab__nav tab__nav fm-tabs-nav">
         <ul role="tablist">
             <li role="presentation" class="is-selected">
-                <a role="tab" aria-controls="#tab-mobile" href="#tab-mobile">Mobile</a>                
+                <a role="tab" aria-controls="#tab-mobile" href="#{{include.component}}-tab-mobile">Mobile</a>                
             </li>
             <li role="presentation">
-                <a role="tab" aria-controls="#tab-tablet" href="#tab-tablet">Tablet</a>
+                <a role="tab" aria-controls="#tab-tablet" href="#{{include.component}}-tab-tablet">Tablet</a>
             </li>
             <li role="presentation">
-                <a role="tab" aria-controls="#tab-desktop" href="#tab-desktop">Desktop</a>
+                <a role="tab" aria-controls="#tab-desktop" href="#{{include.component}}-tab-desktop">Desktop</a>
             </li>
         </ul>
     </nav>
     <div class="styleguide-tab__content tab__content">
-        <div role="tabpanel" id="tab-mobile" class="styleguide-tab__panel tab__panel mobile fm-tabs-content is-selected">
+        <div role="tabpanel" id="{{include.component}}-tab-mobile" class="styleguide-tab__panel tab__panel mobile fm-tabs-content is-selected">
             <div class="styleguide-iframe-container">
-                <iframe width="560" height="315" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/mobile.css" frameborder="0"></iframe>
+                <iframe width="375" height="{{include.height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/mobile.css" frameborder="0"></iframe>
             </div>
         </div>
-        <div role="tabpanel" id="tab-tablet" class="styleguide-tab__panel tab__panel tablet fm-tabs-content">
+        <div role="tabpanel" id="{{include.component}}-tab-tablet" class="styleguide-tab__panel tab__panel tablet fm-tabs-content">
             <div class="styleguide-iframe-container">
-                <iframe width="560" height="315" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/tablet.css" frameborder="0"></iframe>
+                <iframe width="720" height="{{include.height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/tablet.css" frameborder="0"></iframe>
             </div>
         </div>
-        <div role="tabpanel" id="tab-desktop" class="styleguide-tab__panel tab__panel desktop fm-tabs-content">
+        <div role="tabpanel" id="{{include.component}}-tab-desktop" class="styleguide-tab__panel tab__panel desktop fm-tabs-content">
             <div class="styleguide-iframe-container">
-                <iframe width="560" height="315" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/desktop.css" frameborder="0"></iframe>
+                <iframe width="620" height="{{include.height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/desktop.css" frameborder="0"></iframe>
             </div>
         </div>
     </div>
 </div>
+
+
