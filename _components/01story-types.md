@@ -7,7 +7,7 @@ menu-item: true
 
 ### Story
 
-{% include tabs.html component="story" height="250" %}
+{% include tabs.html component="story" height="250" mobile=true %}
 
 ### Hero Story
  

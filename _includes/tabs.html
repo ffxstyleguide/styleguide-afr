@@ -15,22 +15,32 @@
     <div class="styleguide-tab__content tab__content">
         <div role="tabpanel" id="{{include.component}}-tab-mobile" class="styleguide-tab__panel tab__panel mobile fm-tabs-content is-selected">
             <div class="styleguide-iframe-container">
-                <iframe width="375" height="{{include.height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/mobile.css" frameborder="0"></iframe>
-                <div>
+                <iframe width="375" height="{{include.height}}" {% if include.mobile == true %}src="{{ site.github.url }}/components/{{ include.component }}-mobile.html"{% else %}src="{{ site.github.url }}/components/{{ include.component }}.html"{% endif %} data-breakpoint="{{ site.github.url }}/css/mobile.css" frameborder="0"></iframe>
+            </div>
+            <div>
 {% highlight html %}
-{% include components/{{ include.component }}.html %}
-{% endhighlight %}                    
-                </div>
+{% if include.mobile == true %}{% include components/{{ include.component }}-mobile.html %}{% else %}{% include components/{{ include.component }}.html %}{% endif %}
+{% endhighlight %} 
             </div>
         </div>
         <div role="tabpanel" id="{{include.component}}-tab-tablet" class="styleguide-tab__panel tab__panel tablet fm-tabs-content">
             <div class="styleguide-iframe-container">
                 <iframe width="720" height="{{include.height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/tablet.css" frameborder="0"></iframe>
             </div>
+            <div>
+{% highlight html %}
+{% if include.tablet == true %}{% include components/{{ include.component }}-tablet.html %}{% else %}{% include components/{{ include.component }}.html %}{% endif %}
+{% endhighlight %} 
+            </div>
         </div>
         <div role="tabpanel" id="{{include.component}}-tab-desktop" class="styleguide-tab__panel tab__panel desktop fm-tabs-content">
             <div class="styleguide-iframe-container">
                 <iframe width="620" height="{{include.height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/desktop.css" frameborder="0"></iframe>
+            </div>
+            <div>
+{% highlight html %}
+{% if include.desktop == true %}{% include components/{{ include.component }}-desktop.html %}{% else %}{% include components/{{ include.component }}.html %}{% endif %}
+{% endhighlight %} 
             </div>
         </div>
     </div>
