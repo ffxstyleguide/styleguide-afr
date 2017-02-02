@@ -16,6 +16,11 @@
         <div role="tabpanel" id="{{include.component}}-tab-mobile" class="styleguide-tab__panel tab__panel mobile fm-tabs-content is-selected">
             <div class="styleguide-iframe-container">
                 <iframe width="375" height="{{include.height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/mobile.css" frameborder="0"></iframe>
+                <div>
+{% highlight html %}
+{% include components/{{ include.component }}.html %}
+{% endhighlight %}                    
+                </div>
             </div>
         </div>
         <div role="tabpanel" id="{{include.component}}-tab-tablet" class="styleguide-tab__panel tab__panel tablet fm-tabs-content">
