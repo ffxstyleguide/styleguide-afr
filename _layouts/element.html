@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var customStyle = window.frameElement.getAttribute('data-stylesheet');
+        var stylesheet = document.createElement('link');
+        stylesheet.setAttribute('rel','stylesheet');
+        stylesheet.setAttribute('href',customStyle);
+        document.head.appendChild(stylesheet);
+    </script>
+</head>
+<body>
+    {{ content }}
+</body>
+</html>
