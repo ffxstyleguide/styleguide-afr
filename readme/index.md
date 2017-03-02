@@ -128,7 +128,13 @@ You can then add in a markdown file for each subsection, numbered 00 - 99 in the
 For all sections except the intro a level 2 heading (h2) should be added with the exact same text as the subsection title. If there is no heading or the text is not the same, in-page links from the navigation bar will not work, as they depend on automatically generated `id`s for these headings. These headings should also be given a class of `styleguide-heading`, using [Kramdown attribute notation](http://kramdown.gettalong.org/syntax.html#block-ials). Example:
 
     ## fonts
-    {: .styleguide-heading}
+    {: .styleguide-heading}    
+
+
+### Adding new elements to a section
+
+1. In `_includes/elements` add a new file named `[element_name].html` with the markup for your element. 
+2. In the root element
 
 
 ### Adding project CSS to the styleguide

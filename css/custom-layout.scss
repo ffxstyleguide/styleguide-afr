@@ -21,30 +21,37 @@ $col-6-units:                       $grid-unit*6 + $gutter-unit*5;
     justify-content: space-between;
 }
 
-.col {
+.col-1-unit {
+    width: $grid-unit;
     height: 40px;
     background-color: $mid-grey;
 }
 
-.col-1-unit {
-    width: $grid-unit;
-}
-
 .col-2-units {
     width: $col-2-units;
+    height: 40px;
+    background-color: $mid-grey;
 }
 .col-3-units {
     width: $col-3-units;
+    height: 40px;
+    background-color: $mid-grey;
 }
 .col-4-units {
     width: $col-4-units;
+    height: 40px;
+    background-color: $mid-grey;
 }
 .col-6-units {
     width: $col-6-units;
     flex-shrink: 0;
+    height: 40px;
+    background-color: $mid-grey;
 }
 
 .col-flex-units-right {
     flex-grow: 1;
     margin-left: $gutter-unit;
+    height: 40px;
+    background-color: $mid-grey;
 }
