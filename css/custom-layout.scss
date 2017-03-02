@@ -1,0 +1,50 @@
+---
+# custom css for elements in the layout section
+---
+
+@import 'iframe-base';
+
+
+$grid-unit:                         60px;
+$gutter-unit:                       20px;
+$tubby-unit:                        16px;
+
+$col-2-units:                       $grid-unit*2 + $gutter-unit;
+$col-3-units:                       $grid-unit*3 + $gutter-unit*2;
+$col-4-units:                       $grid-unit*4 + $gutter-unit*3;
+$col-5-units:                       $grid-unit*5 + $gutter-unit*4;
+$col-6-units:                       $grid-unit*6 + $gutter-unit*5;
+
+.flex-grid,
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    height: 40px;
+    background-color: $mid-grey;
+}
+
+.col-1-unit {
+    width: $grid-unit;
+}
+
+.col-2-units {
+    width: $col-2-units;
+}
+.col-3-units {
+    width: $col-3-units;
+}
+.col-4-units {
+    width: $col-4-units;
+}
+.col-6-units {
+    width: $col-6-units;
+    flex-shrink: 0;
+}
+
+.col-flex-units-right {
+    flex-grow: 1;
+    margin-left: $gutter-unit;
+}
