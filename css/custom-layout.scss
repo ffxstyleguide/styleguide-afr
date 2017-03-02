@@ -15,6 +15,11 @@ $col-4-units:                       $grid-unit*4 + $gutter-unit*3;
 $col-5-units:                       $grid-unit*5 + $gutter-unit*4;
 $col-6-units:                       $grid-unit*6 + $gutter-unit*5;
 
+
+.wrap {
+    width: 1260px;
+}
+
 .flex-grid,
 .flex-row {
     display: flex;
