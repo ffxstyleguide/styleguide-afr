@@ -31,6 +31,9 @@ collections:
     components:
         output: true
         menu: 4
+    deprecated:
+        output: true
+        menu: 5
 
 # Build settings
 markdown: kramdown

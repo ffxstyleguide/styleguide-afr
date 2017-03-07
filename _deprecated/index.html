@@ -1,0 +1,13 @@
+---
+layout: section
+title: deprecated
+scripts: tabs
+---
+
+     {% for m in site.deprecated %}
+         {% if m.title != page.title %}
+
+            {{ m.content }}
+
+         {% endif %}
+     {% endfor %}
