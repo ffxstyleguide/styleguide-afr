@@ -7,20 +7,20 @@ menu-item: true
 
 ### Story
 
-{% include tabs.html component="story" mobile-height="215" tablet-height="200" desktop-height="160" mobile=true %}
+{% include tabs.html component="d-story" mobile-height="215" mobile-width="375" tablet-height="200" tablet-width="720" desktop-height="160" desktop-width="620" mobile=true %}
 
 ### Hero Story
  
-{% include tabs.html component="story-hero" mobile-height="410" tablet-height="450" desktop-height="270" %}
+{% include tabs.html component="d-story-hero" mobile-height="410" mobile-width="375" tablet-height="450" tablet-width="720" desktop-height="270" desktop-width="620" %}
 
 ### List Story
  
-{% include tabs.html component="story-list" mobile-height="95" tablet-height="65" desktop-height="65" %}
+{% include tabs.html component="d-story-list" mobile-height="95" mobile-width="375" tablet-height="65" tablet-width="720" desktop-height="65" desktop-width="620" %}
 
 ### Stacked Story
  
-{% include tabs.html component="story-stacked" mobile-height="200" tablet-height="300" desktop-height="280" %}
+{% include tabs.html component="d-story-stacked" mobile-height="200" mobile-width="375" tablet-height="300" tablet-width="720" desktop-height="280" desktop-width="620" %}
 
 ### Overlay Story
  
-{% include tabs.html component="story-overlay" mobile-height="220" tablet-height="410" desktop-height="350" %}
+{% include tabs.html component="d-story-overlay" mobile-height="220" mobile-width="375" tablet-height="410" tablet-width="720" desktop-height="350" desktop-width="620" %}
