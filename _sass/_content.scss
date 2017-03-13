@@ -2,7 +2,7 @@
 
 .styleguide-landing {
     .styleguide-site-header {
-        background-color: $pale-grey;
+        background-color: $slate100;
     }
 }
 
@@ -15,7 +15,7 @@
         padding: $quarter;
 
         &:nth-child(odd) {
-            background-color: $pale-grey;
+            background-color: $slate100;
         }
         h2 {
             font-size: 1.2rem;
@@ -23,7 +23,7 @@
         }
         ul,
         p {
-            color: $mid-grey;
+            color: $slate500;
         }
         .grid__cell:empty {
             display: none;
@@ -101,6 +101,64 @@ code.highlighter-rouge {
     padding: .1em;
 }
 
+// typography
+
+.styleguide-typeface-figure {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 0 $tubby-unit;
+    
+    figcaption {
+        font-family: $base-font-family-secondary;
+        font-size: .75rem;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        top: 110px;
+        height: 30px;
+        width: 140px;
+        border-top: 1px solid $slate300;
+        padding-top: $tubby-unit/2;
+    }
+    &.sueca {
+        font-family: $base-font-family;
+        
+        &.bold {
+            font-weight: bold;
+        }
+        &.italic {
+            font-style: italic;
+        }
+    }
+    &.suecasans.regular {
+        font-family: $base-font-family-secondary;
+    }
+    &.suecasans.bold {
+        font-family: $base-font-family-secondary-bold;
+    }
+}
+
+.styleguide-type-sample {
+    font-size: 3rem;
+    padding: .5em .8em;
+    border: 1px solid $slate300;
+    width: 140px;
+    height: 140px;
+    
+}
+
+.styleguide-type-allchars.styleguide-type-allchars {
+    margin-left: $gutter-unit;
+    
+    p {
+        margin-bottom: $tubby-unit/2;
+        word-break: break-all;
+    }
+}
+
 // iconography
 
 .styleguide-iconset {
@@ -108,7 +166,7 @@ code.highlighter-rouge {
     flex-wrap: wrap;
 }
 .styleguide-iconbox {
-    border: 1px solid $mid-grey;
+    border: 1px solid $slate500;
     margin: 0 $quarter $quarter 0;
     padding: .5em;
     text-align: center;
@@ -239,6 +297,15 @@ code.highlighter-rouge {
     .styleguide-main-content {
         p {
             margin-bottom: $half;
+        }
+    }
+    
+    .styleguide-typeface-figure {
+        display: inline-flex;
+        width: 48%;
+        
+        &:nth-child(even) {
+            margin-left: 2%;
         }
     }
     

@@ -1,8 +1,10 @@
 //colours (new grey palette)
 
 $white: #ffffff;
-$pale-grey: #faf7f5;
-$mid-grey: #757575;
+$slate100: #f5f5f5;
+$slate200: #e5e5e5;
+$slate300: #c5c5c5;
+$slate500: #757575;
 $black: #252525;
 
 $text-color: $black;
@@ -29,3 +31,7 @@ $eighth: 7.5px;
 $sixteenth: 3.75px;
 
 $max-content-width: 58.75em;
+
+$grid-unit:                         60px;
+$gutter-unit:                       20px;
+$tubby-unit:                        16px;

@@ -1,5 +1,9 @@
 // base styles
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: $base-font-family;
     font-size: 100%;
@@ -44,7 +48,7 @@ body {
 }
 
 .styleguide-img {
-    background-color: $mid-grey;
+    background-color: $slate500;
 }
 
 // utility classes
@@ -89,7 +93,7 @@ body {
 .styleguide-text-input {
     height: $half;
     width: $twice * 2;
-    border: 1px solid $pale-grey;
+    border: 1px solid $slate100;
     border-radius: $sixteenth;
     font-family: $base-font-family-secondary;
     font-size: .75rem;

@@ -7,7 +7,7 @@ menu-item: true
 
 ### Story
 
-{% include tabs.html component="d-story" mobile-height="215" mobile-width="375" tablet-height="200" tablet-width="720" desktop-height="160" desktop-width="620" mobile=true %}
+{% include tabs.html component="d-story" mobile-height="225" mobile-width="375" tablet-height="200" tablet-width="720" desktop-height="160" desktop-width="620" mobile=true %}
 
 ### Hero Story
  
@@ -15,7 +15,7 @@ menu-item: true
 
 ### List Story
  
-{% include tabs.html component="d-story-list" mobile-height="95" mobile-width="375" tablet-height="65" tablet-width="720" desktop-height="65" desktop-width="620" %}
+{% include tabs.html component="d-story-list" mobile-height="105" mobile-width="375" tablet-height="65" tablet-width="720" desktop-height="65" desktop-width="620" %}
 
 ### Stacked Story
  
