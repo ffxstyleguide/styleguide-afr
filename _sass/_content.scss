@@ -74,6 +74,20 @@
 
 }
 
+// component code blocks
+
+.styleguide-code-view {
+    overflow-x: scroll;
+    max-width: 38.75em;
+}
+
+// highlight code block syntax
+
+.highlight code {
+    font-size: .875rem;
+}
+
+
 // block level code (pre) styling
 div.highlighter-rouge {
     background: #fff;
