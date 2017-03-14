@@ -1,0 +1,16 @@
+<table class="styleguide-type-sizes">
+    <tr>
+        <th class="sans regular xxs">Font size/Line height</th>
+        {% for style in site.data.typography.styles %}
+            <th class="sans regular xxs">{{ style }}</th>
+        {% endfor %}
+    </tr>
+    {% for size in site.data.typography.sizes %}
+        <tr>
+            <th class="sans regular xxs">{{size[1]}}</th>
+            {% for style in site.data.typography.styles %}
+                <td class="{{style | downcase }} {{size[0]}}">{{ "Aa" }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>

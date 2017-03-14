@@ -103,6 +103,63 @@ code.highlighter-rouge {
 
 // typography
 
+// families, sizes and styles
+
+.styleguide {
+    .serif, .sueca {
+        font-family: $base-font-family;
+    }
+    .sans, .suecasans {
+        font-family: $base-font-family-secondary;
+    }
+    .regular {
+        font-weight: normal;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .italic {
+        font-style: italic;
+    }
+    
+    .xxxl {
+        font-size: $font-size-xxxl;
+        line-height: $line-height-xxxl;
+    }
+    .xxl {
+        font-size: $font-size-xxl;
+        line-height: $line-height-xxl;
+    }
+    .xl {
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
+    }
+    .l {
+        font-size: $font-size-l;
+        line-height: $line-height-l;
+    }
+    .m {
+        font-size: $font-size-m;
+        line-height: $line-height-m;
+    }
+    .s {
+        font-size: $font-size-s;
+        line-height: $line-height-s;
+    }
+    .xs {
+        font-size: $font-size-xs;
+        line-height: $line-height-xs;
+    }
+    .xxs {
+        font-size: $font-size-xxs;
+        line-height: $line-height-xxs;
+    }
+    .xxxs {
+        font-size: $font-size-xxxs;
+        line-height: $line-height-xxxs;
+    }
+}
+
 .styleguide-typeface-figure {
     display: flex;
     align-items: center;
@@ -123,6 +180,7 @@ code.highlighter-rouge {
         border-top: 1px solid $slate300;
         padding-top: $tubby-unit/2;
     }
+    // remove when font-face refactored
     &.sueca {
         font-family: $base-font-family;
         
@@ -156,6 +214,34 @@ code.highlighter-rouge {
     p {
         margin-bottom: $tubby-unit/2;
         word-break: break-all;
+    }
+}
+
+// sizes table
+
+.styleguide-type-sizes {
+    td {
+        color: $slate300;
+        padding: $gutter-unit;
+    }
+    th {
+        padding: $gutter-unit;
+    }
+    th:first-child {
+        padding-left: 0;
+    }
+    .xxxl.serif.regular,
+    .xl.serif.bold,
+    .l.serif.regular,
+    .l.serif.italic:not(.bold),
+    .m.serif,
+    .s.serif,
+    .xs,
+    .xxs.serif.regular,
+    .xxs.serif.bold:not(.italic),
+    .xxs.sans,
+    .xxxs.sans.regular {
+        color: $black;
     }
 }
 

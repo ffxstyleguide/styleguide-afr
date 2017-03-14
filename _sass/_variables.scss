@@ -15,6 +15,28 @@ $base-font-family:                  'sueca_hd_regular', georgia, serif;
 $base-font-family-secondary:        'suecasans_regular', Arial, Helvetica, sans-serif;
 $base-font-family-secondary-bold:     'suecasans_bold', Arial, Helvetica, sans-serif;
 
+// font sizes
+
+$font-size-xxxl: 5.125rem; // 82px
+$line-height-xxxl: 1.244; // 102px
+$font-size-xxl: 3.125rem; // 50px
+$line-height-xxl: 1.2; // 60px
+$font-size-xl: 2.625rem; // 42px
+$line-height-xl: 1.238; // 52px
+$font-size-l: 2rem; // 32px
+$line-height-l: 1.313; // 42px
+$font-size-m: 1.625rem; // 26px
+$line-height-m: 1.231; // 32px
+$font-size-s: 1.25rem; // 20px
+$line-height-s: 1.3; // 26px
+$font-size-xs: 1rem; // 16px
+$line-height-xs: 1.375; // 22px
+$font-size-xxs: .75rem; // 12px
+$line-height-xxs: 1.333; // 16px
+$font-size-xxxs: .625rem; // 10px
+$line-height-xxxs: 1.4; // 14px
+
+
 // breakpoints
 
 $bp-small: 24em; // 384px at 16px font-size
