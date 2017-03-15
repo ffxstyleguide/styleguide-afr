@@ -17,12 +17,16 @@ To get edit access to the styleguide via Prose you need to contact the [repo adm
 
 The styleguide is organised in sections. For each of them there is a folder at root level named after the section name. All section folder names are preceded by an underscore.
 
-Inside each of these folders there is an `index.html` file and several [`markdown`](https://daringfireball.net/projects/markdown/syntax) files. The index.html is the main section page - for example "Colours" - and for each subsection in that page there is a markdown file. The markdown file names all start with a number; this number determines the order of the subsections. Numbering starts at 00.
+Inside each of these folders there is an `index.html` file and several [markdown](https://daringfireball.net/projects/markdown/syntax) files. The index.html is the main section page - for example "Colours" - and for each subsection in that page there is a markdown file. The markdown file names all start with a number; this number determines the order of the subsections. Numbering starts at 00.
 
 Each markdown file should start with [front matter](https://jekyllrb.com/docs/frontmatter/), otherwise Jekyll will not process it. For the subsections you need only add a `title` variable set to that subsection's title, and a `menu-item` variable set to `true` if you wish that subsection to be linked to in the site navigation (if this is not the case you can either not add that variable at all or set it to `false` instead). So for a subsection you would like to include in the navigation the front matter should look something like this:
 
-    title:  brand colours
-    menu-item: true
+{% highlight yaml %}
+---
+title:  brand colours
+menu-item: true
+---
+{% endhighlight %}
 
 ### Homepage 
 
@@ -33,8 +37,10 @@ The homepage is generated from the `index.html` file at root level, and its sect
 
 Markdown image syntax is very similar to link syntax except it starts with an exclamation mark like so:
 
-    ![Vertov films oncoming train](../images/vertov.jpg)
-    {: .f-right .img-medium}
+{% highlight md %}
+![Vertov films oncoming train](../images/vertov.jpg)
+{: .f-right .img-medium}
+{% endhighlight %}
 
 Contents of the square brackets will become image alt text. Note that path to the `/images/` folder must always be specified relative to the file where the image is being inserted.
 
@@ -59,23 +65,31 @@ Jekyll uses a particular flavour of markdown called [Kramdown](http://kramdown.g
 
 Check if you have Ruby installed: open a Terminal window, type "ruby -v" and press enter. You should see something like
 
-    ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin14]
+{% highlight bash %}
+ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin14]
+{% endhighlight %}
 
 If you instead see something like
 
-    -bash: ruby: command not found
+{% highlight bash %}
+-bash: ruby: command not found
+{% endhighlight %}
 
 you will need to [install Ruby](https://www.ruby-lang.org/en/downloads/).
 
 To install Jekyll, go back to the Terminal and type:
 
-    gem install jekyll
+{% highlight bash %}
+gem install jekyll
+{% endhighlight %}
 
 Next, check out the [Styleguide GitHub repository](https://github.com/ffxstyleguide/styleguide-afr) and make sure you're on the `gh-pages` branch. Your styleguide repo should live inside the project folder in Landmark.
 
 Then in the Terminal navigate to the root styleguide folder - this should be `landmark/sites/[your project name]/styeguide` - and type:
 
-    jekyll serve --baseurl '' --watch
+{% highlight bash %}
+jekyll serve --baseurl '' --watch
+{% endhighlight %}
 
 You can then make changes and Jekyll will update the site as you save. You can preview your changes locally at http://localhost:4000.
 
@@ -92,9 +106,17 @@ To add a section you must create a new collection. This is a two step process:
 First you must register the collection in the `_config.yml` file at root level.
 Within that file you will find something like:
 
-    collections:
-        typography:
-            output: true
+{% highlight yaml %}
+collections:
+    frontpage:
+        output: true
+    layout:
+        output: true
+        menu: 0
+    colours:
+        output: true
+        menu: 1
+{% endhighlight %}
 
 Under `collections` add your section name, indented 4 spaces and followed by a colon. On the line below add `output: true`, indented 8 spaces. Be sure to indent correctly or Jekyll will not process your collection.
 
@@ -102,34 +124,40 @@ Then you need to create the collection folder. Add a new folder at root level an
 
 Inside that folder, you will need to add an `index.html` file containing the following code:
 
+{% highlight yaml%}
+---
+layout: section
+title: [your section name here]
+---
+{% endhighlight %}
+{% highlight liquid %}
 {% raw %}
-    ---
-    layout: section
-    title: [your section name here]
-    ---
+{% for m in site.[your section name here] %}
+    {% if m.title != page.title %}
 
-    {% for m in site.[your section name here] %}
-        {% if m.title != page.title %}
+        {{ m.content }}
 
-            {{ m.content }}
-
-        {% endif %}
-    {% endfor %
+    {% endif %}
+{% endfor %}
 {% endraw %}
+{% endhighlight %}
 
 This is the loop that displays all the subsections inside the main section.
 
 You can then add in a markdown file for each subsection, numbered 00 - 99 in the order you wish them to display. Add the subsection title in its front matter like so:
 
-    ---
-    title: intro
-    ---
+{% highlight yaml %}
+---
+title: intro
+---
+{% endhighlight %}
 
 For all sections except the intro a level 2 heading (h2) should be added with the exact same text as the subsection title. If there is no heading or the text is not the same, in-page links from the navigation bar will not work, as they depend on automatically generated `id`s for these headings. These headings should also be given a class of `styleguide-heading`, using [Kramdown attribute notation](http://kramdown.gettalong.org/syntax.html#block-ials). Example:
 
-    ## fonts
-    {: .styleguide-heading}    
-
+{% highlight md %}
+## fonts
+{: .styleguide-heading}    
+{% endhighlight %}
 
 ### Adding new elements to a section
 

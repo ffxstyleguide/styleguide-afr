@@ -71,7 +71,18 @@
         margin-bottom: 1em;
         margin-top: 2em;
     }
-
+    // syntax highlighting
+    .highlight {
+        margin: 0 0 $quarter;
+    }
+    .highlighter-rouge {
+        background-color: $slate200;
+        padding: .1rem .3rem;
+    }
+    code {
+        font-family: "Courier", monospace;
+        font-size: .875em;
+    }
 }
 
 // component code blocks
@@ -81,25 +92,6 @@
     max-width: 38.75em;
 }
 
-// highlight code block syntax
-
-.highlight code {
-    font-size: .875rem;
-}
-
-
-// block level code (pre) styling
-div.highlighter-rouge {
-    background: #fff;
-    margin-bottom: .75em;
-    padding: .5em;
-}
-
-// inline code styling
-code.highlighter-rouge {
-    background: #fff;
-    padding: .1em;
-}
 
 // typography
 
@@ -120,43 +112,6 @@ code.highlighter-rouge {
     }
     .italic {
         font-style: italic;
-    }
-    
-    .xxxl {
-        font-size: $font-size-xxxl;
-        line-height: $line-height-xxxl;
-    }
-    .xxl {
-        font-size: $font-size-xxl;
-        line-height: $line-height-xxl;
-    }
-    .xl {
-        font-size: $font-size-xl;
-        line-height: $line-height-xl;
-    }
-    .l {
-        font-size: $font-size-l;
-        line-height: $line-height-l;
-    }
-    .m {
-        font-size: $font-size-m;
-        line-height: $line-height-m;
-    }
-    .s {
-        font-size: $font-size-s;
-        line-height: $line-height-s;
-    }
-    .xs {
-        font-size: $font-size-xs;
-        line-height: $line-height-xs;
-    }
-    .xxs {
-        font-size: $font-size-xxs;
-        line-height: $line-height-xxs;
-    }
-    .xxxs {
-        font-size: $font-size-xxxs;
-        line-height: $line-height-xxxs;
     }
 }
 
@@ -230,6 +185,44 @@ code.highlighter-rouge {
     th:first-child {
         padding-left: 0;
     }
+    
+    .xxxl {
+        font-size: $font-size-xxxl;
+        line-height: $line-height-xxxl;
+    }
+    .xxl {
+        font-size: $font-size-xxl;
+        line-height: $line-height-xxl;
+    }
+    .xl {
+        font-size: $font-size-xl;
+        line-height: $line-height-xl;
+    }
+    .l {
+        font-size: $font-size-l;
+        line-height: $line-height-l;
+    }
+    .m {
+        font-size: $font-size-m;
+        line-height: $line-height-m;
+    }
+    .s {
+        font-size: $font-size-s;
+        line-height: $line-height-s;
+    }
+    .xs {
+        font-size: $font-size-xs;
+        line-height: $line-height-xs;
+    }
+    .xxs {
+        font-size: $font-size-xxs;
+        line-height: $line-height-xxs;
+    }
+    .xxxs {
+        font-size: $font-size-xxxs;
+        line-height: $line-height-xxxs;
+    }
+    
     .xxxl.serif.regular,
     .xl.serif.bold,
     .l.serif.regular,
@@ -381,7 +374,8 @@ code.highlighter-rouge {
     }
     
     .styleguide-main-content {
-        p {
+        p,
+        .highlight {
             margin-bottom: $half;
         }
     }
