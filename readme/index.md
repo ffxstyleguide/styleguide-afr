@@ -95,10 +95,12 @@ You can then make changes and Jekyll will update the site as you save. You can p
 
 ### Structural details
 
-Each section of the styleguide corresponds to a [Jekyll collection](https://jekyllrb.com/docs/collections/). 
+Each section of the styleguide, including the front page, corresponds to a [Jekyll collection](https://jekyllrb.com/docs/collections/). 
+
+Each section can have a number of subsections, and these in turn can have several elements or components in them.
 
 
-### Adding new sections
+#### Adding new sections
 {: .styleguide-heading}
 
 To add a section you must create a new collection. This is a two step process:
@@ -119,6 +121,8 @@ collections:
 {% endhighlight %}
 
 Under `collections` add your section name, indented 4 spaces and followed by a colon. On the line below add `output: true`, indented 8 spaces. Be sure to indent correctly or Jekyll will not process your collection.
+
+If you wish the section to be indexed in the main navigation, set the menu variable to the number the section should occupy in the menu order.
 
 Then you need to create the collection folder. Add a new folder at root level and give it the section name preceded by an underscore.
 
@@ -159,13 +163,54 @@ For all sections except the intro a level 2 heading (h2) should be added with th
 {: .styleguide-heading}    
 {% endhighlight %}
 
-### Adding new elements to a section
+#### Adding new elements to a section
+{: .styleguide-heading}
 
 1. In `_includes/elements` add a new file named `[element_name].html` with the markup for your element. 
-2. In the root element
+2. In the root `elements` directory add another file, also named `[element_name].html`, with the following front matter:
 
+   ~~~ yaml
+   ---
+   layout: element
+   ---
+   ~~~
 
-### Adding project CSS to the styleguide
+   and then `include` in it the file you created previously with the markup.
+
+3. Add a custom stylesheet for your element (you can use one of the default stylesheets, but elements are usually pretty simple so you probably won't need all the site styles). This stylesheet should be located in the root `css` directory and it can be `.scss` or `.css`. If it is `.scss` you'll have to add at least one line of front matter for Jekyll to compile it. This front matter will usually be a comment detailing the purpose of the stylesheet.
+
+4. To get your element to render in a section, you need to `include element.html` and pass in the following values:
+
+    * element = element name (without file extension)
+    * height = height of element in pixels
+    * width = width of element in pixels
+    * stylesheet = stylesheet name (without file extension)
+    * code view = true or false, depending on whether you wish to show the code for the element. 
+
+#### Adding new components to a section
+{: .styleguide-heading}
+
+Currently all three breakpoints are rendered by default for each component. This means you need to specify width and height of component for each breakpoint.
+
+1. In `_includes/components` add a new file named `[component_name].html` with the markup for your component. If the component has different markup across breakpoints, add a file for each breakpoint named `[component_name]-[breakpoint].html`
+2. In the root `component` directory add another file, also named `[component_name].html`, with the following front matter:
+
+   ~~~ yaml
+   ---
+   layout: component
+   ---
+   ~~~
+
+   and then `include` in it the file you created previously with the markup.
+
+3. To get your component to render in a section, you need to `include tabs.html` and pass in the following values:
+
+    * component = component name (without file extension)
+    * [breakpoint]-height = height of component in pixels for that breakpoint (needs to be specified for all three breakpoints)
+    * [breakpoint]-width = width of component in pixels for that breakpoint (needs to be specified for all three breakpoints)
+    * OPTIONAL: [breakpoint] = true (if there is custom markup for that breakpoint)
+
+### Exporting project CSS for the styleguide
 {: .styleguide-heading}
 
 A custom `styleguide` task has been added to the project's Grunt config. When run it copies desktop, tablet and mobile stylesheets into the styleguide, plus a custom typography stylesheet (styleguide-fonts.css) with all the current fonts being used on the site. 
