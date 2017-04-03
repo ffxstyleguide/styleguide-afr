@@ -163,6 +163,10 @@ For all sections except the intro a level 2 heading (h2) should be added with th
 {: .styleguide-heading}    
 {% endhighlight %}
 
+#### Landing page
+
+The contents of the landing page are stored in the `_frontpage` collection but its `index.html` is located at root level instead of in the collection directory.
+
 #### Adding new elements to a section
 {: .styleguide-heading}
 
