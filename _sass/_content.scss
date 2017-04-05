@@ -4,40 +4,27 @@
     .styleguide-site-header {
         background-color: $slate100;
     }
+    .styleguide-main-content {
+        display: grid;
+    }
+}
+.styleguide-section {
+    clear: both;
+    padding: $quarter;
+
+    ul,
+    p {
+        color: $slate500;
+    }
+}
+.styleguide-superlarge-heading {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0 0 $quarter;
 }
 
-.styleguide-full-wrap {
-    margin: 0;
-    width: 100%;
-
-    .styleguide-section {
-        clear: both;
-        padding: $quarter;
-
-        &:nth-child(odd) {
-            background-color: $slate100;
-        }
-        h2 {
-            font-size: 1.2rem;
-            margin: $quarter 0;
-        }
-        ul,
-        p {
-            color: $slate500;
-        }
-        .grid__cell:empty {
-            display: none;
-        }
-        .styleguide-superlarge-heading {
-            font-size: 2rem;
-            font-weight: normal;
-            margin: 0 0 $quarter;
-        }
-
-        .styleguide-small-heading {
-            font-size: 1rem;
-        }
-    }
+.styleguide-small-heading {
+    font-size: 1rem;
 }
 
 .rooster {
@@ -313,66 +300,62 @@
     }
 }
 
-@media (min-width: $bp-small) {
-    .styleguide-inline-figure {
-        display: inline-flex;
-        vertical-align: top;
-        
-        + .styleguide-inline-figure {
-            margin-left: calc(50% - 180px);
+@media (min-width: $bp-medium) {
+
+    // front page
+    .styleguide-landing {
+        .styleguide-main-content {
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: repeat(4, auto);
         }
     }
-}
-
-@media (min-width: $bp-medium) {
+    .styleguide-section {
+        padding: $half $quarter;
+        
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .styleguide-section.title {
+        grid-column: span 4;
+    }
+    .styleguide-section.introduction {
+        grid-column: span 2;
+    }
+    .styleguide-section.atomic-design {
+        .styleguide-type-sample {
+            width: 120px;
+            height: 120px;
+            padding: .5em .7em;
+        }
+    }
+    .styleguide-section.design-principles {
+        grid-column: span 4;
+    }
+    .styleguide-section.highlights {
+        grid-column: span 4;
+    }
+    .styleguide-superlarge-heading {
+        margin: 0 0 $half;
+        font-size: 3.5rem;
+    }
+    .styleguide-small-heading {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
     .styleguide-index .styleguide-main-content {
         display: inline-block;
         vertical-align: top;
         width: 75%;
     }
-    .styleguide-full-wrap .styleguide-section {
-        padding: $half $quarter;
-        
-        header {
-            display: inline-block;
-            width: 25%;
-        }
-        h2 {
-            font-size: 1rem;
-            margin: 0 0 0 $quarter;
-        }
-        section {
-            display: inline-block;
-            width: 75%;
-            max-width: $max-content-width; // 940px assuming a body font size of 16;
-        } 
-        p {
-            font-size: 1.2rem;
-        }
-        .grid__cell:empty {
-            display: inline-block;
-        }
-        .styleguide-superlarge-heading {
-            margin: 0 0 $half;
-            font-size: 3.5rem;
-        }
-        .styleguide-small-heading {
-            font-size: 1.6rem;
-            font-weight: bold;
-        }
-    }
 }
 
 @media (min-width: $bp-large) {
-    .styleguide-full-wrap .styleguide-section {
+    .styleguide-section {
         padding: $whole $half;
-        
-        .styleguide-superlarge-heading {
-            font-size: 5rem;
-        }
-        h2 {
-            margin: 0 0 0 $half;
-        }
+    }
+    .styleguide-superlarge-heading {
+        font-size: 5rem;
     }
     
     .styleguide-main-content {

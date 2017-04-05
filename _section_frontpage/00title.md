@@ -1,5 +1,6 @@
 ---
 title: title
+section-class: title
 ---
 
 # Financial Review Experience Design System

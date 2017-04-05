@@ -5,8 +5,9 @@
     <ul class="styleguide-nav__menu">
         {% for collection in sorted %}
             {% if collection.menu %}
-            <li class="styleguide-nav__item{% if collection.label == page.title%} styleguide-nav-selected{% endif %}">
-                <a class="styleguide-nav__link" href="{{ site.github.url }}/{{ collection.label }}">{{ collection.label | capitalize }}</a>
+            {% assign label = collection.label | split: "_" | last %}
+            <li class="styleguide-nav__item{% if label == page.title%} styleguide-nav-selected{% endif %}">
+                <a class="styleguide-nav__link" href="{{ site.github.url }}/{{ collection.label }}">{{ label | capitalize }}</a>
                 <ul class="styleguide-subnav__menu">
                    {% for doc in collection.docs %}
                        {% if doc.menu-item %}

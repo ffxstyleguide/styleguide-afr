@@ -30,7 +30,7 @@ menu-item: true
 
 ### Homepage 
 
-The homepage is generated from the `index.html` file at root level, and its sections can be found in the `_frontpage` folder. Whatever you add to this folder will not be linked to in the main navigation so there is no need to set `menu-item` for these sections. You will however need to set a `title`.
+The homepage is generated from the `index.html` file at root level, and its sections can be found in the `_section_frontpage` folder. Whatever you add to this folder will not be linked to in the main navigation so there is no need to set `menu-item` for these sections. You will however need to set a `title`.
 
 ### Adding images in content area
 {: .styleguide-heading}
@@ -110,12 +110,12 @@ Within that file you will find something like:
 
 {% highlight yaml %}
 collections:
-    frontpage:
+    section_frontpage:
         output: true
-    layout:
+    section_layout:
         output: true
         menu: 0
-    colours:
+    section_colours:
         output: true
         menu: 1
 {% endhighlight %}
@@ -165,7 +165,7 @@ For all sections except the intro a level 2 heading (h2) should be added with th
 
 #### Landing page
 
-The contents of the landing page are stored in the `_frontpage` collection but its `index.html` is located at root level instead of in the collection directory.
+The contents of the landing page are stored in the `_section_frontpage` collection but its `index.html` is located at root level instead of in the collection directory.
 
 #### Adding new elements to a section
 {: .styleguide-heading}

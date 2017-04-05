@@ -1,6 +1,6 @@
 ---
 title: Highlights
-content-class: styleguide-inline-spacing
+section-class: highlights
 ---
 
 Use a little, use a lot, use it all. Here’s how the Financial Review Experience Design System may help you:

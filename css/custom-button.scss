@@ -1,0 +1,59 @@
+---
+# custom styles for button elements
+---
+
+$base-font-family-primary: 'suecasans_regular', Arial, Helvetica, sans-serif;
+$tubby-unit: 16px;
+$white: #ffffff;
+$primary-color: #0089d0;
+$cerulean600: #104a8c;
+$font-size-xs: 1rem; // 16px
+$line-height-xs: 1.375; // 22px
+
+
+.btn {
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    font-family: $base-font-family-primary;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: $tubby-unit/2 $tubby-unit;
+}
+
+.btn--blue {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: $white;
+    
+    &:hover,
+    &:focus {
+        background-color: $cerulean600;
+        color: $white;
+    }
+}
+    
+.btn--clear-blue {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $white;
+    
+    &:hover,
+    &:focus {
+        background-color: $cerulean600;
+        color: $white;
+    }
+}
+
+.btn--clear-white {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+    
+    &:hover,
+    &:focus {
+        background-color: $white;
+        color: $primary-color;
+    }
+}

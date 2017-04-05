@@ -1,5 +1,5 @@
 ---
-title:  headings
+title:  sizes
 menu-item: true
 ---
 

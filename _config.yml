@@ -14,24 +14,24 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: /styleguide-afr # the subpath of your site, e.g. /blog
 
 collections:
-    frontpage:
+    section_frontpage:
         output: true
-    layout:
+    section_layout:
         output: true
         menu: 0
-    colours:
+    section_colours:
         output: true
         menu: 1
-    typography:
+    section_typography:
         output: true
         menu: 2
-    iconography:
+    section_iconography:
         output: true
         menu: 3
-    components:
+    section_components:
         output: true
         menu: 4
-    deprecated:
+    section_deprecated:
         output: true
         menu: 5
 
