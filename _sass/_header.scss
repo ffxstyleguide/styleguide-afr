@@ -2,7 +2,7 @@
 
 .styleguide-site-header {
     color: $slate500;
-    padding: $quarter;
+    padding: $tubby-unit;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -18,7 +18,7 @@
 }
 .styleguide-logo {
     display: block;
-    padding-right: $quarter;
+    padding-right: $tubby-unit;
     svg {
         width: 11em;
         height: auto;
@@ -38,13 +38,13 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin: $quarter;
+        margin: $tubby-unit;
     }
     .styleguide-tagline {
         align-self: flex-start;
         display: block;
         border-left: 1px solid currentColor;
-        padding-left: $quarter;
+        padding-left: $tubby-unit;
     }
 
 }
@@ -54,7 +54,7 @@
     // header
     .styleguide-home-link {
         font-size: 1.6rem;
-        margin: $half;
+        margin: $tubby-unit * 2;
     }
 
 }

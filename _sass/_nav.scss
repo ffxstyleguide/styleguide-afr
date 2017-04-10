@@ -1,12 +1,12 @@
 // nav
 
 .styleguide-main-navigation {
-    margin-bottom: $half;
+    margin-bottom: $tubby-unit * 2;
 }
 
 .styleguide-nav__menu {
     padding: 0;
-    margin-left: $half;
+    margin-left: $tubby-unit * 2;
 }
 
 .styleguide-nav__item {
@@ -24,7 +24,7 @@
 
 .styleguide-subnav__item {
     font-size: 1.1rem;
-    padding-left: $quarter;
+    padding-left: $tubby-unit;
 }
 
 
@@ -36,6 +36,6 @@
         width: 25%;
     }
     .styleguide-nav {
-        margin-right: $half;
+        margin-right: $tubby-unit * 2;
     }
 }

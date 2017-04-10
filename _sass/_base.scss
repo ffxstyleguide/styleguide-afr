@@ -77,27 +77,27 @@ body {
     float: left;
 
     + .f-left {
-        margin-left: $quarter;
+        margin-left: $tubby-unit;
     }
 }
 .f-right {
     float: right;
 
      + .f-right {
-         margin-right: $quarter;
+         margin-right: $tubby-unit;
      }
 }
 
 // form elements
 
 .styleguide-text-input {
-    height: $half;
-    width: $twice * 2;
+    height: $tubby-unit * 2;
+    width: $tubby-unit * 16;
     border: 1px solid $slate100;
-    border-radius: $sixteenth;
+    border-radius: $tubby-unit / 4;
     font-family: $base-font-family-secondary;
     font-size: .75rem;
-    padding-left: $quarter;
+    padding-left: $tubby-unit;
 }
 
 .styleguide-search-form {
@@ -131,11 +131,11 @@ body {
         margin-right: auto;
 
         &.f-right img {
-            padding-left: $quarter;
+            padding-left: $tubby-unit;
         }
 
         &.f-left img {
-            padding-right: $quarter;
+            padding-right: $tubby-unit;
         }
     }
 
@@ -157,11 +157,11 @@ body {
     }
 
     .f-right img {
-        padding-left: $quarter;
+        padding-left: $tubby-unit;
     }
 
     .f-left img {
-        padding-right: $quarter;
+        padding-right: $tubby-unit;
     }
 
 }

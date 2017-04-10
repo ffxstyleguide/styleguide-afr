@@ -1,5 +1,5 @@
 .styleguide-tab__nav {
-    margin-bottom: $half;
+    margin-bottom: $tubby-unit * 2;
     
     ul {
         display: flex;
@@ -8,7 +8,7 @@
     }
     li {
         border: 1px solid $text-color;
-        padding: $eighth $quarter;
+        padding: $tubby-unit / 2 $tubby-unit;
         + li {
             border-left: 0;
         }
