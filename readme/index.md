@@ -148,6 +148,8 @@ title: [your section name here]
 
 This is the loop that displays all the subsections inside the main section.
 
+It is possible to add a custom stylesheet to your section by including `custom_css: [your stylesheet name here]` in the front matter of `index.html`.
+
 You can then add in a markdown file for each subsection, numbered 00 - 99 in the order you wish them to display. Add the subsection title in its front matter like so:
 
 {% highlight yaml %}
