@@ -1,0 +1,15 @@
+<section class="styleguide-colour-table">
+    <header class="styleguide-colour-table__header" style="background-color:{{ site.data.colours.[include.colour][include.base-tint] }}">
+        <h3>{{ include.colour | capitalize }}</h3>
+        <span>{{ include.base-tint }}</span>
+        <span>{{ site.data.colours.[include.colour][include.base-tint] }}</span>
+    </header>
+    <ul>
+        {% for tint in site.data.colours.[include.colour] %}
+        <li class="styleguide-colour-table__row" style="background-color:{{tint[1]}}">
+            <span>{{tint[0]}}</span>
+            <span>{{tint[1]}}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

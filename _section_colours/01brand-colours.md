@@ -6,4 +6,8 @@ menu-item: true
 ## brand colours
 {: .styleguide-heading}
 
-These colours are to help define the Brand and create a point of difference for each Masthead and can be used for Marketing collateral as needed. Or when a generic colour is needed on the site.
+{% include colour-table.html colour="cerulean" base-tint="400" %}
+
+{% include colour-table.html colour="steel" base-tint="500" %}
+
+{% include colour-table.html colour="slate" base-tint="500" %}
