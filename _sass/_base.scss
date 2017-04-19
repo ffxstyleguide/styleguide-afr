@@ -141,6 +141,14 @@ body {
 
 }
 
+@media (min-width: $bp-medium) {
+    .styleguide-wrap {
+        display: grid;
+        grid-gap: $gutter-unit;
+        grid-template-columns: $col-3-units 1fr;
+    }
+}
+
 @media (min-width: $bp-large) {
 
     //images

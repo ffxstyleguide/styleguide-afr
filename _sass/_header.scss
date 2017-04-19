@@ -2,7 +2,7 @@
 
 .styleguide-site-header {
     color: $slate500;
-    padding: $tubby-unit;
+    padding: $tubby-unit $gutter-unit;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -38,7 +38,6 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin: $tubby-unit;
     }
     .styleguide-tagline {
         align-self: flex-start;
@@ -54,7 +53,6 @@
     // header
     .styleguide-home-link {
         font-size: 1.6rem;
-        margin: $tubby-unit * 2;
     }
 
 }

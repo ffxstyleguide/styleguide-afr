@@ -3,16 +3,16 @@
 
   {% include head.html %}
 
-  <body class=" styleguide styleguide-index">
+  <body class="styleguide styleguide-index">
 
     {% include header.html %}
 
-    <div class="styleguide-wrap grid">
-        <aside class="styleguide-main-navigation grid__cell">
+    <div class="styleguide-wrap">
+        <aside class="styleguide-main-navigation">
             {% include navigation.html %}
         </aside>
 
-        <main class="styleguide-main-content grid__cell">
+        <main class="styleguide-main-content{% if page.main-content-class %} {{page.main-content-class}}{% endif %}">
             {{ content }}
         </main>
     </div>

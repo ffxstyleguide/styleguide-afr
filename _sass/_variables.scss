@@ -42,6 +42,7 @@ $line-height-xxxs: 1.4; // 14px
 $bp-small: 24em; // 384px at 16px font-size
 $bp-medium: 45em; // 720px at 16px font-size
 $bp-large: 51.25em; // 820px at 16px font-size
+$bp-xlarge: 73em; // 1168px at 16px font-size
 
 // measurements
 
@@ -50,3 +51,9 @@ $max-content-width: 58.75em;
 $grid-unit:                         60px;
 $gutter-unit:                       20px;
 $tubby-unit:                        16px;
+
+$col-2-units:                       $grid-unit*2 + $gutter-unit; // 140px
+$col-3-units:                       $grid-unit*3 + $gutter-unit*2; // 220px
+$col-4-units:                       $grid-unit*4 + $gutter-unit*3; // 300px
+$col-5-units:                       $grid-unit*5 + $gutter-unit*4; // 380px
+$col-6-units:                       $grid-unit*6 + $gutter-unit*5; // 460px

@@ -6,7 +6,6 @@
 
 .styleguide-nav__menu {
     padding: 0;
-    margin-left: $tubby-unit * 2;
 }
 
 .styleguide-nav__item {
@@ -30,11 +29,6 @@
 
 
 @media (min-width: $bp-medium) {
-    .styleguide-main-navigation {
-        display: inline-block;
-        vertical-align: top;
-        width: 25%;
-    }
     .styleguide-nav {
         margin-right: $tubby-unit * 2;
     }
