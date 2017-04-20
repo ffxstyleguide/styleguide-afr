@@ -25,5 +25,21 @@
         "500": "#757575",
         "600": "#555555",
         "700": "#252525"
+    },
+    "isabelline": {
+        "100": "#faf7f5",
+        "200": "#f3f0ef",
+        "300": "#efebe9"
+    },
+    "secondary": {
+        "bullion": "#c0a45b",
+        "gold": "#ffbb00",
+        "coquelicot": "#ff3d00",
+        "coral": "#ff3b30",
+        "harlequin": "#4cd964"
+    },
+    "base": {
+        "black": "#000000",
+        "white": "#ffffff"
     }
 }

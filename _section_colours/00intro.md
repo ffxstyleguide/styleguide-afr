@@ -2,8 +2,4 @@
 title: intro
 ---
 
-Chosen to showcase the varied sections that make up our mastheads
-Chosen to work as a unified whole
-Meet the AA Standard of colour contrast accessibility
-
-TEHSEW COLORS ARE AWESOME YAY
+The colors in our palette stem from the reliability of our product and the authenticity of our team. They enhance the user’s experience, from the connection we make through marketing to the way they engage with our product.

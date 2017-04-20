@@ -89,11 +89,16 @@
 .styleguide-colour-table {
     font-family: $base-font-family-secondary;
     width: 18.75em;
-    
+
+    header {
+        margin-bottom: $tubby-unit/2;
+    }
+
     h3 {
         font-weight: normal;
         font-size: $font-size-xs;
-        padding: $tubby-unit;
+        margin: 0;
+        padding: $tubby-unit $tubby-unit $tubby-unit*2;
     }
     span {
         font-size: $font-size-xxs;
@@ -106,7 +111,8 @@
     &.slate header,
     .row-500,
     .row-600,
-    .row-700 {
+    .row-700,
+    .row-black {
         color: $white;
     }
 }
@@ -115,7 +121,7 @@
     display: flex;
     justify-content: space-between;
     padding: $tubby-unit;
-    
+
     span:first-child {
         font-weight: bold;
     }
@@ -149,7 +155,7 @@
     align-items: center;
     position: relative;
     margin: 0 0 $tubby-unit;
-    
+
     figcaption {
         font-family: $base-font-family-secondary;
         font-size: .75rem;
@@ -167,7 +173,7 @@
     // remove when font-face refactored
     &.sueca {
         font-family: $base-font-family;
-        
+
         &.bold {
             font-weight: bold;
         }
@@ -189,12 +195,12 @@
     border: 1px solid $slate300;
     width: 140px;
     height: 140px;
-    
+
 }
 
 .styleguide-type-allchars.styleguide-type-allchars {
     margin-left: $gutter-unit;
-    
+
     p {
         margin-bottom: $tubby-unit/2;
         word-break: break-all;
@@ -214,7 +220,7 @@
     th:first-child {
         padding-left: 0;
     }
-    
+
     .xxxl {
         font-size: $font-size-xxxl;
         line-height: $line-height-xxxl;
@@ -251,7 +257,7 @@
         font-size: $font-size-xxxs;
         line-height: $line-height-xxxs;
     }
-    
+
     .xxxl.serif.regular,
     .xl.serif.bold,
     .l.serif.regular,
@@ -320,7 +326,7 @@
 .styleguide-image-list.styleguide-image-list {
     li {
         list-style: none;
-    }    
+    }
     margin-top: $tubby-unit * 4;
     padding: 0;
 }
@@ -333,7 +339,7 @@
 }
 .styleguide-image-list__text {
     max-width: 360px;
-    
+
     h3 {
         color: $black;
         margin-top: 0;
@@ -351,7 +357,7 @@
     }
     .styleguide-section {
         padding: $tubby-unit * 2 $tubby-unit;
-        
+
         p {
             font-size: 1.2rem;
         }
@@ -392,37 +398,37 @@
     .styleguide-superlarge-heading {
         font-size: 5rem;
     }
-    
+
     .styleguide-main-content {
         p,
         .highlight {
             margin-bottom: $tubby-unit * 2;
         }
     }
-    
+
     .styleguide-typeface-figure {
         display: inline-flex;
         width: 48%;
-        
+
         &:nth-child(even) {
             margin-left: 2%;
         }
     }
-    
+
     .styleguide-two-column {
         flex-wrap: nowrap;
-        
+
         .styleguide-image-list__item:first-child {
             margin-right: $tubby-unit * 2;
         }
     }
-    
+
     // section grid
     .styleguide-section-grid {
         display: grid;
         grid-gap: $gutter-unit;
         grid-template-columns: $col-4-units 1fr;
-        
+
         h1,
         h2,
         p {
@@ -434,7 +440,7 @@
 @media (min-width: $bp-xlarge) {
     .styleguide-section-grid {
         grid-template-columns: $col-4-units $col-4-units 1fr;
-        
+
         h1,
         h2,
         p {
