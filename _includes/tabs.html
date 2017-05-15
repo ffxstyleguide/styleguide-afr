@@ -15,7 +15,7 @@
     <div class="styleguide-tab__content tab__content">
         <div role="tabpanel" id="{{include.component}}-tab-mobile" class="styleguide-tab__panel tab__panel mobile fm-tabs-content is-selected">
             <div class="styleguide-iframe-container">
-                <iframe width="{{include.mobile-width}}" height="{{include.mobile-height}}" {% if include.mobile == true %}src="{{ site.github.url }}/components/{{ include.component }}-mobile.html"{% else %}src="{{ site.github.url }}/components/{{ include.component }}.html"{% endif %} data-breakpoint="{{ site.github.url }}/css/includes-full/mobile.css" frameborder="0"></iframe>
+                <iframe width="{{include.mobile-width}}" height="{{include.mobile-height}}" {% if include.mobile == true %}src="{{ site.github.url }}/components/{{ include.component }}-mobile.html"{% else %}src="{{ site.github.url }}/components/{{ include.component }}.html"{% endif %} data-breakpoint="{{ site.github.url }}/css/imports-full/mobile.css" frameborder="0"></iframe>
             </div>
             <div class="styleguide-code-view">
 {% highlight html %}
@@ -25,7 +25,7 @@
         </div>
         <div role="tabpanel" id="{{include.component}}-tab-tablet" class="styleguide-tab__panel tab__panel tablet fm-tabs-content">
             <div class="styleguide-iframe-container">
-                <iframe width="{{include.tablet-width}}" height="{{include.tablet-height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/includes-full/tablet.css" frameborder="0"></iframe>
+                <iframe width="{{include.tablet-width}}" height="{{include.tablet-height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/imports-full/tablet.css" frameborder="0"></iframe>
             </div>
             <div class="styleguide-code-view">
 {% highlight html %}
@@ -35,7 +35,7 @@
         </div>
         <div role="tabpanel" id="{{include.component}}-tab-desktop" class="styleguide-tab__panel tab__panel desktop fm-tabs-content">
             <div class="styleguide-iframe-container">
-                <iframe width="{{include.desktop-width}}" height="{{include.desktop-height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/includes-full/desktop.css" frameborder="0"></iframe>
+                <iframe width="{{include.desktop-width}}" height="{{include.desktop-height}}" src="{{ site.github.url }}/components/{{ include.component }}.html" data-breakpoint="{{ site.github.url }}/css/imports-full/desktop.css" frameborder="0"></iframe>
             </div>
             <div class="styleguide-code-view">
 {% highlight html %}
