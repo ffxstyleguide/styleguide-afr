@@ -3,60 +3,18 @@
 ---
 
 @import 'iframe-base';
-
-
-$grid-unit:                         60px;
-$gutter-unit:                       20px;
-$tubby-unit:                        16px;
-
-$col-2-units:                       $grid-unit*2 + $gutter-unit;
-$col-3-units:                       $grid-unit*3 + $gutter-unit*2;
-$col-4-units:                       $grid-unit*4 + $gutter-unit*3;
-$col-5-units:                       $grid-unit*5 + $gutter-unit*4;
-$col-6-units:                       $grid-unit*6 + $gutter-unit*5;
+@import 'variables';
 
 
 .wrap {
     width: 1260px;
 }
 
-.flex-grid,
-.flex-row {
-    display: flex;
-    justify-content: space-between;
-}
-
 .col-1-unit {
     width: $grid-unit;
-    height: 40px;
-    background-color: $slate500;
 }
 
-.col-2-units {
-    width: $col-2-units;
-    height: 40px;
-    background-color: $slate500;
-}
-.col-3-units {
-    width: $col-3-units;
-    height: 40px;
-    background-color: $slate500;
-}
-.col-4-units {
-    width: $col-4-units;
-    height: 40px;
-    background-color: $slate500;
-}
-.col-6-units {
-    width: $col-6-units;
-    flex-shrink: 0;
-    height: 40px;
-    background-color: $slate500;
-}
-
-.col-flex-units-right {
-    flex-grow: 1;
-    margin-left: $gutter-unit;
+[class*="col-"] {
     height: 40px;
     background-color: $slate500;
 }

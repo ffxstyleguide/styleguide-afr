@@ -219,6 +219,6 @@ Currently all three breakpoints are rendered by default for each component. This
 ### Exporting project CSS for the styleguide
 {: .styleguide-heading}
 
-A custom `styleguide` task has been added to the project's Grunt config. When run it copies desktop, tablet and mobile stylesheets into the styleguide, plus a custom typography stylesheet (styleguide-fonts.css) with all the current fonts being used on the site.
+A custom `styleguide` task has been added to the project's Grunt config. When run it copies desktop, tablet, mobile and icons stylesheets into the `imports-full` directory, and any custom stylesheets defined in `sass/styleguide` are copied into `imports-partial`. When creating a new custom stylesheet, the project build must be run in order to compile it to CSS before running the styleguide task.
 
 
