@@ -10,7 +10,7 @@ This styleguide is built with [Jekyll](https://jekyllrb.com/docs/home/) static s
 ## Designers
 {: .styleguide-heading}
 
-To get edit access to the styleguide via Prose you need to contact the [repo administrator](https://github.com/ffxisabel). 
+To get edit access to the styleguide via Prose you need to contact the [repo administrator](https://github.com/ffxisabel).
 
 ### File structure
 {: .styleguide-heading}
@@ -28,7 +28,7 @@ menu-item: true
 ---
 {% endhighlight %}
 
-### Homepage 
+### Homepage
 
 The homepage is generated from the `index.html` file at root level, and its sections can be found in the `_section_frontpage` folder. Whatever you add to this folder will not be linked to in the main navigation so there is no need to set `menu-item` for these sections. You will however need to set a `title`.
 
@@ -95,7 +95,7 @@ You can then make changes and Jekyll will update the site as you save. You can p
 
 ### Structural details
 
-Each section of the styleguide, including the front page, corresponds to a [Jekyll collection](https://jekyllrb.com/docs/collections/). 
+Each section of the styleguide, including the front page, corresponds to a [Jekyll collection](https://jekyllrb.com/docs/collections/).
 
 Each section can have a number of subsections, and these in turn can have several elements or components in them.
 
@@ -172,7 +172,7 @@ The contents of the landing page are stored in the `_section_frontpage` collecti
 #### Adding new elements to a section
 {: .styleguide-heading}
 
-1. In `_includes/elements` add a new file named `[element_name].html` with the markup for your element. 
+1. In `_includes/elements` add a new file named `[element_name].html` with the markup for your element.
 2. In the root `elements` directory add another file, also named `[element_name].html`, with the following front matter:
 
    ~~~ yaml
@@ -183,15 +183,15 @@ The contents of the landing page are stored in the `_section_frontpage` collecti
 
    and then `include` in it the file you created previously with the markup.
 
-3. Add a custom stylesheet for your element (you can use one of the default stylesheets, but elements are usually pretty simple so you probably won't need all the site styles). This stylesheet should be located in the root `css` directory and it can be `.scss` or `.css`. If it is `.scss` you'll have to add at least one line of front matter for Jekyll to compile it. This front matter will usually be a comment detailing the purpose of the stylesheet.
+3. Add custom stylesheets for your element (you can use one of the default stylesheets, but elements are usually pretty simple so you probably won't need all the site styles). All the necessary site styles should be imported from landmark but a local stylesheet with additional styles can be added in the root `css` directory. Its extension can be `.scss` or `.css`. If it is `.scss` you'll have to add at least one line of front matter for Jekyll to compile it. This front matter will usually be a comment detailing the purpose of the stylesheet.
 
 4. To get your element to render in a section, you need to `include element.html` and pass in the following values:
 
     * element = element name (without file extension)
     * height = height of element in pixels
     * width = width of element in pixels
-    * stylesheet = stylesheet name (without file extension)
-    * code view = true or false, depending on whether you wish to show the code for the element. 
+    * stylesheet = space separated list of stylesheet paths relative to root css directory (without file extension)
+    * code view = true or false, depending on whether you wish to show the code for the element.
 
 #### Adding new components to a section
 {: .styleguide-heading}
@@ -219,6 +219,6 @@ Currently all three breakpoints are rendered by default for each component. This
 ### Exporting project CSS for the styleguide
 {: .styleguide-heading}
 
-A custom `styleguide` task has been added to the project's Grunt config. When run it copies desktop, tablet and mobile stylesheets into the styleguide, plus a custom typography stylesheet (styleguide-fonts.css) with all the current fonts being used on the site. 
+A custom `styleguide` task has been added to the project's Grunt config. When run it copies desktop, tablet and mobile stylesheets into the styleguide, plus a custom typography stylesheet (styleguide-fonts.css) with all the current fonts being used on the site.
 
 

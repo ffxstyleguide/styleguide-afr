@@ -1,0 +1,10 @@
+---
+# custom css for elements in the form elements section
+---
+
+@import 'iframe-base';
+@import 'variables';
+
+.gel-layout .btn+.btn {
+    margin-left: $tubby-unit*2;
+}
