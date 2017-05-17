@@ -21,9 +21,12 @@
     color: $text-color;
 }
 
+.styleguide-subnav__menu {
+    padding-left: $tubby-unit;
+}
+
 .styleguide-subnav__item {
     font-size: 1.1rem;
-    padding-left: $tubby-unit;
 }
 
 

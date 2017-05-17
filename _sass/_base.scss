@@ -112,10 +112,10 @@ body {
     cursor: pointer;
     border: none;
     height: 16px;
-    width: 16px;    
+    width: 16px;
     position: absolute;
     top: 8px;
-    right: 8px;    
+    right: 8px;
     text-indent: -9999px;
     overflow: hidden
 }
@@ -145,7 +145,7 @@ body {
     .styleguide-wrap {
         display: grid;
         grid-gap: $gutter-unit;
-        grid-template-columns: $col-3-units 1fr;
+        grid-template-columns: minmax($col-3-units, $col-4-units) 1fr;
     }
 }
 
@@ -173,4 +173,11 @@ body {
     }
 
 }
+
+@media (min-width: $bp-xlarge) {
+    .styleguide-wrap {
+        grid-template-columns: minmax($col-3-units, $col-4-units) 1fr minmax(0, $col-4-units);
+    }
+}
+
 

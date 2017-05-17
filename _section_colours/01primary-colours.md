@@ -13,3 +13,5 @@ The primary colors are the core, used to define our brand. They should be used p
 {% include colour-table.html colour="steel" base-tint="500" %}
 
 {% include colour-table.html colour="slate" base-tint="500" %}
+
+{% include colour-table.html colour="isabelline" base-tint="300" %}

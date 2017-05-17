@@ -38,11 +38,9 @@
 .styleguide-main-content {
     color: $text-color;
 
-    .styleguide-index & {
-        max-width: $max-content-width; // 940px assuming a body font size of 16;
-    }
     p {
         margin: 0 0 $tubby-unit;
+        max-width: $max-content-width; // 940px assuming a body font size of 16;
     }
     ol,
     ul {
@@ -88,7 +86,8 @@
 
 .styleguide-colour-table {
     font-family: $base-font-family-secondary;
-    width: 18.75em;
+    // width: 18.75em;
+    min-width: 13.75em;
 
     header {
         margin-bottom: $tubby-unit/2;
@@ -427,10 +426,23 @@
     .styleguide-section-grid {
         display: grid;
         grid-gap: $gutter-unit;
-        grid-template-columns: $col-4-units 1fr;
+        grid-template-columns: repeat(2, 1fr);
 
         h1,
         h2,
+        h3,
+        p {
+            grid-column: span 2;
+        }
+    }
+
+    .styleguide-subsection--buttons {
+        display: grid;
+        grid-gap: $gutter-unit;
+        grid-template-columns: $col-5-units 1fr;
+
+        h2,
+        h3,
         p {
             grid-column: span 2;
         }
@@ -439,12 +451,16 @@
 
 @media (min-width: $bp-xlarge) {
     .styleguide-section-grid {
-        grid-template-columns: $col-4-units $col-4-units 1fr;
+        // grid-template-columns: repeat(3, $col-4-units) 1fr;
+        grid-template-columns: repeat(4, 1fr);
 
         h1,
         h2,
+        h3,
         p {
-            grid-column: span 3;
+            grid-column: span 4;
         }
     }
+
+
 }

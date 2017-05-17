@@ -3,10 +3,14 @@ layout: section
 title: form elements
 ---
 
-     {% for m in site.section_form_elements %}
-         {% if m.title != page.title %}
-
-            {{ m.content }}
-
-         {% endif %}
-     {% endfor %}
+    {% for m in site.section_form_elements %}
+        {% if m.title != page.title %}
+            {% if m.sub-section-class %}
+                <section class="{{m.sub-section-class}}">
+            {% endif %}
+                {{ m.content }}
+            {% if m.sub-section-class %}
+                </section>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
