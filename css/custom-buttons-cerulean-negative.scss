@@ -1,0 +1,26 @@
+---
+# custom css for elements in the form elements section
+---
+
+@import 'iframe-base';
+@import 'variables';
+
+body {
+    border: 1px solid $slate300;
+}
+
+.gel-layout {
+    background-color: $cerulean400;
+    display: flex;
+    justify-content: center;
+    padding: $tubby-unit;
+
+    .btn+.btn {
+        margin-left: $tubby-unit*2;
+    }
+    .btn:nth-child(3) {
+        margin-left: $tubby-unit*6;
+    }
+}
+
+
