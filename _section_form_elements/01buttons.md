@@ -34,3 +34,10 @@ these are buttons what are they for
 ### Tertiary Buttons
 {: .styleguide-heading}
 
+{% include element.html element="buttons--tertiary--cerulean" height="80" width="380" stylesheet="imports-partial/forms custom-buttons-default" %}
+
+{% include element.html element="buttons--tertiary--slate" height="80" width="380" stylesheet="imports-partial/forms custom-buttons-default" %}
+
+{% include element.html element="buttons--tertiary--cerulean--negative" height="80" width="380" stylesheet="imports-partial/forms custom-buttons-cerulean-negative"%}
+
+{% include element.html element="buttons--tertiary--slate--negative" height="80" width="380" stylesheet="imports-partial/forms custom-buttons-slate-negative"%}
