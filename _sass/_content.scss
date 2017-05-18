@@ -79,6 +79,18 @@
     max-width: 38.75em;
 }
 
+// element code blocks
+
+.styleguide-element {
+
+    .highlight {
+        display: none;
+
+        &.is-visible {
+            display: block;
+        }
+    }
+}
 
 // colours
 
@@ -439,12 +451,17 @@
     .styleguide-subsection--buttons {
         display: grid;
         grid-gap: $gutter-unit;
-        grid-template-columns: $col-5-units 1fr;
+        grid-template-columns: repeat(2, $col-5-units);
 
         h2,
         h3,
         p {
             grid-column: span 2;
+        }
+
+        .styleguide-element:nth-of-type(even) figure.highlight {
+            position: relative;
+            left: -400px;
         }
     }
 }

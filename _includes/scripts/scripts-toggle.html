@@ -1,0 +1,12 @@
+<script>
+require(['fmjs/toggle/fm.toggle'], function() {
+    $('.btn--code-view').each(function(index) {
+        $('.btn--code-view:eq(' + index + ')').fmToggle({
+            toggleContentSelector: '.highlight:eq(' + index + ')',
+            toggleEventDelay: 300,
+            triggers: 'click',
+            toggleClickOutside: true
+        });
+    });
+});
+</script>

@@ -3,6 +3,7 @@
         <iframe width="{{include.width}}" height="{{include.height}}" src="{{ site.github.url }}/elements/{{ include.element }}.html" data-stylesheet="{{include.stylesheet}}" frameborder="0"></iframe>
     </div>
     {% if include.code-view == true %}
+        <button class="btn btn--secondary btn--slate btn--code-view">Toggle Code View</button>
         {% highlight html %}
 {% include elements/{{ include.element }}.html %}
         {% endhighlight %}

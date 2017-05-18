@@ -7,4 +7,4 @@ menu-item: true
 
 ### Small Input
 
-{% include element.html element="input--small" height="100" width="940" stylesheet="imports-partial/forms" code-view=true %}
+{% include element.html element="input--small" height="60" width="380" stylesheet="imports-partial/forms" code-view=true %}
