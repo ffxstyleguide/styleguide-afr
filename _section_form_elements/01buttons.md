@@ -48,3 +48,5 @@ these are buttons what are they for
 {% include element.html element="buttons--primary--icon--before" height="80" width="380" stylesheet="imports-full/icons imports-partial/forms custom-buttons-default" code-view=true %}
 
 {% include element.html element="buttons--secondary--icon--after" height="80" width="380" stylesheet="imports-full/icons imports-partial/forms custom-buttons-default" code-view=true %}
+
+{% include element.html element="buttons--secondary--icon" height="80" width="80" stylesheet="imports-full/icons imports-partial/forms custom-buttons-default" code-view=true %}
