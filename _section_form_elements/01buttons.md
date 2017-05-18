@@ -41,3 +41,10 @@ these are buttons what are they for
 {% include element.html element="buttons--tertiary--cerulean--negative" height="80" width="380" stylesheet="imports-partial/forms custom-buttons-cerulean-negative" code-view=true %}
 
 {% include element.html element="buttons--tertiary--slate--negative" height="80" width="380" stylesheet="imports-partial/forms custom-buttons-slate-negative" code-view=true %}
+
+### Icon Buttons
+{: .styleguide-heading}
+
+{% include element.html element="buttons--primary--icon--before" height="80" width="380" stylesheet="imports-full/icons imports-partial/forms custom-buttons-default" code-view=true %}
+
+{% include element.html element="buttons--secondary--icon--after" height="80" width="380" stylesheet="imports-full/icons imports-partial/forms custom-buttons-default" code-view=true %}
