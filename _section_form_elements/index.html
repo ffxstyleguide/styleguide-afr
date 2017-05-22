@@ -7,11 +7,11 @@ scripts: toggle
     {% for m in site.section_form_elements %}
         {% if m.title != page.title %}
             {% if m.sub-section-class %}
-                <section class="{{m.sub-section-class}}">
+                <div class="{{m.sub-section-class}}">
             {% endif %}
-                {{ m.content }}
+            {{ m.content }}
             {% if m.sub-section-class %}
-                </section>
+                </div>
             {% endif %}
         {% endif %}
     {% endfor %}

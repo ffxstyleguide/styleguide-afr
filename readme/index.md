@@ -216,6 +216,45 @@ Currently all three breakpoints are rendered by default for each component. This
     * [breakpoint]-width = width of component in pixels for that breakpoint (needs to be specified for all three breakpoints)
     * OPTIONAL: [breakpoint] = true (if there is custom markup for that breakpoint)
 
+#### Using CSS Grid layouts
+
+CSS Grid is being used for the navigation / main section layout, attached to the `.styleguide-wrap` class. It starts as a 2 column grid on the medium breakpoint with a 220 to 300px left column and variable width right column. It expands to 3 columns on the extra-large breakpoint, adding a 0 to 300px right hand column to the previous two. This column is not meant to have any content but only exists for spacing purposes.
+
+The grid layout can optionally be used inside the main content area by adding the `.styleguide-section-grid` class to the `main` element (see below for how to do that). This will produce a 2 column (variable width) grid on the large breakpoint, stretching to 4 variable width columns on the extra-large breakpoint. All headings and paragraphs inside the main content area are configured to take up the whole width of the grid as we don't want them split into columns.
+
+Only direct descendants of the grid element will be laid out in columns, so if you want to override this behaviour for a given subsection you can wrap a div around that subsection by adding a classname to it (see below for how to do this).
+
+#### Adding custom classes to sections and subsections
+
+If you wish to add a custom class to a section (for the purpose of using a grid layout, for example), you should add it to the front matter of your section's `index.html` as `main-content-class`.
+
+To add a custom class to a subsection, you can add a `sub-section-class` to the front matter of your subsection. This will wrap a div around that subsection, so, if you don't wish that to happen, the alternative is to add a class to the heading of your subsection by using`{: .my-classname}` directly under that heading, and then target its siblings using the `+` or the `~` selectors. This may affect subsections further down though.
+
+### JavaScript workflow
+{: .styleguide-heading}
+
+The styleguide is using RequireJS to handle both FMJS plugins and any custom or third-party code that may be needed.
+
+If a new FMJS plugin is needed:
+
+* specify the plugin path in the Landmark build config styleguide copy task;
+* add a new script with the plugin call in `_includes/scripts`;
+* in the front matter of `index.html` for the page you want to use the plugin, specify the plugin name:
+
+   ~~~ yaml
+   ---
+   layout: section
+   title: form elements
+   scripts: toggle
+   ---
+   ~~~
+
+If you need to add another plugin or library:
+
+* add it manually to the `js` folder;
+* specify its path in `requirejs/require-config.js`;
+* proceed as above with plugin calls.
+
 ### Exporting project CSS for the styleguide
 {: .styleguide-heading}
 

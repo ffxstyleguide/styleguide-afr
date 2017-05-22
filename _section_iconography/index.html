@@ -6,8 +6,12 @@ custom_css: imports-full/icons
 
      {% for m in site.section_iconography %}
          {% if m.title != page.title %}
-
-            {{ m.content }}
-
+             {% if m.sub-section-class %}
+                 <div class="{{m.sub-section-class}}">
+             {% endif %}
+             {{ m.content }}
+             {% if m.sub-section-class %}
+                 </div>
+             {% endif %}
          {% endif %}
      {% endfor %}

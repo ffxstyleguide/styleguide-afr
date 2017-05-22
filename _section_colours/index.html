@@ -6,8 +6,12 @@ main-content-class: styleguide-section-grid
 
   {% for m in site.section_colours %}
       {% if m.title != page.title %}
-
-         {{ m.content }}
-
+          {% if m.sub-section-class %}
+              <div class="{{m.sub-section-class}}">
+          {% endif %}
+          {{ m.content }}
+          {% if m.sub-section-class %}
+              </div>
+          {% endif %}
       {% endif %}
   {% endfor %}
