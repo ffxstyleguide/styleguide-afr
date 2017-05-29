@@ -145,7 +145,7 @@ body {
     .styleguide-wrap {
         display: grid;
         grid-gap: $gutter-unit;
-        grid-template-columns: minmax($col-3-units, $col-4-units) 1fr;
+        grid-template-columns: $col-3-units 1fr;
     }
 }
 
@@ -176,7 +176,7 @@ body {
 
 @media (min-width: $bp-xlarge) {
     .styleguide-wrap {
-        grid-template-columns: minmax($col-3-units, $col-4-units) 1fr minmax(0, $col-4-units);
+        grid-template-columns: minmax($col-3-units, $col-4-units) minmax($col-12-units, $bp-xlarge);
     }
 }
 

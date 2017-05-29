@@ -218,7 +218,7 @@ Currently all three breakpoints are rendered by default for each component. This
 
 #### Using CSS Grid layouts
 
-CSS Grid is being used for the navigation / main section layout, attached to the `.styleguide-wrap` class. It starts as a 2 column grid on the medium breakpoint with a 220 to 300px left column and variable width right column. It expands to 3 columns on the extra-large breakpoint, adding a 0 to 300px right hand column to the previous two. This column is not meant to have any content but only exists for spacing purposes.
+CSS Grid is being used for the navigation / main section layout, attached to the `.styleguide-wrap` class. It starts as a 2 column grid on the medium breakpoint with a 220px left hand column and variable width right hand column. The left hand column becomes expansible to 300px on the extra-large breakpoint, and the right hand column becomes expansible between 940px and 1260px.
 
 The grid layout can optionally be used inside the main content area by adding the `.styleguide-section-grid` class to the `main` element (see below for how to do that). This will produce a 2 column (variable width) grid on the large breakpoint, stretching to 4 variable width columns on the extra-large breakpoint. All headings and paragraphs inside the main content area are configured to take up the whole width of the grid as we don't want them split into columns.
 
