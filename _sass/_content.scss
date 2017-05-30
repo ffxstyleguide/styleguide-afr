@@ -1,38 +1,3 @@
-// homepage specific styles
-
-.styleguide-landing {
-    .styleguide-site-header {
-        background-color: $slate100;
-    }
-    .styleguide-main-content {
-        display: grid;
-    }
-}
-.styleguide-section {
-    clear: both;
-    padding: $tubby-unit;
-
-    ul,
-    p {
-        color: $slate500;
-    }
-}
-.styleguide-superlarge-heading {
-    font-size: 2rem;
-    font-weight: normal;
-    margin: 0 0 $tubby-unit;
-}
-
-.styleguide-small-heading {
-    font-size: 1rem;
-}
-
-.rooster {
-    width: 30%;
-    float: right;
-    margin-left: $tubby-unit * 4;
-}
-
 // main content - markdown stuff
 
 .styleguide-main-content {
@@ -47,10 +12,6 @@
         margin: 0;
         padding-left: 1em;
     }
-    // ol {
-    //     list-style: none;
-    //     @include numbered-list(". ");
-    // }
     .page-heading {
         margin-top: 0;
     }
@@ -90,221 +51,6 @@
             display: block;
         }
     }
-}
-
-// colours
-
-// colour chart
-
-.styleguide-colour-table {
-    font-family: $base-font-family-secondary;
-    // width: 18.75em;
-    min-width: 13.75em;
-
-    header {
-        margin-bottom: $tubby-unit/2;
-    }
-
-    h3 {
-        font-weight: normal;
-        font-size: $font-size-xs;
-        margin: 0;
-        padding: $tubby-unit $tubby-unit $tubby-unit*2;
-    }
-    span {
-        font-size: $font-size-xxs;
-    }
-    ul {
-        list-style: none;
-        padding-left: 0;
-    }
-    &.steel header,
-    &.slate header,
-    .row-500,
-    .row-600,
-    .row-700,
-    .row-black {
-        color: $white;
-    }
-}
-
-.styleguide-colour-table__row {
-    display: flex;
-    justify-content: space-between;
-    padding: $tubby-unit;
-
-    span:first-child {
-        font-weight: bold;
-    }
-}
-
-
-// typography
-
-// families, sizes and styles
-
-.styleguide {
-    .serif, .sueca {
-        font-family: $base-font-family;
-    }
-    .sans, .suecasans {
-        font-family: $base-font-family-secondary;
-    }
-    .regular {
-        font-weight: normal;
-    }
-    .bold {
-        font-weight: bold;
-    }
-    .italic {
-        font-style: italic;
-    }
-}
-
-.styleguide-typeface-figure {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 0 0 $tubby-unit;
-
-    figcaption {
-        font-family: $base-font-family-secondary;
-        font-size: .75rem;
-        font-weight: normal;
-        font-style: normal;
-        text-align: center;
-        display: inline-block;
-        position: absolute;
-        top: 110px;
-        height: 30px;
-        width: 140px;
-        border-top: 1px solid $slate300;
-        padding-top: $tubby-unit/2;
-    }
-    // remove when font-face refactored
-    &.sueca {
-        font-family: $base-font-family;
-
-        &.bold {
-            font-weight: bold;
-        }
-        &.italic {
-            font-style: italic;
-        }
-    }
-    &.suecasans.regular {
-        font-family: $base-font-family-secondary;
-    }
-    &.suecasans.bold {
-        font-family: $base-font-family-secondary-bold;
-    }
-}
-
-.styleguide-type-sample {
-    font-size: 3rem;
-    padding: .5em .8em;
-    border: 1px solid $slate300;
-    width: 140px;
-    height: 140px;
-
-}
-
-.styleguide-type-allchars.styleguide-type-allchars {
-    margin-left: $gutter-unit;
-
-    p {
-        margin-bottom: $tubby-unit/2;
-        word-break: break-all;
-    }
-}
-
-// sizes table
-
-.styleguide-type-sizes {
-    td {
-        color: $slate300;
-        padding: $gutter-unit;
-    }
-    th {
-        padding: $gutter-unit;
-    }
-    th:first-child {
-        padding-left: 0;
-    }
-
-    .xxxl {
-        font-size: $font-size-xxxl;
-        line-height: $line-height-xxxl;
-    }
-    .xxl {
-        font-size: $font-size-xxl;
-        line-height: $line-height-xxl;
-    }
-    .xl {
-        font-size: $font-size-xl;
-        line-height: $line-height-xl;
-    }
-    .l {
-        font-size: $font-size-l;
-        line-height: $line-height-l;
-    }
-    .m {
-        font-size: $font-size-m;
-        line-height: $line-height-m;
-    }
-    .s {
-        font-size: $font-size-s;
-        line-height: $line-height-s;
-    }
-    .xs {
-        font-size: $font-size-xs;
-        line-height: $line-height-xs;
-    }
-    .xxs {
-        font-size: $font-size-xxs;
-        line-height: $line-height-xxs;
-    }
-    .xxxs {
-        font-size: $font-size-xxxs;
-        line-height: $line-height-xxxs;
-    }
-
-    .xxxl.serif.regular,
-    .xl.serif.bold,
-    .l.serif.regular,
-    .l.serif.italic:not(.bold),
-    .m.serif,
-    .s.serif,
-    .xs,
-    .xxs.serif.regular,
-    .xxs.serif.bold:not(.italic),
-    .xxs.sans,
-    .xxxs.sans.regular {
-        color: $black;
-    }
-}
-
-// iconography
-
-.styleguide-icons-grid {
-    display: grid;
-    grid-gap: $tubby-unit;
-    grid-template-columns: repeat(auto-fit, $col-3-units);
-
-    .styleguide-heading {
-        grid-column-start: 1;
-        grid-column-end: -1;
-    }
-}
-
-.styleguide-iconbox {
-    border: 1px solid $slate500;
-    margin: 0;
-    padding: 2em .5em;
-    text-align: center;
-}
-.styleguide-iconbox__class {
-    margin: .5em 0 0;
 }
 
 // components
@@ -362,72 +108,12 @@
     }
 }
 
-@media (min-width: $bp-medium) {
-
-    // front page
-    .styleguide-landing {
-        .styleguide-main-content {
-            grid-template-columns: repeat(4, 25%);
-            grid-template-rows: repeat(4, auto);
-        }
-    }
-    .styleguide-section {
-        padding: $tubby-unit * 2 $tubby-unit;
-
-        p {
-            font-size: 1.2rem;
-        }
-    }
-    .styleguide-section.title {
-        grid-column: span 4;
-    }
-    .styleguide-section.introduction {
-        grid-column: span 2;
-    }
-    .styleguide-section.atomic-design {
-        .styleguide-type-sample {
-            width: 120px;
-            height: 120px;
-            padding: .5em .7em;
-        }
-    }
-    .styleguide-section.design-principles {
-        grid-column: span 4;
-    }
-    .styleguide-section.highlights {
-        grid-column: span 4;
-    }
-    .styleguide-superlarge-heading {
-        margin: 0 0 $tubby-unit * 2;
-        font-size: 3.5rem;
-    }
-    .styleguide-small-heading {
-        font-size: 1.6rem;
-        font-weight: bold;
-    }
-}
-
 @media (min-width: $bp-large) {
-    .styleguide-section {
-        padding: $tubby-unit * 4 $tubby-unit * 2;
-    }
-    .styleguide-superlarge-heading {
-        font-size: 5rem;
-    }
 
     .styleguide-main-content {
         p,
         .highlight {
             margin-bottom: $tubby-unit * 2;
-        }
-    }
-
-    .styleguide-typeface-figure {
-        display: inline-flex;
-        width: 48%;
-
-        &:nth-child(even) {
-            margin-left: 2%;
         }
     }
 
@@ -449,26 +135,9 @@
         h2,
         h3,
         p {
+            // span all columns
             grid-column-start: 1;
             grid-column-end: -1;
-        }
-    }
-
-    .styleguide-subsection--buttons {
-        display: grid;
-        grid-gap: $gutter-unit;
-        grid-template-columns: repeat(2, $col-5-units);
-
-        h2,
-        h3,
-        p {
-            grid-column-start: 1;
-            grid-column-end: -1;
-        }
-
-        .styleguide-element:nth-of-type(even) figure.highlight {
-            position: relative;
-            left: -400px;
         }
     }
 }

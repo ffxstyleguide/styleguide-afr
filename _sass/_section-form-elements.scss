@@ -1,0 +1,19 @@
+@media (min-width: $bp-large) {
+    .styleguide-subsection--buttons {
+        display: grid;
+        grid-gap: $gutter-unit;
+        grid-template-columns: repeat(2, $col-5-units);
+
+        h2,
+        h3,
+        p {
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        .styleguide-element:nth-of-type(even) figure.highlight {
+            position: relative;
+            left: -400px;
+        }
+    }
+}

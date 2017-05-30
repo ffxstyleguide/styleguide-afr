@@ -3,14 +3,24 @@
 # only Main files contain this front matter, not partials.
 ---
 
+// base
 @import 'variables';
 @import 'mixins';
-// @import 'grid';
 @import 'base';
+
+// objects
+@import 'forms';
+@import 'images';
+@import 'tabs';
+
+// template parts
 @import 'header';
 @import 'nav';
-@import 'content';
-@import 'tabs';
 @import 'footer';
+@import 'content';
 
-
+// sections
+@import 'homepage';
+@import 'section-colours';
+@import 'section-iconography';
+@import 'section-typography';

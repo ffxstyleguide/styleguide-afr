@@ -24,33 +24,6 @@ body {
     }
 }
 
-// wrappers
-
-.styleguide-wrap {
-    margin: 2vh 2vw;
-}
-
-// layout helpers
-
-.styleguide-inline-spacing {
-    letter-spacing: -0.32em;
-
-    * {
-        letter-spacing: normal;
-    }
-}
-
-// images
-
-.styleguide-main-content img {
-    width: 100%;
-    height: auto;
-}
-
-.styleguide-img {
-    background-color: $slate500;
-}
-
 // utility classes
 
 .is-vishidden {
@@ -62,84 +35,15 @@ body {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap; // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-    //Extends the .is-vishidden class to allow the element to be focusable when navigated to via the keyboard
-    &.focusable:active,
-    &.focusable:focus {
-        position: static!important;
-        height: auto;
-        width: auto;
-        overflow: visible;
-        clip: auto;
-    }
 }
 
-.f-left {
-    float: left;
+// wrappers
 
-    + .f-left {
-        margin-left: $tubby-unit;
-    }
-}
-.f-right {
-    float: right;
-
-     + .f-right {
-         margin-right: $tubby-unit;
-     }
-}
-
-// form elements
-
-.styleguide-text-input {
-    height: $tubby-unit * 2;
-    width: $tubby-unit * 16;
-    border: 1px solid $slate100;
-    border-radius: $tubby-unit / 4;
-    font-family: $base-font-family-secondary;
-    font-size: .75rem;
-    padding-left: $tubby-unit;
-}
-
-.styleguide-search-form {
-    position: relative;
-}
-
-.styleguide-search-button {
-    background-image: url(img/icon--search.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    text-indent: -9999px;
-    overflow: hidden
+.styleguide-wrap {
+    margin: 2vh 2vw;
 }
 
 // desktop later :D
-
-@media (min-width: $bp-small) {
-
-    // images
-    .img-small {
-        max-width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-
-        &.f-right img {
-            padding-left: $tubby-unit;
-        }
-
-        &.f-left img {
-            padding-right: $tubby-unit;
-        }
-    }
-
-}
 
 @media (min-width: $bp-medium) {
     .styleguide-wrap {
@@ -149,30 +53,6 @@ body {
     }
 }
 
-@media (min-width: $bp-large) {
-
-    //images
-    .img-medium {
-        max-width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .img-small {
-        max-width: 25%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .f-right img {
-        padding-left: $tubby-unit;
-    }
-
-    .f-left img {
-        padding-right: $tubby-unit;
-    }
-
-}
 
 @media (min-width: $bp-xlarge) {
     .styleguide-wrap {

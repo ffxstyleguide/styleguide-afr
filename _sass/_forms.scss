@@ -1,0 +1,31 @@
+// form elements
+
+.styleguide-text-input {
+    height: $tubby-unit * 2;
+    width: $tubby-unit * 16;
+    border: 1px solid $slate100;
+    border-radius: $tubby-unit / 4;
+    font-family: $base-font-family-secondary;
+    font-size: .75rem;
+    padding-left: $tubby-unit;
+}
+
+.styleguide-search-form {
+    position: relative;
+}
+
+.styleguide-search-button {
+    background-image: url(img/icon--search.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    text-indent: -9999px;
+    overflow: hidden
+}

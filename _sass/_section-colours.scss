@@ -1,0 +1,45 @@
+// colours
+
+// colour chart
+
+.styleguide-colour-table {
+    font-family: $base-font-family-secondary;
+    // width: 18.75em;
+    min-width: 13.75em;
+
+    header {
+        margin-bottom: $tubby-unit/2;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-size: $font-size-xs;
+        margin: 0;
+        padding: $tubby-unit $tubby-unit $tubby-unit*2;
+    }
+    span {
+        font-size: $font-size-xxs;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    &.steel header,
+    &.slate header,
+    .row-500,
+    .row-600,
+    .row-700,
+    .row-black {
+        color: $white;
+    }
+}
+
+.styleguide-colour-table__row {
+    display: flex;
+    justify-content: space-between;
+    padding: $tubby-unit;
+
+    span:first-child {
+        font-weight: bold;
+    }
+}
