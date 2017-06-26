@@ -1,0 +1,16 @@
+---
+layout: section
+title: brand
+---
+
+  {% for m in site.section_brand %}
+      {% if m.title != page.title %}
+          {% if m.sub-section-class %}
+              <div class="{{m.sub-section-class}}">
+          {% endif %}
+          {{ m.content }}
+          {% if m.sub-section-class %}
+              </div>
+          {% endif %}
+      {% endif %}
+  {% endfor %}

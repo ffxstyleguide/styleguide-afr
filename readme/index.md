@@ -114,15 +114,13 @@ collections:
         output: true
     section_layout:
         output: true
-        menu: 0
     section_colours:
         output: true
-        menu: 1
 {% endhighlight %}
 
 Under `collections` add your section name, indented 4 spaces and followed by a colon. On the line below add `output: true`, indented 8 spaces. Be sure to indent correctly or Jekyll will not process your collection.
 
-If you wish the section to be indexed in the main navigation, set the menu variable to the number the section should occupy in the menu order.
+If you wish the section to be indexed in the main navigation, add the collection name to the `menu.json` data file.
 
 Then you need to create the collection folder. Add a new folder at root level and give it the section name preceded by an underscore.
 

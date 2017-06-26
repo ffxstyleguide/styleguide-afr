@@ -18,25 +18,18 @@ collections:
         output: true
     section_layout:
         output: true
-        menu: 0
     section_colours:
         output: true
-        menu: 1
     section_typography:
         output: true
-        menu: 2
     section_iconography:
         output: true
-        menu: 3
     section_form_elements:
         output: true
-        menu: 4
     section_components:
         output: true
-        menu: 5
     section_deprecated:
         output: true
-        menu: 6
 
 # Build settings
 markdown: kramdown

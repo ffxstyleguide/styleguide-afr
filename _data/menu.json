@@ -1,0 +1,12 @@
+{
+    "order": [
+        "section_brand",
+        "section_layout",
+        "section_colours",
+        "section_typography",
+        "section_iconography",
+        "section_form_elements",
+        "section_components",
+        "section_deprecated"
+    ]
+}
