@@ -16,6 +16,8 @@ baseurl: /styleguide-afr # the subpath of your site, e.g. /blog
 collections:
     section_frontpage:
         output: true
+    section_brand:
+        output: true
     section_layout:
         output: true
     section_colours:
