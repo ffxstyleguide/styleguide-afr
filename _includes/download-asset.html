@@ -1,0 +1,4 @@
+<div class="styleguide-asset">
+    <img class="styleguide-asset__image{% if include.background %} styleguide-background-{{ include.background }}{% endif %}" src="{{ site.github.url }}/assets/{{ include.asset }}" alt="{{ include.description }}" />
+    <a class="styleguide-asset__download" href="{{ site.github.url }}/assets/{{ include.asset }}" download="{{ include.asset }}">download {{ include.description }}</a>
+</div>

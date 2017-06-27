@@ -1,0 +1,21 @@
+.styleguide-asset__image {
+    padding: $tubby-unit/2;
+}
+.styleguide-background-dark {
+    background-color: $black;
+}
+
+@media (min-width: $bp-large) {
+    .styleguide-subsection--assets {
+        display: grid;
+        grid-gap: $gutter-unit;
+        grid-template-columns: repeat(2, 1fr);
+
+        h2,
+        h3,
+        p {
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+    }
+}
