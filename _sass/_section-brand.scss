@@ -1,15 +1,25 @@
-.styleguide-asset__image {
-    padding: $tubby-unit/2;
+.styleguide-subsection--assets {
+    display: grid;
+    grid-gap: $gutter-unit;
+    justify-items: center;
+
+    .styleguide-heading {
+        justify-self: start;
+    }
+}
+.styleguide-asset {
+    max-width: 400px;
+    margin-bottom: $tubby-unit;
 }
 .styleguide-background-dark {
     background-color: $black;
+    padding: $tubby-unit/2;
 }
 
 @media (min-width: $bp-large) {
     .styleguide-subsection--assets {
-        display: grid;
-        grid-gap: $gutter-unit;
         grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
 
         h2,
         h3,
