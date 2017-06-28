@@ -1,9 +1,6 @@
 ---
 title: Grid
-menu-item: true
 ---
-
-## Grid
 
 {% include element.html element="grid-fixed" height="60" width="1300" stylesheet="custom-layout imports-partial/grid" code-view=false %}
 

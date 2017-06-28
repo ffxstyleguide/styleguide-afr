@@ -3,14 +3,16 @@ layout: section
 title: layout
 ---
 
-     {% for m in site.section_layout %}
-         {% if m.title != page.title %}
-             {% if m.sub-section-class %}
-                 <div class="{{m.sub-section-class}}">
-             {% endif %}
-             {{ m.content }}
-             {% if m.sub-section-class %}
-                 </div>
-             {% endif %}
-         {% endif %}
-     {% endfor %}
+{{ site.section_layout | where:"title", "intro" }}
+
+{% for doc in site.data.menu.section_layout %}
+    {% assign current = site.section_layout | where:"title", doc | first %}
+    {% if current.sub-section-class %}
+        <div class="{{current.sub-section-class}}">
+    {% endif %}
+    <h2 class="styleguide-heading">{{ current.title }}</h2>
+    {{ current }}
+    {% if current.sub-section-class %}
+        </div>
+    {% endif %}
+{% endfor %}

@@ -1,10 +1,6 @@
 ---
-title:  inputs
-menu-item: true
+title: Inputs
 ---
-
-## inputs
-{: .styleguide-heading}
 
 ### Small Input
 {: .styleguide-heading}

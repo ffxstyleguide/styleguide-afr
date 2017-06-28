@@ -1,12 +1,10 @@
 {
-    "order": [
-        "section_brand",
-        "section_layout",
-        "section_colours",
-        "section_typography",
-        "section_iconography",
-        "section_form_elements",
-        "section_components",
-        "section_deprecated"
-    ]
+    "section_brand": ["Downloadable Assets"],
+    "section_layout": ["Grid"],
+    "section_colours": ["Primary Colours","Secondary Colours"],
+    "section_typography": ["Typeface","Sizes"],
+    "section_iconography": ["Icons","Sizes","Colours","Positions"],
+    "section_form_elements": ["Buttons","Inputs"],
+    "section_components": ["Story Types"],
+    "section_deprecated": ["Story Types"]
 }

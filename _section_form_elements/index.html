@@ -4,14 +4,17 @@ title: form elements
 scripts: toggle
 ---
 
-    {% for m in site.section_form_elements %}
-        {% if m.title != page.title %}
-            {% if m.sub-section-class %}
-                <div class="{{m.sub-section-class}}">
-            {% endif %}
-            {{ m.content }}
-            {% if m.sub-section-class %}
-                </div>
-            {% endif %}
-        {% endif %}
-    {% endfor %}
+{{ site.section_form_elements | where:"title", "intro" }}
+
+{% for doc in site.data.menu.section_form_elements %}
+    {% assign current = site.section_form_elements | where:"title", doc | first %}
+    {% if current.sub-section-class %}
+        <div class="{{current.sub-section-class}}">
+    {% endif %}
+    <h2 class="styleguide-heading">{{ current.title }}</h2>
+    {{ current }}
+    {% if current.sub-section-class %}
+        </div>
+    {% endif %}
+{% endfor %}
+

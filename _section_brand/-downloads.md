@@ -1,8 +1,9 @@
 ---
 title: Downloadable Assets
-menu-item: true
 sub-section-class: styleguide-subsection--assets
 ---
+
+The primary colors are the core, used to define our brand. They should be used predominately BLAHBLAH in marketing our product.
 
 {% include download-asset.html asset="afr-logo.svg" description="afr logo" %}
 

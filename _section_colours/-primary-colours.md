@@ -1,10 +1,6 @@
 ---
-title:  primary colours
-menu-item: true
+title: Primary Colours
 ---
-
-## primary colours
-{: .styleguide-heading}
 
 The primary colors are the core, used to define our brand. They should be used predominately BLAHBLAH in marketing our product.
 

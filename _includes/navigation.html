@@ -2,17 +2,16 @@
 {% if site.collections %}
 <nav class="styleguide-nav">
     <ul class="styleguide-nav__menu">
-        {% for collection in site.data.menu.order %}
-            {% assign label = collection | remove: "section_" | replace: "_"," "  %}
-            <li class="styleguide-nav__item{% if label == page.title%} styleguide-nav-selected{% endif %}">
-                <a class="styleguide-nav__link" href="{{ site.github.url }}/{{ collection }}">{{ label | capitalize }}</a>
+        {% for collection in site.data.menu %}
+            {% assign label = collection[0] | remove: "section_" | replace: "_"," "  %}
+            <li class="styleguide-nav__item{% if label == page.title %} styleguide-nav-selected{% endif %}">
+                <a class="styleguide-nav__link" href="{{ site.github.url }}/{{ collection[0] }}">{{ label | capitalize }}</a>
                 <ul class="styleguide-subnav__menu">
-                   {% for doc in site[collection] %}
-                       {% if doc.menu-item %}
+                    {% assign section = collection[0] %}
+                   {% for doc in collection[1] %}
                         <li class="styleguide-subnav__item">
-                            <a class="styleguide-subnav__link" href="{{ site.github.url }}/{{ doc.collection }}/#{{ doc.title | slugify }}">{{ doc.title }}</a>
+                            <a class="styleguide-subnav__link" href="{{ site.github.url }}/{{ section }}/#{{ doc | slugify }}">{{ doc }}</a>
                         </li>
-                       {% endif %}
                    {% endfor %}
                  </ul>
             </li>

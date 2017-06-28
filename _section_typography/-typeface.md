@@ -1,10 +1,6 @@
 ---
-title:  typeface
-menu-item: true
+title: Typeface
 ---
-
-## Typeface
-{: .styleguide-heading}
 
 This guide explains how to use our typographic styles across The Australian Financial Review. It covers typefaces, sizes, weights,
 line-heights and tracking recommendations.

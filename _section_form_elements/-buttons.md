@@ -1,13 +1,9 @@
 ---
-title:  buttons
-menu-item: true
+title: Buttons
 sub-section-class: styleguide-subsection--buttons
 ---
 
-## Buttons
-{: .styleguide-heading}
-
-these are buttons what are they for
+Our buttons come in Primary, Secondary and Tertiary flavours, two available colours for each.
 
 ### Primary Buttons
 {: .styleguide-heading}
@@ -44,6 +40,8 @@ these are buttons what are they for
 
 ### Icon Buttons
 {: .styleguide-heading}
+
+Icons on buttons can come before or after the button text, depending on desired prominence.
 
 {% include element.html element="buttons--primary--icon--before" height="80" width="380" stylesheet="imports-partial/forms custom-buttons-default" code-view=true %}
 

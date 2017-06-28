@@ -1,10 +1,6 @@
 ---
-title:  secondary colours
-menu-item: true
+title: Secondary Colours
 ---
-
-## secondary colours
-{: .styleguide-heading}
 
 The secondary palette allows us to push our boundries, while staying within the consistency of our brand guides. The secondary colors should be used to distinguish our products, BLAAHH part of our family.
 

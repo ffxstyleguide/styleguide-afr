@@ -1,9 +1,6 @@
 ---
-title:  story types
-menu-item: true
+title: Story Types
 ---
-
-## Story types
 
 ### Story
 

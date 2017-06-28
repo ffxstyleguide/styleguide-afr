@@ -1,8 +1,5 @@
 ---
-title:  sizes
-menu-item: true
+title: Sizes
 ---
-
-## Sizes
 
 {% include type-sizes-table.html %}

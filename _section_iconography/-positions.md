@@ -1,9 +1,5 @@
 ---
-title:  positions
-menu-item: true
+title: Positions
 ---
-
-## positions
-{: .styleguide-heading}
 
 A description about `--before`, `--after` and `--beforeafter` to be put here.
