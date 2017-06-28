@@ -17,20 +17,21 @@ To get edit access to the styleguide via Prose you need to contact the [repo adm
 
 The styleguide is organised in sections. For each of them there is a folder at root level named after the section name. All section folder names are preceded by an underscore.
 
-Inside each of these folders there is an `index.html` file and several [markdown](https://daringfireball.net/projects/markdown/syntax) files. The index.html is the main section page - for example "Colours" - and for each subsection in that page there is a markdown file. The markdown file names all start with a number; this number determines the order of the subsections. Numbering starts at 00.
+Inside each of these folders there is an `index.html` file and several [markdown](https://daringfireball.net/projects/markdown/syntax) files. The index.html is the main section page - for example "Colours" - and for each subsection in that page there is a markdown file. The subsection markdown file names all start with a dash.
 
-Each markdown file should start with [front matter](https://jekyllrb.com/docs/frontmatter/), otherwise Jekyll will not process it. For the subsections you need only add a `title` variable set to that subsection's title, and a `menu-item` variable set to `true` if you wish that subsection to be linked to in the site navigation (if this is not the case you can either not add that variable at all or set it to `false` instead). So for a subsection you would like to include in the navigation the front matter should look something like this:
+Each markdown file should start with [front matter](https://jekyllrb.com/docs/frontmatter/), otherwise Jekyll will not process it. For the subsections you need only add a `title` variable set to that subsection's title. Your front matter should look like this:
 
 {% highlight yaml %}
 ---
 title:  brand colours
-menu-item: true
 ---
 {% endhighlight %}
 
+If you wish to include the subsection in the navigation menu it needs to be listed, in the order it should appear, in the `menu.json` file inside the `_data` folder.
+
 ### Homepage
 
-The homepage is generated from the `index.html` file at root level, and its sections can be found in the `_section_frontpage` folder. Whatever you add to this folder will not be linked to in the main navigation so there is no need to set `menu-item` for these sections. You will however need to set a `title`.
+The homepage is generated from the `index.html` file at root level, and its sections can be found in the `_section_frontpage` folder. You will also need to set a `title` for each section. Currently sections are ordered according to file name, thus the numbers in front of each file name.
 
 ### Adding images in content area
 {: .styleguide-heading}
@@ -134,11 +135,17 @@ title: [your section name here]
 {% endhighlight %}
 {% highlight liquid %}
 {% raw %}
-{% for m in site.[your section name here] %}
-    {% if m.title != page.title %}
+{{ site.your_section_name | where:"title", "intro" }}
 
-        {{ m.content }}
-
+{% for doc in site.data.menu.your_section_name %}
+    {% assign current = site.your_section_name | where:"title", doc | first %}
+    {% if current.sub-section-class %}
+        <div class="{{current.sub-section-class}}">
+    {% endif %}
+    <h2 class="styleguide-heading" id="{{ current.title | slugify }}">{{ current.title }}</h2>
+    {{ current }}
+    {% if current.sub-section-class %}
+        </div>
     {% endif %}
 {% endfor %}
 {% endraw %}
@@ -148,19 +155,12 @@ This is the loop that displays all the subsections inside the main section.
 
 It is possible to add a custom stylesheet to your section by including `custom_css: [your stylesheet name here]` in the front matter of `index.html`.
 
-You can then add in a markdown file for each subsection, numbered 00 - 99 in the order you wish them to display. Add the subsection title in its front matter like so:
+You can then add in a markdown file for each subsection, prefixed with a dash to ensure it comes before `index.html` in the file order. (This is because the markdown will not be parsed if it comes later.) Add the subsection title in its front matter like so:
 
 {% highlight yaml %}
 ---
 title: intro
 ---
-{% endhighlight %}
-
-For all sections except the intro a level 2 heading (h2) should be added with the exact same text as the subsection title. If there is no heading or the text is not the same, in-page links from the navigation bar will not work, as they depend on automatically generated `id`s for these headings. These headings should also be given a class of `styleguide-heading`, using [Kramdown attribute notation](http://kramdown.gettalong.org/syntax.html#block-ials). Example:
-
-{% highlight md %}
-## fonts
-{: .styleguide-heading}    
 {% endhighlight %}
 
 #### Landing page
