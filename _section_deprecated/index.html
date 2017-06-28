@@ -11,7 +11,7 @@ scripts: tabs
     {% if current.sub-section-class %}
         <div class="{{current.sub-section-class}}">
     {% endif %}
-    <h2 class="styleguide-heading">{{ current.title }}</h2>
+    <h2 class="styleguide-heading" id="{{ current.title | slugify }}">{{ current.title }}</h2>
     {{ current }}
     {% if current.sub-section-class %}
         </div>
