@@ -1,17 +1,5 @@
 // iconography
 
-.styleguide-icons-grid {
-    display: grid;
-    grid-gap: $tubby-unit;
-    grid-template-columns: repeat(auto-fit, $col-3-units); // number of cols determined dynamically
-
-    .styleguide-heading {
-        // span all columns
-        grid-column-start: 1;
-        grid-column-end: -1;
-    }
-}
-
 .styleguide-iconbox {
     border: 1px solid $slate500;
     margin: 0;

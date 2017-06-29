@@ -1,0 +1,29 @@
+---
+# custom css for elements in the z-index-shadowing section
+---
+
+@import 'iframe-base';
+@import 'variables';
+@import 'imports/defaults';
+@import 'imports/settings';
+
+.z-shadow-box {
+    border: 1px solid $slate300;
+    font-family: $base-font-family-secondary;
+    font-size: $font-size-s;
+    text-align: center;
+    padding: $tubby-unit;
+
+    &.level-2 {
+        @extend %z-shadow-level2;
+    }
+    &.level-3 {
+        @extend %z-shadow-level3;
+    }
+    &.level-4 {
+        @extend %z-shadow-level4;
+    }
+    &.level-5 {
+        @extend %z-shadow-level5;
+    }
+}

@@ -1,0 +1,166 @@
+//colors
+
+$highlight:                         #f9ffb1;
+
+$primary-color:                     #0089d0;
+$primary-color-light:               #0089d0; //#01a1e4;
+$primary-color-dark:                #0089d0; //#015e96;
+$secondary-color:                   #323b40;
+$secondary-color-light:             #424b50;
+$secondary-color-dark:              #262d31;
+$secondary-color-darker:            #202529;
+$tertiary-color:                    #43768a;
+
+$link-color:                        $primary-color;
+$body-text-color:                   #666666;
+$heading-color:                     $black;
+$section-color:                     #737e85;
+
+$afr-grey:                          #d2d8dc;
+
+$darkest-neutral-color:             #191e20;
+$darker-neutral-color:              #231f20;
+$dark-neutral-gray:                 #333333;
+$neutral-color:                     #969ea3;
+$lightneutral-color:                #999999;
+$lighterneutral-color:              #dedede;
+$lightestneutral-color:             #f2f2f2;
+
+$brw-color:                         #d10a11;
+
+$tools-counter:                     darken($neutral-color, 10%);
+
+$border-color:                      $afr-grey;
+
+$link-color:                        $primary-color;
+$link-hover-color:                  $primary-color;
+$link-visited-color:                $primary-color;
+$btn-bg:                            $lightestneutral-color;
+
+$stock-primary-color:               #20272b;
+$stock-secondary-color:             #374148;
+
+$table-color:                       #252d31;
+$tabs-color:                        #343e43;
+
+$premium-color:                     #c0a45b;
+
+$gutter:                            30px;
+$gutter-v:                          40px;
+$widget-counter-color:              #abb8bf;
+
+$important-notification-color:      #ffdda3;
+$maintanence-notification-color:    #e8edef;
+
+$positive:                          #9eff74; //to be used when a positive market change is to be indicated on a dark/$tabs-color background
+$positive-dark:                     #49b513; //to be used when a positive market change is to be displayed on a white/light background
+$negative:                          #ff7373;
+$negative-dark:                     #f23d4d;
+$neutral:                           $lightneutral-color;
+
+$list-inline-item-margin:           0;
+
+.positive {
+    color: $positive;
+}
+.negative {
+    color: $negative;
+}
+.neutral {
+    color: $neutral;
+}
+
+//------------------------------------//
+//    $ AFR TYPOGRAPHICAL ELEMENTS
+//------------------------------------//
+
+// skin settings
+$base-font-family:                  Arial, Helvetica, sans-serif;
+$base-font-family-primary:          'suecasans_regular', Arial, Helvetica, sans-serif;
+$base-font-family-secondary:        'sueca_hd_regular', georgia, serif;
+
+$breadcrumb-separator:              '\002F';
+
+$slidermenu-hdr-height:             auto;
+
+$tabs-border:                       none;
+$pad:                               0;
+
+//------------------------------------//
+//   $ FRAMEWORK
+//------------------------------------//
+// *
+// * inuit.css will work these next ones out for use within the framework.
+// *
+// * Assign our `$base-line-height` to a new spacing var for more transparency.
+//
+
+$base-spacing-unit:                 $base-line-height!default;
+$half-spacing-unit:                 $base-spacing-unit / 2!default;
+$line-height-ratio:                 $base-line-height / $base-font-size;
+
+//------------------------------------//
+//    $ GEL Layout
+//------------------------------------//
+
+
+// Colours
+
+$steel100:                          #eceff1;
+$steel200:                          #ced6db;
+$steel300:                          #b0bec5;
+$steel400:                          #78909c;
+$steel500:                          #607d8b;
+$steel600:                          #455a65;
+$steel700:                          #263238;
+
+$slate100:                           #f5f5f5;
+$slate200:                           #e5e5e5;
+$slate300:                           #c5c5c5;
+$slate400:                           #959595;
+$slate500:                           #757575;
+$slate600:                           #555555;
+$slate700:                           #252525;
+
+$cerulean100:                       #c3eafc;
+$cerulean200:                       #73d3ff;
+$cerulean300:                       #37b9f5;
+$cerulean400:                       #1e88e5;
+$cerulean500:                       #1564c0;
+$cerulean600:                       #104a8c;
+$cerulean700:                       #0d3960;
+
+$coral:                             #ff3b30;
+
+// Grid
+
+$wide-desktop-width:                1260px;
+
+$grid-unit:                         60px;
+$gutter-unit:                       20px;
+$tubby-unit:                        16px;
+
+$col-2-units:                       $grid-unit*2 + $gutter-unit;
+$col-3-units:                       $grid-unit*3 + $gutter-unit*2;
+$col-4-units:                       $grid-unit*4 + $gutter-unit*3;
+$col-5-units:                       $grid-unit*5 + $gutter-unit*4;
+$col-6-units:                       $grid-unit*6 + $gutter-unit*5;
+$col-9-units:                       $grid-unit*9 + $gutter-unit*8;
+
+// Z-index Shadows
+
+%z-shadow-level2 {
+    box-shadow: 0 $tubby-unit/8 $tubby-unit/4 0 rgba(0,0,0,0.32);
+}
+
+%z-shadow-level3 {
+    box-shadow: 0 $tubby-unit/4 $tubby-unit/2 0 rgba(0,0,0,0.32);
+}
+
+%z-shadow-level4 {
+    box-shadow: 0 $tubby-unit/2 $tubby-unit 0 rgba(0,0,0,0.32);
+}
+
+%z-shadow-level5 {
+    box-shadow: 0 $tubby-unit $tubby-unit*2 0 rgba(0,0,0,0.32);
+}

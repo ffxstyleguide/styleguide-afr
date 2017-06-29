@@ -1,0 +1,17 @@
+// grid with variable number of fixed-width 200px columns
+
+.styleguide-autofit-220-grid {
+    display: grid;
+    grid-gap: $tubby-unit;
+    grid-template-columns: repeat(auto-fit, $col-3-units); // number of cols determined dynamically
+
+    h1,
+    h2,
+    h3,
+    p {
+        // span all columns
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+}
+

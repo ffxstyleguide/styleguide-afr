@@ -1,6 +1,6 @@
 {
     "section_brand": ["Downloadable Assets"],
-    "section_layout": ["Grid"],
+    "section_layout": ["Grid","Z-index Shadowing"],
     "section_colours": ["Primary Colours","Secondary Colours"],
     "section_typography": ["Typeface","Sizes"],
     "section_iconography": ["Icons","Sizes","Colours","Positions"],

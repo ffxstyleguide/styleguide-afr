@@ -1,0 +1,198 @@
+//------------------------------------//
+//   $ DEFAULTS
+//------------------------------------//
+
+//  Landmark default settings - should be overwritten in skin/_settings file
+//  if you update the base content with a variable be sure to add a default here
+
+
+
+//------------------------------------//
+//   $ BORDER-BOX
+//------------------------------------//
+
+//  Do you want all elements to adopt `box-sizing:border-box;` as per
+//  paulirish.com/2012/box-sizing-border-box-ftw ?
+//  This css is contained within the reset file
+$global-border-box: true!default;
+
+
+
+//------------------------------------//
+//   $ TYPOGRAPHY
+//------------------------------------//
+
+//  Base stuff
+$em-base: 16px!default;
+$base-font-size:    16px;
+$base-line-height:  24px;
+$line-height-ratio: $base-line-height / $base-font-size !default;
+
+
+//  Base font-family.
+$base-font-family:  "HelveticaNeue", "Helvetica", "Arial", sans-serif!default;
+$base-font-family-secondary: Georgia, Times, "Times New Roman", serif!default;
+
+
+//------------------------------------//
+//   $ COLOURS
+//------------------------------------//
+
+//  Default colour for objects’ borders etc.
+$base-ui-color:           #ccc!default;
+$error-color:             #b94a48!default;
+$success-color:           green!default;
+
+$primary-color:           #0078be!default;
+$secondary-color:         #98246f!default;
+$tertiary-color:          rgb(41,47,54)!default;
+
+// Now set a neutral colour for borders etc.
+$neutral-color:           rgb(71,63,63)!default;
+$midneutral-color:        darken($neutral-color,25%)!default;
+$darkneutral-color:       darken($neutral-color,50%)!default;
+$lightneutral-color:      lighten($neutral-color,25%)!default;
+$lighterneutral-color:    lighten($neutral-color,50%)!default;
+$lightestneutral-color:   lighten($neutral-color,70%)!default;
+
+// Sometimes you may want $black and $white to be ‘almost black’ and ’off-white’
+$black:                   rgb(0,0,0)!default;
+$white:                   rgb(255,255,255)!default;
+
+//------------------------------------//
+//   $ APPLIED COLOURS
+//------------------------------------//
+
+$text-color:              $darkneutral-color!default;
+
+$link-color:              $primary-color!default;
+$link-hover-color:        mix(black, $link-color, 20)!default;
+$link-visited-color:      $neutral-color!default;
+
+$btn-bg:                  $neutral-color!default;
+$btn-bg-hover:            mix(white, $btn-bg, 20)!default;
+$btn-primary-bg:          $primary-color!default;
+$btn-primary-bg-hover:    mix(white, $btn-primary-bg, 20)!default;
+
+$table-bg:                $lightestneutral-color!default;
+
+$text-overlay:            rgba($darkneutral-color,.7)!default;
+
+//------------------------------------//
+//   $ LAYOUT
+//------------------------------------//
+
+$gutter:                  1.5em!default;
+
+$gutter-top:              $gutter!default;
+$gutter-right:            $gutter!default;
+$gutter-bottom:           $gutter!default;
+$gutter-left:             $gutter!default;
+
+$gutter-all:              $gutter-top $gutter-right $gutter-bottom $gutter-left;
+
+$pad:                     6px!default;
+
+//used for fixed-wdith centering of elements
+$desktop-site-width:      940px!default;
+
+//------------------------------------//
+//   $ Z INDEXES
+//------------------------------------//
+
+//  Default z-indexes
+
+$z-index-hidden: -1;
+$z-index-nav: 5;
+$z-index-overlay: 10;
+$z-index-ads: 2000010;
+
+//------------------------------------//
+//   $ RESPONSIVE
+//------------------------------------//
+
+//  Responsiveness?
+$responsive:              true!default;
+
+
+//  Responsiveness for widescreen/high resolution desktop monitors and beyond?
+//  Note: `$responsive` variable above must be set to true before enabling this.
+$responsive-extra:        false!default;
+
+
+//  Responsive push and pull produce a LOT of code, only turn them on if you
+//  definitely need them.
+$push:                    false!default;
+
+//  Note: `$push` variable above must be set to true before enabling these.
+$palm-push:               false!default;
+$lap-push:                false!default;
+$lap-and-up-push:         false!default;
+$portable-push:           false!default;
+$desk-push:               false!default;
+
+$pull:                    false!default;
+
+//  Note: `$pull` variable above must be set to true before enabling these.
+$palm-pull:               false!default;
+$lap-pull:                false!default;
+$lap-and-up-pull:         false!default;
+$portable-pull:           false!default;
+$desk-pull:               false!default;
+
+
+//  Breakpoints (ref: http://bradfrostweb.com/blog/post/7-habits-of-highly-effective-media-queries/#major-minor)
+$bp-small: 				384px!default;
+$bp-medium: 			720px!default;
+$bp-large: 				820px!default;
+$bp-xlarge: 			1168px!default;
+
+
+//------------------------------------//
+//   $ FONT-SIZES
+//------------------------------------//
+
+//  Font-sizes (in pixels). Refer to relevant sections for their implementations.
+$giga-size:              96px!default;
+$mega-size:            72px!default;
+$kilo-size:               48px!default;
+
+$h1-size:                 36px!default; // .h1
+$h2-size:                 30px!default; // .h2
+$h3-size:                 24px!default; // .h3
+$h4-size:                 20px!default; // .h4
+$h5-size:                 16px!default; // .h5
+$h6-size:                 14px!default; // .h6
+
+$milli-size:              12px!default;
+$micro-size:            10px!default;
+
+
+//------------------------------------//
+//   $ FORMS
+//------------------------------------//
+
+//  How big would you like round corners to be on form elements by default?
+$input-round:             0!default;
+
+
+//  Remove browser styling of elements e.g. select boxes?
+$custom-input-appearance: false!default;
+
+//------------------------------------//
+//   $ VISUAL STYLES
+//------------------------------------//
+
+//  Gradients, border styles etc.
+//  Primarily used in site skin
+$border-style:     1px solid $base-ui-color !default;
+
+
+//------------------------------------//
+//   $ BRAND
+//------------------------------------//
+
+
+
+//  How big would you like round corners to be by default?
+$brand-round:             4px!default;
