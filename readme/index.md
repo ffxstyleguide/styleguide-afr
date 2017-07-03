@@ -1,6 +1,7 @@
 ---
 layout: default
 title: readme
+published: true
 ---
 
 # Instructions for editing and maintaining the styleguide
@@ -10,7 +11,12 @@ This styleguide is built with [Jekyll](https://jekyllrb.com/docs/home/) static s
 ## Designers
 {: .styleguide-heading}
 
-To get edit access to the styleguide via Prose you need to contact the [repo administrator](https://github.com/ffxisabel).
+* go to http://prose.io/ and click "authorize on github"
+* new to github? click on "create an account" and go through the steps
+* go back to prose.io and authorize for your new github account
+* To get edit access to the styleguide via Prose you need to contact the [repo administrator](https://github.com/ffxisabel)
+* once you have access the repo will appear on your prose dashboard.
+
 
 ### File structure
 {: .styleguide-heading}
@@ -257,5 +263,3 @@ If you need to add another plugin or library:
 {: .styleguide-heading}
 
 A custom `styleguide` task has been added to the project's Grunt config. When run it copies desktop, tablet, mobile and icons stylesheets into the `imports-full` directory, and any custom stylesheets defined in `sass/styleguide` are copied into `imports-partial`. When creating a new custom stylesheet, the project build must be run in order to compile it to CSS before running the styleguide task.
-
-
