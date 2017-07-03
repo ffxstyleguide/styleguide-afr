@@ -2,8 +2,7 @@
 title: intro
 ---
 
-This guide explains how to use our typographic styles across The Australian Financial Review. It covers typefaces, sizes, weights,
-line-heights and tracking recommendations.
+This guide explains how to use our typographic styles across The Australian Financial Review. It covers typefaces, sizes, weights, line-heights and tracking recommendations.
 
 ## Overview
 {: .styleguide-heading}
