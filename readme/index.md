@@ -11,7 +11,7 @@ This styleguide is built with [Jekyll](https://jekyllrb.com/docs/home/) static s
 ## Designers
 {: .styleguide-heading}
 
-* go to http://prose.io/ and click "authorize on github"
+* go to [Prose](http://prose.io/) and click "authorize on github"
 * new to github? click on "create an account" and go through the steps
 * go back to prose.io and authorize for your new github account
 * To get edit access to the styleguide via Prose you need to contact the [repo administrator](https://github.com/ffxisabel)
