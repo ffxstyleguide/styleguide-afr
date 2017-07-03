@@ -16,3 +16,4 @@ On the left hand side of the screen is a menu listing all the sections and topic
 
 If you are an editor and want to know how to make changes to it, click the "about this site" link at the very bottom of the page.
 
+If you wish to know more about what drives this project from a high level, read on.
