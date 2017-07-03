@@ -2,8 +2,7 @@
 title: Typeface
 ---
 
-This guide explains how to use our typographic styles across The Australian Financial Review. It covers typefaces, sizes, weights,
-line-heights and tracking recommendations.
+These are all our fonts, weights and styles:
 
 {% include typeface-figure.html font="Sueca Regular" %}
 {% include typeface-figure.html font="Sueca Bold" %}
