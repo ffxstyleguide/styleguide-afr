@@ -1,6 +1,9 @@
 ---
 title: Story Types
+published: true
 ---
+We use the following story types:
+
 
 ### Story
 
