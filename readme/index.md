@@ -14,11 +14,11 @@ This styleguide is built with [Jekyll](https://jekyllrb.com/docs/home/) static s
 ### Start contributing: the easy way :D
 {: .styleguide-heading}
 
-* go to [Prose](http://prose.io/) and click "authorize on github"
-* new to github? click on "create an account" and go through the steps
-* go back to prose.io and authorize for your new github account
+* go to [Prose](http://prose.io/) and click "authorize on GitHub"
+* new to GitHub? click on "create an account" and go through the steps
+* go back to prose.io and authorize for your new GitHub account
 * To get edit access to the styleguide via Prose you need to contact the [repo administrator](https://github.com/ffxisabel)
-* once you have access the repo will appear on your prose dashboard.
+* once you have access the repo will appear on your Prose dashboard.
 
 
 ### Start contributing: the hard way :P
