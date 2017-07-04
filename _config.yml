@@ -38,6 +38,6 @@ markdown: kramdown
 prose:
     siteurl: 'https://ffxstyleguide.github.io/styleguide-afr/'
     media: 'images'
-    ignore: ['_includes','_layouts','_sass','_site','components','css','js','.gitignore']
+    ignore: ['_includes','_layouts','_site','components','js','.gitignore']
 sass:
     sass_dir: _sass
