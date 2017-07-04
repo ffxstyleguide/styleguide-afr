@@ -11,11 +11,34 @@ This styleguide is built with [Jekyll](https://jekyllrb.com/docs/home/) static s
 ## Designers
 {: .styleguide-heading}
 
+### Start contributing: the easy way :D
+{: .styleguide-heading}
+
 * go to [Prose](http://prose.io/) and click "authorize on github"
 * new to github? click on "create an account" and go through the steps
 * go back to prose.io and authorize for your new github account
 * To get edit access to the styleguide via Prose you need to contact the [repo administrator](https://github.com/ffxisabel)
 * once you have access the repo will appear on your prose dashboard.
+
+
+### Start contributing: the hard way :P
+{: .styleguide-heading}
+
+1.Set up the styleguide locally:
+
+* download and install [Git](https://git-scm.com/)
+* download and install [Github Desktop](https://desktop.github.com/) 
+* from GitHub Desktop create a GitHub account or sign in if you already have one
+* clone the [styleguide repo](https://github.com/ffxstyleguide/styleguide-afr)
+* contact the [repo administrator](https://github.com/ffxisabel) for edit access
+
+2. Editing tools
+
+* install [atom code editor](https://atom.io/)
+
+3. Preview changes locally
+
+* install Jekyll following [these instructions](https://ffxstyleguide.github.io/styleguide-afr/readme/#installation)
 
 
 ### File structure
@@ -61,7 +84,10 @@ A few classes are available for positioning and sizing images:
 ### Resources
 {: .styleguide-heading}
 
-Jekyll uses a particular flavour of markdown called [Kramdown](http://kramdown.gettalong.org/quickref.html).
+* [markdown 101](https://blog.ghost.org/markdown/)
+* [Dillinger: online markdown editor](http://dillinger.io/)
+* Jekyll uses a particular flavour of markdown called [Kramdown](http://kramdown.gettalong.org/quickref.html)
+* [Intro to Git for non-programmers](http://blog.scottlowe.org/2015/01/14/non-programmer-git-intro/)
 
 
 ## Developers
