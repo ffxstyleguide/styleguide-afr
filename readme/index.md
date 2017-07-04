@@ -26,19 +26,21 @@ This styleguide is built with [Jekyll](https://jekyllrb.com/docs/home/) static s
 
 1. Set up the styleguide locally:
 
-  * download and install [Git](https://git-scm.com/)
-  * download and install [Github Desktop](https://desktop.github.com/) 
-  * from GitHub Desktop create a GitHub account or sign in if you already have one
-  * clone the [styleguide repo](https://github.com/ffxstyleguide/styleguide-afr)
-  * contact the [repo administrator](https://github.com/ffxisabel) for edit access
+    * download and install [Git](https://git-scm.com/)
+    * download and install [Github Desktop](https://desktop.github.com/)
+    * from GitHub Desktop create a GitHub account or sign in if you already have one
+    * clone the [styleguide repo](https://github.com/ffxstyleguide/styleguide-afr)
+    * contact the [repo administrator](https://github.com/ffxisabel) for edit access
+
 
 2. Editing tools:
 
-  * install [atom code editor](https://atom.io/)
+    * install [atom code editor](https://atom.io/)
+
 
 3. Preview changes locally:
 
-  * install Jekyll following [these instructions](https://ffxstyleguide.github.io/styleguide-afr/readme/#installation)
+    * install Jekyll following [these instructions](https://ffxstyleguide.github.io/styleguide-afr/readme/#installation)
 
 
 ### File structure
