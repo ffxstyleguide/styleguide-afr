@@ -1,0 +1,18 @@
+---
+layout: section
+title: sandbox
+---
+
+{{ site.section_sandbox | where:"title", "intro" }}
+
+{% for doc in site.data.menu.section_sandbox %}
+    {% assign current = site.section_sandbox | where:"title", doc | first %}
+    {% if current.sub-section-class %}
+        <div class="{{current.sub-section-class}}">
+    {% endif %}
+    <h2 class="styleguide-heading" id="{{ current.title | slugify }}">{{ current.title }}</h2>
+    {{ current }}
+    {% if current.sub-section-class %}
+        </div>
+    {% endif %}
+{% endfor %}
