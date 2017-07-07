@@ -28,18 +28,20 @@
 
 @media (min-width: $bp-small) {
 
-    // images
-    .img-small {
-        max-width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+    .styleguide-main-content {
+        // images
+        .img-small {
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
 
-        &.f-right img {
-            padding-left: $tubby-unit;
-        }
+            &.f-right img {
+                padding-left: $tubby-unit;
+            }
 
-        &.f-left img {
-            padding-right: $tubby-unit;
+            &.f-left img {
+                padding-right: $tubby-unit;
+            }
         }
     }
 
@@ -47,25 +49,23 @@
 
 @media (min-width: $bp-large) {
 
-    //images
-    .img-medium {
-        max-width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+    .styleguide-main-content {
+        //images
+        .img-medium {
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img-small {
+            max-width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-
-    .img-small {
-        max-width: 25%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .f-right img {
-        padding-left: $tubby-unit;
-    }
-
-    .f-left img {
-        padding-right: $tubby-unit;
-    }
-
+        .f-right img {
+            padding-left: $tubby-unit;
+        }
+        .f-left img {
+            padding-right: $tubby-unit;
+        }
 }
