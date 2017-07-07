@@ -19,5 +19,13 @@ A grounded spatial system range limits expectations on how it is used and avoids
 {: .img-medium .f-left}
 Geometric progression, doubling each step.
 
+Further application
+
+Inset: Uniform, squish and stretch — cover the vast majority of the rules for space: padding, margin, left, right, top, and bottom.
+
+![inset.png]({{site.baseurl}}/images/inset.png)
+A visual reference, akin to a cheatsheet, of spatial concepts.
+
+
 
 (images can be uploaded directly to a markdown file by clicking the image icon on the top toolbar :D)
