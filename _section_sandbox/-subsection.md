@@ -6,6 +6,7 @@ published: true
 This is a subsection.
 
 ![kitten hugging soft toy]({{site.baseurl}}/images/kitten.jpg)
+{: .img-medium .f-right}
 
 ![jabba-the-hutt.jpg]({{site.baseurl}}/images/jabba-the-hutt.jpg)
 
