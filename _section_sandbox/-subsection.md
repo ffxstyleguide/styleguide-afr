@@ -25,7 +25,7 @@ Geometric progression, doubling each step.
 Inset: Uniform, squish and stretch — cover the vast majority of the rules for space: padding, margin, left, right, top, and bottom.
 
 ![inset.png]({{site.baseurl}}/images/inset.png)
-{: .img-medium}
+{: .img-large}
 A visual reference, akin to a cheatsheet, of spatial concepts.
 
 **Examples**
