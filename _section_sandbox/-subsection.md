@@ -17,7 +17,7 @@ Tubby unit set of limited spatial options, based on 16.
 A grounded spatial system range limits expectations on how it is used and avoids slipping into unpredictable steps, by offering too many choices.
 
 ![Scale02.png]({{site.baseurl}}/images/Scale02.png)
-{: .img-medium}
+{: .img-medium .f-left}
 
 Geometric progression, doubling each step.
 
