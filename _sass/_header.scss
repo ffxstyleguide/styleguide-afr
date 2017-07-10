@@ -20,15 +20,18 @@
     display: block;
     padding-right: $tubby-unit;
     svg {
-        width: 11em;
-        height: auto;
-        path {
-            fill: $black;
-        }
+        width: auto;
+        height: $tubby-unit*2;
+        fill: $black;
+
     }
 }
 .styleguide-tagline {
     display: none;
+}
+.styleguide-icon--burger {
+    fill: $black;
+    width: $tubby-unit*2;
 }
 
 @media (min-width: $bp-medium) {
@@ -44,6 +47,9 @@
         display: block;
         border-left: 1px solid currentColor;
         padding-left: $tubby-unit;
+    }
+    .styleguide-icon--burger {
+        display: none;
     }
 
 }
