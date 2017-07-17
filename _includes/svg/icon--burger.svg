@@ -1,4 +1,4 @@
 <svg class="styleguide-icon--burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 12">
-    <title>expandable menu icon</title>
+    <title>expandable menu toggle</title>
     <path d="M0 0h16v2H0V0zm0 5h16v2H0V5zm0 5h16v2H0v-2z"/>
 </svg>

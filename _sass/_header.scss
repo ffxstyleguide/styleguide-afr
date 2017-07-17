@@ -1,12 +1,15 @@
 // header
 
 .styleguide-site-header {
+    background-color: $white;
     color: $slate500;
     padding: $tubby-unit $gutter-unit;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
 }
 .styleguide-home-link {
     font-size: 1rem;
@@ -21,7 +24,7 @@
     padding-right: $tubby-unit;
     svg {
         width: auto;
-        height: $tubby-unit*2;
+        height: $tubby-unit + $tubby-unit/2;
         fill: $black;
 
     }
@@ -29,12 +32,18 @@
 .styleguide-tagline {
     display: none;
 }
-.styleguide-icon--burger {
+.styleguide-icon--burger,
+.styleguide-icon--search,
+.styleguide-icon--cancel {
     fill: $black;
-    width: $tubby-unit*2;
+    width: $tubby-unit;
 }
 
 @media (min-width: $bp-medium) {
+
+    .styleguide-site-header {
+        position: static;
+    }
 
     .styleguide-home-link {
         font-size: 1.2rem;
@@ -48,7 +57,7 @@
         border-left: 1px solid currentColor;
         padding-left: $tubby-unit;
     }
-    .styleguide-icon--burger {
+    .styleguide-menu-toggle {
         display: none;
     }
 

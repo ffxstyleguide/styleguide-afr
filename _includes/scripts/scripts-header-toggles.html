@@ -1,0 +1,16 @@
+<script>
+require(['fmjs/toggle/fm.toggle'], function() {
+    $('.styleguide-menu-toggle').fmToggle({
+        toggleContentSelector: '.styleguide-nav',
+        toggleEventDelay: 300,
+        triggers: 'click',
+        toggleClickOutside: true
+    });
+    $('.styleguide-search-toggle').fmToggle({
+        toggleContentSelector: '.styleguide-search-form',
+        toggleEventDelay: 300,
+        triggers: 'click',
+        toggleClickOutside: true
+    });
+});
+</script>

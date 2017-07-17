@@ -4,6 +4,18 @@
     margin-bottom: $tubby-unit * 2;
 }
 
+.styleguide-nav {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transition: padding .5s;
+    overflow-y: auto;
+    z-index: 3;
+
+    @extend %is-vishidden;
+}
+
 .styleguide-nav__menu {
     padding: 0;
 }
@@ -34,5 +46,11 @@
 @media (min-width: $bp-medium) {
     .styleguide-nav {
         margin-right: $tubby-unit * 2;
+        // override mobile nav styles
+        position: static;
+        width: auto;
+        height: auto;
+        clip: auto;
+        opacity: 1;
     }
 }

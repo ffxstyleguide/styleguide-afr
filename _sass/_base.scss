@@ -26,21 +26,29 @@ body {
 
 // utility classes
 
-.is-vishidden {
-    position: absolute !important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
+%is-vishidden {
+    position: absolute;
+    opacity: 0;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap; // https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 }
 
+%is-visible {
+    clip: auto;
+    opacity: 1;
+}
+
+.is-vishidden {
+    @extend %is-vishidden;
+}
+
+.is-visible {
+    @extend %is-visible;
+}
 // wrappers
 
 .styleguide-wrap {
-    margin: 2vh 2vw;
+    margin: 102px 2vw 2vh;
 }
 
 // desktop later :D
@@ -50,6 +58,7 @@ body {
         display: grid;
         grid-gap: $gutter-unit;
         grid-template-columns: $col-3-units 1fr;
+        margin-top: 0;
     }
 }
 

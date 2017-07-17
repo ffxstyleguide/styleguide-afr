@@ -4,8 +4,12 @@
     </div>
 </footer>
 
+<!-- global scripts -->
+{% include scripts/scripts-main.html %}
+{% include scripts/scripts-header-toggles.html %}
+
+<!-- page-specific scripts -->
 {% if page.scripts %}
-    {% include scripts/scripts-main.html %}
     {% for script in page.scripts %}
         {% include scripts/scripts-{{script}}.html %}
     {% endfor %}

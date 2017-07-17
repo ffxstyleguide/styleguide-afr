@@ -277,7 +277,7 @@ If a new FMJS plugin is needed:
    ---
    layout: section
    title: form elements
-   scripts: toggle
+   scripts: codeview-toggle
    ---
    ~~~
 
