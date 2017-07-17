@@ -11,6 +11,8 @@ require(['fmjs/toggle/fm.toggle'], function() {
         toggleEventDelay: 300,
         triggers: 'click',
         toggleClickOutside: true
+    }).on('click', function(){
+        $('#search-box').focus();
     });
 });
 </script>

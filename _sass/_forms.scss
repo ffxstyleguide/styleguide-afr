@@ -1,4 +1,4 @@
-// form elements
+// generic
 
 .styleguide-text-input {
     height: $tubby-unit * 2;
@@ -7,25 +7,55 @@
     border-radius: $tubby-unit / 4;
     font-family: $base-font-family-secondary;
     font-size: .75rem;
-    padding-left: $tubby-unit;
+    padding: $tubby-unit/2 $tubby-unit;
+}
+
+.styleguide-icon-button {
+    background-color: $white;
+    border: 1px solid $slate300;
+    border-radius: 4px;
+    box-shadow: none;
+    height: $tubby-unit*2;
+    width: $tubby-unit*2;
+    padding: 0;
+    transition: all .2s ease-in-out;
+}
+
+.styleguide-field-control {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    position: absolute;
+}
+
+// search form styles
+
+.styleguide-text-input.search-box {
+    width: 100%;
+    padding-left: $tubby-unit*2;
+    padding-right: $tubby-unit*2;
 }
 
 .styleguide-search-form {
-    position: relative;
+    @extend %is-vishidden;
+    top: 100%;
+    left: 4vw;
+    right: 4vw;
 }
 
-.styleguide-search-button {
-    background-image: url(img/icon--search.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    text-indent: -9999px;
-    overflow: hidden
+.styleguide-field-control.search {
+    left: $tubby-unit/2;
+    top: $tubby-unit/2;
+}
+.styleguide-field-control.reset {
+    right: $tubby-unit/2;
+    top: $tubby-unit/2;
+}
+
+@media (min-width: $bp-medium) {
+    .styleguide-search-form {
+        top: auto;
+        left: auto;
+    }    
 }

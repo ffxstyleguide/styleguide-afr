@@ -3,13 +3,14 @@
 .styleguide-site-header {
     background-color: $white;
     color: $slate500;
-    padding: $tubby-unit $gutter-unit;
+    padding: $tubby-unit 4vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
+    width: 100%;
 }
 .styleguide-home-link {
     font-size: 1rem;
@@ -21,7 +22,6 @@
 }
 .styleguide-logo {
     display: block;
-    padding-right: $tubby-unit;
     svg {
         width: auto;
         height: $tubby-unit + $tubby-unit/2;
@@ -44,12 +44,14 @@
     .styleguide-site-header {
         position: static;
     }
-
     .styleguide-home-link {
         font-size: 1.2rem;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+    }
+    .styleguide-logo {
+        padding-right: $tubby-unit;
     }
     .styleguide-tagline {
         align-self: flex-start;
