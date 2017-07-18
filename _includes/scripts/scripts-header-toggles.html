@@ -1,11 +1,12 @@
 <script>
-require(['fmjs/toggle/fm.toggle'], function() {
+require(['fmjs/prevent-overscroll/fm.prevent-overscroll','fmjs/toggle/fm.toggle'], function() {
     $('.styleguide-menu-toggle').fmToggle({
-        toggleContentSelector: '.styleguide-nav',
+        toggleContentSelector: '.styleguide-main-navigation',
         toggleEventDelay: 300,
         triggers: 'click',
         toggleClickOutside: true
     });
+    $('.styleguide-main-navigation').fmPreventOverscroll();
     $('.styleguide-search-toggle').fmToggle({
         toggleContentSelector: '.styleguide-search-form',
         toggleEventDelay: 300,
@@ -14,7 +15,7 @@ require(['fmjs/toggle/fm.toggle'], function() {
     }).on('click', function(){
         if ($('.styleguide-search-form').hasClass('is-visible')) {
             $('#search-box').focus();
-        }        
+        }
     });
 });
 </script>

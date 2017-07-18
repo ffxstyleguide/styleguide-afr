@@ -2,16 +2,15 @@
 
 .styleguide-main-navigation {
     margin-bottom: $tubby-unit * 2;
-}
-
-.styleguide-nav {
     background-color: white;
     width: 100%;
     height: 100%;
     position: fixed;
+    top: 0;
+    padding-top: $tubby-unit*4;
     transition: padding .5s;
     overflow-y: auto;
-    z-index: 3;
+    z-index: 1;
 
     @extend %is-vishidden;
 }
@@ -44,13 +43,15 @@
 
 
 @media (min-width: $bp-medium) {
-    .styleguide-nav {
-        margin-right: $tubby-unit * 2;
+    .styleguide-main-navigation {
         // override mobile nav styles
         position: static;
         width: auto;
         height: auto;
         clip: auto;
         opacity: 1;
+    }
+    .styleguide-nav {
+        margin-right: $tubby-unit * 2;
     }
 }
