@@ -12,7 +12,9 @@ require(['fmjs/toggle/fm.toggle'], function() {
         triggers: 'click',
         toggleClickOutside: true
     }).on('click', function(){
-        $('#search-box').focus();
+        if ($('.styleguide-search-form').hasClass('is-visible')) {
+            $('#search-box').focus();
+        }        
     });
 });
 </script>
