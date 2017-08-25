@@ -17,4 +17,13 @@
 [class*="col-"] {
     height: 40px;
     background-color: $slate500;
+
+    + [class*="col-"]:not(.col-1-unit) {
+        margin-top: $gutter-unit;
+    }
+    span {
+        line-height: 40px;
+        padding-left: 20px;
+        font-size: 18px;
+    }
 }
