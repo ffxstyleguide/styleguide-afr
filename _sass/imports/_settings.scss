@@ -2,16 +2,12 @@
 
 $highlight:                         #f9ffb1;
 
-$primary-color:                     #0089d0;
-$primary-color-light:               #0089d0; //#01a1e4;
-$primary-color-dark:                #0089d0; //#015e96;
 $secondary-color:                   #323b40;
 $secondary-color-light:             #424b50;
 $secondary-color-dark:              #262d31;
 $secondary-color-darker:            #202529;
 $tertiary-color:                    #43768a;
 
-$link-color:                        $primary-color;
 $body-text-color:                   #666666;
 $heading-color:                     $black;
 $section-color:                     #737e85;
@@ -32,9 +28,6 @@ $tools-counter:                     darken($neutral-color, 10%);
 
 $border-color:                      $afr-grey;
 
-$link-color:                        $primary-color;
-$link-hover-color:                  $primary-color;
-$link-visited-color:                $primary-color;
 $btn-bg:                            $lightestneutral-color;
 
 $stock-primary-color:               #20272b;
@@ -126,11 +119,15 @@ $cerulean100:                       #c3eafc;
 $cerulean200:                       #73d3ff;
 $cerulean300:                       #37b9f5;
 $cerulean400:                       #1e88e5;
-$cerulean500:                       #1564c0;
-$cerulean600:                       #104a8c;
-$cerulean700:                       #0d3960;
+$cerulean500:                       #1976D2;
+$cerulean600:                       #1564c0;
+$cerulean700:                       #104a8c;
 
 $coral:                             #ff3b30;
+
+$link-color:                        $cerulean500;
+$link-hover-color:                  $cerulean500;
+$link-visited-color:                $cerulean500;
 
 // Grid
 
