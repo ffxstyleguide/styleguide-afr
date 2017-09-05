@@ -20,3 +20,4 @@ We use the following story types:
 ### Stacked Story
 
 {% include tabs.html component="story-stacked" mobile-height="260" mobile-width="170" tablet-height="310" tablet-width="300" desktop-height="270" desktop-width="220" %}
+
