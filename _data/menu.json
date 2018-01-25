@@ -5,7 +5,7 @@
     "section_typography": ["Typeface","Sizes"],
     "section_iconography": ["Icons","Sizes","Colours","Positions"],
     "section_form_elements": ["Buttons","Inputs"],
-    "section_components": ["Story Types","Sponsored Content"],
+    "section_components": ["Story Types","Sponsored Content","Notification"],
     "section_deprecated": ["Story Types"],
     "section_sandbox": ["Subsection"]
 }
