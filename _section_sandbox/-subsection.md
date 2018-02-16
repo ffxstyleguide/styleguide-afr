@@ -3,7 +3,7 @@ title: Subsection
 published: true
 ---
 
-_Tubby, or Not Tubby, that is the question:_
+_Tubby, or Not Tubby, that is:_
 
 All components use multiples of our base “Tubby unit” of 16px, to align elements for mobile, tablet, and desktop. Our Iconography is also based on this system.
 
